@@ -14,10 +14,10 @@ const Navbar = () => {
 
     return ( 
         <>
-            <nav className='lg:px-48 md:px-32 px-8 md:py-6 py-4 top-0 left-0 sticky z-[100] bg-sky-300 opacity-100 shadow-xl'>
+            <nav className='lg:px-48 md:px-32 px-8 md:py-6 py-4 top-0 left-0 sticky z-[100] bg-white opacity-80 shadow-xl'>
                 <div className='md:flex items-center justify-between'>
                     <div className="flex justify-between items-center">
-                        <Link href='/' className='md:text-3xl text-2xl uppercase font-semibold '>
+                        <Link href='/' className='md:text-2xl text-xl uppercase font-semibold '>
                             Vabrise Technologies
                         </Link>
                         
@@ -26,15 +26,15 @@ const Navbar = () => {
                         </button>
                     </div>
                     
-                    <div className='md:flex hidden text-gray-700'>
+                    <div className='md:flex hidden text-gray-800'>
                         <ul className="md:flex items-center md:text-lg font-medium">
                             {navLinks.map((navLink) => (
-                                <li className='md:mx-4 md:my-0 my-4 hover:text-white'>
+                                <li className='md:mx-4 md:my-0 my-4 '>
                                     <Link href={navLink.route}>{navLink.name}</Link>
                                 </li>
                             ))}
                             <li className='md:mx-8 md:my-0 my-4'>
-                                <a target='_blank' className="bg-white px-3 py-1 hover:bg-sky-800 hover:text-white duration-500 rounded-md" href='https://learn.vabrisetech.co.ke/'>
+                                <a target='_blank' className="px-3 py-2 bg-sky-400 hover:bg-sky-500 text-white duration-500 rounded-md" href='https://learn.vabrisetech.co.ke/'>
                                     Open Learn
                                 </a>
                             </li>
@@ -55,7 +55,7 @@ const Navbar = () => {
                             </li>
                         ))}
                         <li className='md:mx-8 md:my-0 my-4'>
-                            <a target='_blank' className="px-3 py-1 hover:text-white duration-500 rounded-md" href='https://learn.vabrisetech.co.ke/'>
+                            <a target='_blank' className="px-3 py-2  bg-white text-sky-400 duration-500 rounded-md" href='https://learn.vabrisetech.co.ke/'>
                                 Open Learn
                             </a>
                         </li>
