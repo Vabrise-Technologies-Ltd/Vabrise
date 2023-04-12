@@ -6,12 +6,6 @@ import logo from "../assets/logo.png"
 const Navbar = () => {
     const [open, setOpen] = useState(false)
 
-    const navLinks = [
-        {name: "About", route: "/about"},
-        {name: "Services", route: "/services"},
-        {name: "Contact", route: "/contact"}
-    ]
-
     return ( 
         <>
             <nav className='lg:px-48 md:px-32 px-4 py-4 top-0 left-0 sticky z-[100] bg-white opacity-80 shadow-xl'>
@@ -56,11 +50,18 @@ const Navbar = () => {
                         </button> 
                     </div>
                     <ul className="flex flex-col items-center text-center text-base font-medium">
-                        {navLinks.map((navLink) => (
-                            <li onClick={() => setOpen((prev) => !prev)} className='md:mx-4 md:my-0 my-4 hover:text-white pb-6 w-1/3 border-b-2'>
-                                <Link href={navLink.route}>{navLink.name}</Link>
-                            </li>
-                        ))}
+                        <li className='md:mx-4 md:my-0 my-4 '>
+                            <Link to='/'>Home</Link>
+                        </li>
+                        <li className='md:mx-4 md:my-0 my-4 '>
+                            <a href="#about-us">About</a>
+                        </li>
+                        <li className='md:mx-4 md:my-0 my-4 '>
+                            <a href="#our-services">Services</a>
+                        </li>
+                        <li className='md:mx-4 md:my-0 my-4 '>
+                            <a href="#contact">Contact</a>
+                        </li>
                         <li className='md:mx-8 md:my-0 my-4'>
                             <a target='_blank' className="px-4 py-2 bg-white text-sky-400 duration-500 rounded-lg" href='https://learn.vabrisetech.co.ke/'>
                                 Open Learn

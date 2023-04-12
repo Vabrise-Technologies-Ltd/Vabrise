@@ -15,15 +15,19 @@
   }
 
   .section-title {
-    @apply font-semibold text-gray-800 md:text-2xl text-xl text-center mt-8 mb-2
+    @apply md:text-4xl text-2xl mt-2 font-semibold text-gray-600 text-center mb-2
   }
 
   .team-card {
-    @apply rounded-lg md:w-64 mb-2 
+    @apply rounded-lg md:w-44 mb-2 
   }
 
   .input {
     @apply py-3 px-2 bg-white rounded-lg w-full focus-within:border-cyan-400 outline-none
+  }
+
+  .service-card {
+    @apply my-4 p-4 flex flex-col justify-center items-center shadow-xl hover:shadow-2xl rounded-xl hover:translate-y-2 hover:scale-105 duration-500
   }
 }
 
