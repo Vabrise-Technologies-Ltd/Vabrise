@@ -10,12 +10,12 @@ const Team = () => {
                 <div className="md:flex justify-around items-around md:my-8 my-6">
                     <div></div>
                     <div className="md:my-2 my-6 flex flex-col items-center justify-center">
-                        <img className="team-card" src={ceo} alt="" />
+                        <img className="team-img" src={ceo} alt="" />
                         <p className="font-medium">Chris Khayere</p>
                         <p className="text-cyan-500 text-sm">Founder & CEO</p>
                     </div>
                     <div className="md:my-2 my-6 flex flex-col items-center justify-center">
-                        <img className="team-card" src={cto} alt="" />
+                        <img className="team-img" src={cto} alt="" />
                         <p className="font-medium">Andrew Ochieng</p>
                         <p className="text-cyan-500 text-sm">Founder & CEO</p>
                     </div>

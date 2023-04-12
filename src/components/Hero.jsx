@@ -6,18 +6,20 @@ import { Slide } from "react-reveal";
 const Hero = () => {
     return ( 
         <>
-            <div className="md:flex justify-between items-center md:my-16 my-8">
+            <div className="grid sm:grid-cols-2 md:gap-16 md:my-16 my-8">
                 <div>
                     <Slide left>
                         <h3 className="uppercase font-medium md:text-lg text-base text-gray-600">
                             We Ideate. Create. Develop. 
                         </h3>
-                        <h1 className="md:my-6 my-4 lg:text-5xl md:text-3xl text-2xl font-bold text-gray-800 md:leading-tight tracking-wide ">
-                            A <span className="underline underline-offset-4 cursor-pointer text-cyan-500 md:mx-2 mx-1">Complete</span>
-                            tech <br />
-                            <span className="underline underline-offset-4 cursor-pointer text-yellow-400 md:mx-2 mx-1">solution</span> 
-                            <br /> <span className="mr-1">in...</span>
-                            <span className="text-cyan-500 font-semibold text-xl italic">
+                        <div className="md:my-6 my-4 lg:text-6xl md:text-4xl text-3xl font-bold text-gray-800 md:space-y-3 space-y-1 tracking-wide ">
+                            <p>Your complete</p> 
+                            <p>
+                                tech
+                                <span className="underline underline-offset-4 cursor-pointer text-yellow-400 md:mx-2 mx-1">solution</span>
+                                in..
+                            </p>  
+                            <p className="text-cyan-500 md:text-4xl text-xl">
                                 <Typewriter
                                     words={[
                                         'Software Development', 
@@ -34,8 +36,8 @@ const Hero = () => {
                                     deleteSpeed={50}
                                     delaySpeed={2000}
                                 />
-                            </span>             
-                        </h1>
+                            </p>             
+                        </div>
                         <p>
                             Manage your bussiness without having to worry about the the software solutions you are using. Less hustle more growth.
                         </p>

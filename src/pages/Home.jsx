@@ -7,7 +7,7 @@ import Team from "../components/Team";
 const Home = () => {
     return ( 
         <>
-            <div className="md:px-8 px-6">
+            <div className="lg:px-32 md:px-16 px-6">
                 <Hero />
                 <AboutUs />
                 <OurServices />

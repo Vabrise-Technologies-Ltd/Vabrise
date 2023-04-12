@@ -18,8 +18,8 @@
     @apply md:text-4xl text-2xl mt-2 font-semibold text-gray-600 text-center mb-2
   }
 
-  .team-card {
-    @apply rounded-lg md:w-44 mb-2 
+  .team-img {
+    @apply rounded-xl md:w-44 mb-2 
   }
 
   .input {

@@ -20,7 +20,7 @@ const OurServices = () => {
                     {services.map((service) => (
                         <div className="service-card">
                             <img src={service.image} alt="" />
-                            <h2>{service.title}</h2>
+                            <h2 className="font-semibold text-cyan-800 md:text-lg">{service.title}</h2>
                             <p className="text-sm text-center">{service.content}</p>
                         </div>
                     ))}

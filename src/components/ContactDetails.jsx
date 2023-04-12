@@ -17,7 +17,7 @@ const ContactDetails = () => {
                     whileHover={{y: -8, scale: 1.02}}
                     transition={{type: 'spring', stiffness: 80}}
                     class="flex items-center bg-white rounded-lg ease-out duration-300 p-4 shadow-lg hover:shadow-xl">
-                    {info.icon}
+                    <p className="text-cyan-800">{info.icon}</p>
                     <p class="md:ml-4 ml-2 mt-2 md:text-sm text-xs">{info.details}</p>
                 </motion.div>
             ))}
