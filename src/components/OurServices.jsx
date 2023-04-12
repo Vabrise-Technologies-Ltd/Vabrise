@@ -1,12 +1,12 @@
 import web from "../assets/web-dev.png"
-import mobile from "../assets/mobile-dev.png"
+import graphics from "../assets/graphics.png"
 import training from "../assets/training.png"
 import security from "../assets/security.png"
 
 const OurServices = () => {
     const services = [
         {image: web, title: "Software Development", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur?"},
-        {image: mobile, title: "Graphics Design", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur?"},
+        {image: graphics, title: "Graphics Design", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur?"},
         {image: training, title: "Technical Training", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur?"},
         {image: security, title: "Cyber Security", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur?"},
         // {image: web, title: "Software Development", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur?"},

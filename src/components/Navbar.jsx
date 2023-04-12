@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return ( 
         <>
-            <nav className='md:px-32 px-4 py-4 top-0 left-0 sticky z-[100] bg-white opacity-80 shadow-xl'>
+            <nav className='md:px-32 px-4 py-4 top-0 left-0 sticky z-[100] bg-white opacity-90 shadow-xl'>
                 <div className='md:flex items-center justify-between'>
                     <div className="flex justify-between items-center">
                         <Link href='/' className='md:text-2xl text-xl uppercase font-semibold '>

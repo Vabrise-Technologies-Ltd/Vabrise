@@ -2,6 +2,7 @@ import AboutUs from "../components/AboutUs";
 import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import OurServices from "../components/OurServices";
+import OurWork from "../components/OurWork";
 import Team from "../components/Team";
 
 const Home = () => {
@@ -9,8 +10,9 @@ const Home = () => {
         <>
             <div className="lg:px-32 md:px-16 px-6">
                 <Hero />
-                <AboutUs />
                 <OurServices />
+                <AboutUs />
+                <OurWork />
                 <Team />
                 <Contact />
             </div>
