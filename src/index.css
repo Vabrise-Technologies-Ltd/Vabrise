@@ -9,6 +9,22 @@
   font-family: 'Poppins', sans-serif;
 }
 
+@layer components {
+  .btn {
+    @apply px-4 py-1 bg-gradient-to-r from-cyan-500 to-cyan-700 border-none text-white duration-500 rounded-lg 
+  }
 
+  .section-title {
+    @apply font-semibold text-gray-800 md:text-2xl text-xl text-center mt-8 mb-2
+  }
+
+  .team-card {
+    @apply rounded-lg md:w-64 mb-2 
+  }
+
+  .input {
+    @apply py-3 px-2 bg-white rounded-lg w-full focus-within:border-cyan-400 outline-none
+  }
+}
 
 
