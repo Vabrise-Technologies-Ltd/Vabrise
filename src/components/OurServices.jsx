@@ -1,16 +1,14 @@
-import web from "../assets/web-dev.png"
-import graphics from "../assets/graphics.png"
+import soft from "../assets/soft-dev.png"
+import design from "../assets/design.png"
 import training from "../assets/training.png"
 import security from "../assets/security.png"
 
 const OurServices = () => {
     const services = [
-        {image: web, title: "Software Development", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur?"},
-        {image: graphics, title: "Graphics Design", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur?"},
-        {image: training, title: "Technical Training", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur?"},
-        {image: security, title: "Cyber Security", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur?"},
-        // {image: web, title: "Software Development", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur?"},
-        // {image: web, title: "Software Development", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur?"},
+        {image: soft, title: "Software Development", content: "We work handy with our clients to create user-friendly, interactive & scalable web-based & mobile applications."},
+        {image: design, title: "Graphics Design", content: "We have a strong branding portfolio in logos, posters, & flyers design and affirm to deliver this to all our clients."},
+        {image: training, title: "Technical Training", content: "We offer a project-based 8-weeks training on courses such as Frontend & Backend Software development, Graphics design & Cyber Security."},
+        {image: security, title: "Cyber Security", content: "Our expertise in CCTV & Network Installations has put us on top because we deliver unmatched quality work."}
     ]
     return ( 
         <>
