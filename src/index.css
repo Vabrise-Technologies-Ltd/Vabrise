@@ -19,7 +19,7 @@
   }
 
   .team-img {
-    @apply rounded-xl md:w-44 mb-2 
+    @apply rounded-2xl md:w-44 mb-2 
   }
 
   .input {
@@ -28,6 +28,18 @@
 
   .service-card {
     @apply my-4 p-4 flex flex-col justify-center items-center shadow-xl hover:shadow-2xl rounded-xl hover:translate-y-2 hover:scale-105 duration-500
+  }
+
+  .testimonial-card-name {
+    @apply text-gray-800 font-semibold md:text-lg
+  }
+
+  .testimonial-card-post {
+    @apply font-medium text-yellow-500 text-sm
+  }
+
+  .testimonial-card-content {
+    @apply font-light md:text-xl text-cyan-800
   }
 }
 

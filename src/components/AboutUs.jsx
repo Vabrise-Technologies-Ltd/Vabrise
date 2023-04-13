@@ -1,5 +1,6 @@
 import aboutImg from "../assets/about2.webp"
 import { Slide } from "react-reveal";
+import { BsCheckCircleFill } from "react-icons/bs";
 
 
 const AboutUs = () => {
@@ -15,28 +16,39 @@ const AboutUs = () => {
                     </div>
                     <div>
                         <Slide right>
-                            <h3 className="uppercase font-medium md:text-lg text-base text-gray-600">
-                                We Ideate. Create. Develop. 
-                            </h3>
-                            <div className="md:my-6 my-4 lg:text-6xl md:text-4xl text-3xl font-bold text-gray-800 md:space-y-3 space-y-1 tracking-wide ">
-                                <p>Your complete</p> 
+                            <div className="mb-4 lg:text-5xl md:text-4xl text-2xl font-bold text-gray-800 md:space-y-3 space-y-1 tracking-wide ">
+                                <p>Providing nextgen</p> 
                                 <p>
-                                    tech
-                                    <span className="underline underline-offset-4 cursor-pointer text-yellow-400 md:mx-2 mx-1">solution</span>
-                                    in..
+                                    <span className="underline underline-offset-4 cursor-pointer text-yellow-400 md:mx-2 mx-1">tech</span>
+                                    solutions
                                 </p>            
                             </div>
-                            <p>
-                                Vabrise Technologies is a startup ICT Consultncy Firm 
-                                in Nairobi - Kenya, started in 2020 by passionate tech 
-                                students in Baraton University. With vast experience in 
-                                what we do, we provide services in Computer Repair & Maintainance, 
+                            <p className="md:text-base text-sm">
+                                Vabrise Technologies is a startup ICT Consultancy Firm 
+                                in Nairobi - Kenya, started in 2020. We do, we provide services in Computer Sales & Repair, 
                                 Software Design & Development, CCTV & Networks Installation & 
                                 Maintainance, Graphics Design. We also provide ICT-Based Training 
                                 in Web Development, UI/ UX Design, Graphics Design, CCTV & Network 
                                 Installation, and Cyber Security.
                             </p>
                         </Slide>
+                        <div className="mt-4">
+                            <p className="text-cyan-500 uppercase font-semibold md:text-base text-sm">Our Core Values</p>
+                            <div className="md:space-y-4 space-y-2 my-2">
+                                <div className="flex justify-start items-center">
+                                    <BsCheckCircleFill className="md:text-4xl text-3xl text-yellow-500" />
+                                    <p className="md:text-lg font-medium text-gray-600 ml-2">Integrity</p>
+                                </div>
+                                <div className="flex justify-start items-center">
+                                    <BsCheckCircleFill className="md:text-4xl text-3xl text-yellow-500" />
+                                    <p className="md:text-lg font-medium text-gray-600 ml-2">Guaranteed Results</p>
+                                </div>
+                                <div className="flex justify-start items-center">
+                                    <BsCheckCircleFill className="md:text-4xl text-3xl text-yellow-500" />
+                                    <p className="md:text-lg font-medium text-gray-600 ml-2">Fast and Reliable</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -5,7 +5,7 @@ const Team = () => {
 
     return ( 
         <>
-            <div>
+            <section>
                 <h2 className="section-title">Our Team</h2>
                 <div className="md:flex justify-around items-around md:my-8 my-6">
                     <div></div>
@@ -21,7 +21,7 @@ const Team = () => {
                     </div>
                     <div></div>
                 </div>
-            </div>
+            </section>
         </>
      );
 }

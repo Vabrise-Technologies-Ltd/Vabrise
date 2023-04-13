@@ -15,16 +15,16 @@ const Footer = () => {
                     <p className="text-xs">Copyright © {year} - All rights Reserved</p>
                 </div> 
                 <div className="grid-flow-col gap-4  md:place-self-center md:justify-self-end md:text-lg text-base">
-                    <a href="#">
+                    <a href="https://www.facebook.com/profile.php?id=100068470802763">
                         <BsFacebook />
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/company/vabrise-technologies-ltd/">
                         <BsLinkedin />
                     </a>
                     <a href="#">
                         <BsTwitter />
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/Vabrise-Technologies-Ltd">
                         <BsGithub />
                     </a> 
                 </div>
