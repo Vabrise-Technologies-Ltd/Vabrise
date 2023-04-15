@@ -19,7 +19,7 @@
   }
 
   .team-img {
-    @apply rounded-2xl md:w-44 mb-2 
+    @apply rounded-xl md:w-44 mb-2 
   }
 
   .input {
