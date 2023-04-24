@@ -2,6 +2,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg"
 import ceo from "../assets/CEO.jpg"
 import cto from "../assets/CTO.jpg"
+import { motion } from "framer-motion";
 
 const Team = () => {
     const details = [
@@ -16,7 +17,10 @@ const Team = () => {
                 <div className="md:flex justify-around items-around md:my-8 my-6">
                     <div></div>
                     {details.map((item) => (
-                        <div className="md:my-2 my-6 flex flex-col items-center justify-center shadow-xl p-2 pb-3 rounded-xl">
+                        <motion.div 
+                            whileHover={{y: -8}}
+                            transition={{type: 'spring', stiffness: 80}}
+                            className="md:my-2 my-6 flex flex-col items-center justify-center shadow-lg hover:shadow-xl p-2 pb-3 rounded-xl">
                             <img className="team-img" src={item.image} alt="" />
                             <p className="font-medium">{item.name}</p>
                             <p className="text-cyan-500 text-sm">{item.post}</p>
@@ -28,7 +32,7 @@ const Team = () => {
                                     {item.icon2}
                                 </a>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                     <div></div>
                 </div>

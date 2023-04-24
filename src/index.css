@@ -19,11 +19,15 @@
   }
 
   .team-img {
-    @apply rounded-xl md:w-44 mb-2 
+    @apply rounded-xl md:w-44 w-72 mb-2 
   }
 
   .input {
     @apply py-3 px-2 bg-white rounded-lg w-full focus-within:border-cyan-400 outline-none
+  }
+
+  .label {
+    @apply my-2
   }
 
   .service-card {

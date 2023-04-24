@@ -1,14 +1,14 @@
 import kccson from "../assets/KCCSON.png"
-import kambi from "../assets/kambi.png"
+import chris from "../assets/chris-portfolio.png"
 import ola from "../assets/OLA.png"
 import ccabo from "../assets/ccabo.png"
 
 const OurWork = () => {
     const projects = [
-        {id: 1, title: "Kakamega CSO Network", repo: "", image: kccson, link: "https://www.kakamegacsonetwork.org"},
-        {id: 2, title: "Kambi Serene Apartments", repo: "", image: kambi, link: "https://kambiappartments.co.ke/"},
-        {id: 3, title: "Open Learn Africa", repo: "", image: ola, link: "https://learn.vabrisetech.co.ke/"},
-        {id: 4, title: "CCABO KENYA", repo: "", image: ccabo, link: "https://ccabokenya.or.ke/"},
+        {id: 1, title: "Kakamega CSO Network", image: kccson, link: "https://www.kakamegacsonetwork.org"},
+        {id: 2, title: "Open Learn Africa", image: ola, link: "https://learn.vabrisetech.co.ke/"},
+        {id: 3, title: "CCABO KENYA", image: ccabo, link: "https://ccabokenya.or.ke/"},
+        {id: 4, title: "Chris Khayere", image: chris, link: "https://chris.vabrisetech.co.ke/"},
     ]
     return ( 
         <>
@@ -21,7 +21,7 @@ const OurWork = () => {
                             alt="project-image"
                             className="w-full h-full rounded-lg mb-4"
                         />
-                        <a className="text-sm px-4 py-1 bg-gradient-to-r from-cyan-500 to-cyan-700 border-none text-white duration-500 rounded-md" href={project.link}>
+                        <a target="_blank" className="text-sm px-4 py-1 bg-gradient-to-r from-cyan-500 to-cyan-700 border-none text-white duration-500 rounded-md" href={project.link}>
                             {project.title}
                         </a>
                     </div>

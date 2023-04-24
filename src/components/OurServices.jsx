@@ -17,7 +17,9 @@ const OurServices = () => {
                 <div className="grid sm:grid-cols-2 md:grid-cols-4 md:gap-8 gap-4">
                     {services.map((service) => (
                         <div className="service-card">
-                            <img src={service.image} alt="" />
+                            <div className="w-full">
+                                <img className="w-72" src={service.image} alt="" />
+                            </div>
                             <h2 className="font-semibold text-cyan-800 md:text-lg">{service.title}</h2>
                             <p className="text-sm text-center">{service.content}</p>
                         </div>

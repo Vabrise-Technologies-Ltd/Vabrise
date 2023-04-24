@@ -13,10 +13,12 @@ const Hero = () => {
                             We Ideate. Create. Develop. 
                         </h3>
                         <div className="md:my-6 my-4 lg:text-6xl md:text-4xl text-3xl font-bold text-gray-800 md:space-y-3 space-y-1 tracking-wide ">
-                            <p>Your complete</p> 
+                            <p>Your 
+                            <span className="underline underline-offset-4 cursor-pointer text-cyan-400 md:mx-2 mx-1">trusted</span>
+                            </p> 
                             <p>
                                 tech
-                                <span className="underline underline-offset-4 cursor-pointer text-yellow-400 md:mx-2 mx-1">solution</span>
+                                <span className="underline underline-offset-4 cursor-pointer text-yellow-400 md:mx-2 mx-1">partner</span>
                                 in..
                             </p>  
                             <p className="text-cyan-500 md:text-4xl text-xl">
