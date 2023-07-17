@@ -26,10 +26,6 @@
     @apply py-3 px-2 bg-white rounded-lg w-full focus-within:border-cyan-400 outline-none
   }
 
-  .label {
-    @apply my-2
-  }
-
   .service-card {
     @apply my-4 p-4 flex flex-col justify-center items-center shadow-xl hover:shadow-2xl rounded-xl hover:translate-y-1 hover:scale-105 duration-500
   }
