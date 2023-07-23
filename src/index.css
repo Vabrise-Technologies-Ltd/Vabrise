@@ -31,7 +31,7 @@
   }
 
   .testimonial-card-name {
-    @apply text-gray-800 font-semibold md:text-lg
+    @apply text-gray-700 font-light md:text-lg
   }
 
   .testimonial-card-post {
@@ -39,8 +39,30 @@
   }
 
   .testimonial-card-content {
-    @apply font-light md:text-xl text-cyan-800
+    @apply font-medium md:text-xl text-cyan-800 italic
   }
+
+
+  .card-container {
+    @apply md:m-24 m-4 md:gap-16 gap-8 grid md:grid-cols-3
+  }
+
+  .card {
+      @apply rounded-xl shadow-md
+  }
+
+  .card-content {
+      @apply md:p-4 p-3 
+  }
+
+  .card-title {
+      @apply font-semibold text-gray-700 hover:text-cyan-700
+  }
+
+  .card-description {
+      @apply text-gray-500 font-medium
+  }
+
 }
 
 

@@ -1,10 +1,7 @@
-import AboutUs from "../components/AboutUs";
-import Contact from "../components/Contact";
-import Hero from "../components/Hero";
-import OurServices from "../components/OurServices";
-import OurWork from "../components/OurWork";
-import Team from "../components/Team";
-import Testimonials from "../components/Testimonials";
+import AboutUs from "../components/Home/AboutUs";
+import Hero from "../components/Home/Hero";
+import OurServices from "../components/Services/OurServices";
+import OurWork from "../components/Home/OurWork";
 
 const Home = () => {
     return ( 
@@ -14,9 +11,6 @@ const Home = () => {
                 <OurServices />
                 <AboutUs />
                 <OurWork />
-                <Testimonials />
-                <Team />
-                <Contact />
             </div>
         </>
      );

@@ -1,6 +1,7 @@
-import aboutImg from "../assets/about2.webp"
+import aboutImg from "../../assets/about2.webp"
 import { Slide } from "react-reveal";
-import { BsCheckCircleFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
+// import { BsCheckCircleFill } from "react-icons/bs";
 
 
 const AboutUs = () => {
@@ -32,23 +33,9 @@ const AboutUs = () => {
                                 Installation, and Cyber Security.
                             </p>
                         </Slide>
-                        <div className="mt-4">
-                            <p className="text-cyan-500 uppercase font-semibold md:text-base text-sm">Our Core Values</p>
-                            <div className="md:space-y-4 space-y-2 my-2">
-                                <div className="flex justify-start items-center">
-                                    <BsCheckCircleFill className="md:text-4xl text-3xl text-yellow-500" />
-                                    <p className="md:text-lg font-medium text-gray-600 ml-2">Integrity</p>
-                                </div>
-                                <div className="flex justify-start items-center">
-                                    <BsCheckCircleFill className="md:text-4xl text-3xl text-yellow-500" />
-                                    <p className="md:text-lg font-medium text-gray-600 ml-2">Guaranteed Results</p>
-                                </div>
-                                <div className="flex justify-start items-center">
-                                    <BsCheckCircleFill className="md:text-4xl text-3xl text-yellow-500" />
-                                    <p className="md:text-lg font-medium text-gray-600 ml-2">Fast and Reliable</p>
-                                </div>
-                            </div>
-                        </div>
+                        <Link to='/about' className="btn mt-4">
+                            Read More
+                        </Link>
                     </div>
                 </div>
             </section>

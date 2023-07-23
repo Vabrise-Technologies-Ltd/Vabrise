@@ -1,6 +1,5 @@
 import { Typewriter } from "react-simple-typewriter";
-import heroImg from "../assets/hero.png"
-// import { motion } from "framer-motion";
+import heroImg from "../../assets/hero.png"
 import { Slide } from "react-reveal";
 
 const Hero = () => {

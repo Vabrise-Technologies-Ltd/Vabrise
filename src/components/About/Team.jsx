@@ -1,7 +1,7 @@
 import { FaLinkedinIn } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg"
-import ceo from "../assets/CEO.jpg"
-import cto from "../assets/CTO.jpg"
+import ceo from "../../assets/CEO.jpg"
+import cto from "../../assets/CTO.jpg"
 import { motion } from "framer-motion";
 
 const Team = () => {

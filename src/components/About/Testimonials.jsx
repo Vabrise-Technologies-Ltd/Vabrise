@@ -1,6 +1,7 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { testimonials } from "../data/testimonials";
+import { testimonials } from "../../data/testimonials";
 import '@splidejs/react-splide/css/skyblue';
+import { carousel } from "../../utils/Carousel";
 
 const Testimonials = () => {
     return ( 
@@ -9,18 +10,7 @@ const Testimonials = () => {
                 <h2 className="section-title">Testimonials</h2>
                 <div className="w-full md:my-12 my-6">
                 <Splide
-                    options={{
-                        type: "loop",
-                        perPage: 1,
-                        perMove: 1,
-                        autoplay: true,
-                        interval: 2000,
-                        pauseOnHover: false,
-                        pauseOnFocus: false,
-                        arrows: true,
-                        pagination: false,
-                        drag: true,
-                      }}
+                    options={carousel}
                 >
                     {testimonials.map((item) => (
                         <SplideSlide>

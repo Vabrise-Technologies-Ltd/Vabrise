@@ -1,7 +1,9 @@
+import OurServices from "../components/Services/OurServices";
+
 const Services = () => {
     return ( 
         <>
-            Services...
+            <OurServices />
         </>
      );
 }

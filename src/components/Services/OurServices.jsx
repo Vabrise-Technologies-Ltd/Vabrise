@@ -1,7 +1,7 @@
-import soft from "../assets/soft-dev.png"
-import design from "../assets/design.png"
-import training from "../assets/training.png"
-import security from "../assets/security.png"
+import soft from "../../assets/soft-dev.png"
+import design from "../../assets/design.png"
+import training from "../../assets/training.png"
+import security from "../../assets/security.png"
 
 const OurServices = () => {
     const services = [
@@ -13,7 +13,7 @@ const OurServices = () => {
     return ( 
         <>
             <section id="our-services" className="md:py-24 py-16"  >
-                <h1 className="section-title">Our Services</h1>
+                <h1 className="section-title">Our Solutions</h1>
                 <div className="grid sm:grid-cols-2 md:grid-cols-4 md:gap-8 gap-4">
                     {services.map((service) => (
                         <div className="service-card">

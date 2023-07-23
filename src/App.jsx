@@ -1,21 +1,35 @@
 // import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
+import BlogDetails from './components/Blog/BlogDetails'
+import ContactContainer from './components/ContactContainer'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import UseFetch from './components/UseFetch'
+import About from './pages/About'
+import Blog from './pages/Blog'
+import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Services from './pages/Services'
 
 function App() {
+  const {data: posts, error, loading } = UseFetch('https://jsonplaceholder.typicode.com/posts') 
 
+  const blogs = posts.data
+  // console.log(blogs)
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar />
         <Routes>
             <Route path='/' element={ <Home /> } />
+            <Route path='/about' element={ <About /> } />
             <Route path='/services' element={ <Services /> } />
+            <Route path='/blog' element={ <Blog blogs={blogs} error={error} loading={loading} /> } />
+            <Route path='/blogs/:id' element={ <BlogDetails blogs={blogs} error={error} loading={loading} /> } />
+            <Route path='/contact' element={ <Contact /> } />
         </Routes>
+        <ContactContainer />
         <Footer />
       </BrowserRouter>
 

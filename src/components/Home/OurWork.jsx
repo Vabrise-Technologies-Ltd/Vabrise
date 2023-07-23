@@ -1,7 +1,7 @@
-import kccson from "../assets/KCCSON.png"
-import chris from "../assets/chris-portfolio.png"
-import ola from "../assets/OLA.png"
-import ccabo from "../assets/ccabo.png"
+import kccson from "../../assets/KCCSON.png"
+import chris from "../../assets/chris-portfolio.png"
+import ola from "../../assets/OLA.png"
+import ccabo from "../../assets/ccabo.png"
 
 const OurWork = () => {
     const projects = [
