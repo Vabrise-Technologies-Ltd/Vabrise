@@ -1,9 +1,11 @@
-import OurServices from "../components/Services/OurServices";
+import ServicesList from "../components/Services/ServicesList";
 
 const Services = () => {
     return ( 
         <>
-            <OurServices />
+            <div className="lg:px-32 md:px-16 px-6">
+                <ServicesList />
+            </div>
         </>
      );
 }

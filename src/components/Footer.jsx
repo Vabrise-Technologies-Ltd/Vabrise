@@ -1,6 +1,7 @@
 // import logo from "../assets/logo.png"
 import { BsFacebook, BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs"
 import { Link } from "react-router-dom"
+import logo from "../assets/logo.png"
 
 const Footer = () => {
     const today = new Date()
@@ -9,7 +10,36 @@ const Footer = () => {
 
     return ( 
         <>
-            <footer className="footer flex md:flex-row flex-col justify-around items-center p-4 bg-cyan-900 text-neutral-content">
+            <footer className="footer grid md:grid-cols-4 sm:grid-cols-2 md:p-10 p-4 bg-base-200 text-base-content">
+                <div>
+                    <img src={logo} alt="Vabrise Technologies" className="md:w-36 w-32"/>
+                    <p>Vabrise Technologies LTD.<br/>Providing reliable tech to businesses, organizations & societies since 2020</p>
+                </div> 
+                <div>
+                    <span className="footer-title">Services</span> 
+                    <a className="link link-hover">Web Development</a> 
+                    <a className="link link-hover">Graphics Design</a> 
+                    <a className="link link-hover">AI & Automation</a>
+                    <a className="link link-hover">Cloud Solutions</a>
+                    <a className="link link-hover">AI & Automation</a>
+                    <a className="link link-hover">Cyber Security</a> 
+                </div> 
+                <div>
+                    <span className="footer-title">Company</span> 
+                    <a className="link link-hover">About us</a> 
+                    <a className="link link-hover">Services</a> 
+                    <a className="link link-hover">Blogs</a> 
+                    <a className="link link-hover">Contact</a>
+                </div> 
+                <div>
+                    <span className="footer-title">Legal</span> 
+                    <a className="link link-hover">Terms of use</a> 
+                    <a className="link link-hover">Privacy policy</a> 
+                    <a className="link link-hover">Cookie policy</a>
+                </div>
+            </footer> 
+
+            <footer className="footer md:px-10 p-4 border-t bg-cyan-900 text-white border-base-300 ">
                 <div className="md:flex md:flex-row flex-col justify-center items-center">
                     {/* <img className="w-28" src={logo} alt="Logo" />  */}
                     <p className="text-xs">
@@ -17,7 +47,7 @@ const Footer = () => {
                         <Link className="ml-1 text-yellow-500" to='/'>Vabrise Technologies</Link>
                     </p>
                 </div> 
-                <div className="grid-flow-col gap-4  md:place-self-center md:justify-self-end md:text-lg text-base">
+                <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end md:text-lg text-base">
                     <a href="https://www.facebook.com/profile.php?id=100068470802763">
                         <BsFacebook />
                     </a>

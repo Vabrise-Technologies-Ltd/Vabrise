@@ -23,7 +23,7 @@ const Navbar = () => {
                         </Link>
                         
                         <button onClick={() => setOpen((prev) => !prev)} className="md:hidden text-xl text-gray-800">
-                            <FaBars/>
+                            {open ? <FaTimes/> : <FaBars/>}
                         </button>
                     </div>
                     
@@ -47,13 +47,8 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0  space-y-8 py-6 px-8 w-full h-screen duration-300 ease-in-out bg-sky-500`}>
-                    <div className="flex justify-end">
-                        <button onClick={() => setOpen((prev) => !prev)} className="mb-8 sm:hidden text-2xl text-gray-100 text-right">
-                                <FaTimes/> 
-                        </button> 
-                    </div>
-                    <ul className="flex flex-col items-center text-center text-base font-medium">
+                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0  space-y-8 py-6 px-8 w-[85%] h-screen duration-300 ease-in-out bg-sky-600`}>
+                    <ul className="flex flex-col justify-center mt-8 text-base font-medium">
                             <li 
                                 className='md:mx-3 md:my-0 my-4' 
                                 onClick={() => setOpen((prev) => !prev)}
