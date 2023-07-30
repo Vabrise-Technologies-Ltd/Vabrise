@@ -17,7 +17,7 @@ const ServicesDetails = ({services}) => {
     const handleClick = () => {
         setTimeout(() => {
             navigate('/services')
-        }, 3000);
+        }, 1000);
     }
     return ( 
         <>
@@ -28,8 +28,8 @@ const ServicesDetails = ({services}) => {
                     </div>
                     <div className="md:space-y-8 space-y-4">
                         <h3 className="card-title">{serviceItem.title}</h3>
-                        <h4 className="font-medium text-sm">{serviceItem.summary}</h4>
-                        <p className="md:text-base text-sm">{serviceItem.content}</p>
+                        <h4 className="font-medium text-gray-700">{serviceItem.summary}</h4>
+                        <p className="md:text-base text-sm text-gray-500">{serviceItem.content}</p>
                         <button onClick={handleClick} className='btn'>
                             Back
                         </button>

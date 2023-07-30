@@ -17,25 +17,21 @@ const Home = () => {
                     <Splide
                         options={serviceCarousel}
                     >
-                        {/* <SplideSlide> */}
-                            {/* <div className="flex md:gap-8 gap-4"> */}
-                            {services.map((service) => (
-                                <SplideSlide>
-                                    <div className="flex md:gap-8 gap-4">
-                                        <div className="mx-8">
-                                        <Link to={`/services/${service.id}`} className="service-card">
-                                            <div className="w-full">
-                                                <img className="w-72" src={service.image} alt="" />
-                                            </div>
-                                            <h2 className="font-medium text-cyan-800">{service.title}</h2>
-                                            <p className="text-sm text-center">{service.summary.slice(0,100)}...</p>
-                                        </Link>
+                        {services.map((service) => (
+                            <SplideSlide>
+                                <div className="flex lg:gap-8 md:gap-6 gap-4 md:py-16 py-8">
+                                    <div className="mx-8">
+                                    <Link to={`/services/${service.id}`} className="service-card text-left h-64">
+                                        <div className="w-full">
+                                            <i className="text-yellow-500 lg:text-5xl md:text-3xl text-4xl">{service.icon}</i>
                                         </div>
+                                        <h2 className="font-medium text-cyan-800">{service.title}</h2>
+                                        <p className="text-sm">{service.summary.slice(0,100)}...</p>
+                                    </Link>
                                     </div>
-                                </SplideSlide>
-                            ))}
-                            {/* </div> */}
-                        {/* </SplideSlide> */}
+                                </div>
+                            </SplideSlide>
+                        ))}
                     </Splide>
                 </section>
                 <OurWork />

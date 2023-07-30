@@ -27,16 +27,16 @@ const ContactForm = () => {
             <div>
                 <form ref={form} onSubmit={sendEmail} >
                     <div className="label">
-                        <input className="input" type="text" name="name" placeholder="Enter name..." required />
+                        <input className="input " type="text" name="name" placeholder="Enter name..." required />
                     </div>
                     <div className="label">
-                        <input className="input" type="email" name="email" placeholder="Enter email..." required />
+                        <input className="input " type="email" name="email" placeholder="Enter email..." required />
                     </div>
                     <div className="label">
-                        <input className="input" type="text" name="subject" placeholder="Enter subject..." required />
+                        <input className="input " type="text" name="subject" placeholder="Enter subject..." required />
                     </div>
                     <div className="label">
-                        <textarea className="py-2 px-3 rounded-lg w-full outline-none" name="message" placeholder="Enter Message..." cols="30" rows="4"></textarea>
+                        <textarea className="border border-cyan-500 py-2 px-3 rounded-lg w-full outline-none" name="message" placeholder="Enter Message..." cols="30" rows="4"></textarea>
                     </div>
                     <button className="mt-4 btn w-full rounded-lg flex items-center">
                         Submit
