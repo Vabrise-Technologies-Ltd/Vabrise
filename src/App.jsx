@@ -11,6 +11,7 @@ import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Services from './pages/Services'
 import { services } from './data/services'
+import ServicesDetails from './components/Services/ServicesDetails'
 
 function App() {
   const {data: posts, error, loading } = UseFetch('https://jsonplaceholder.typicode.com/posts') 
@@ -25,7 +26,7 @@ function App() {
             <Route path='/' element={ <Home /> } />
             <Route path='/about' element={ <About /> } />
             <Route path='/services' element={ <Services /> } />
-
+            <Route path='/services/:id' element={ <ServicesDetails services={services} /> } />
             <Route path='/blog' element={ <Blog blogs={blogs} error={error} loading={loading} /> } />
             <Route path='/blogs/:id' element={ <BlogDetails blogs={blogs} error={error} loading={loading} /> } />
             <Route path='/contact' element={ <Contact /> } />

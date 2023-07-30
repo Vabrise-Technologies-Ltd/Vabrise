@@ -1,7 +1,7 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { testimonials } from "../../data/testimonials";
 import '@splidejs/react-splide/css/skyblue';
-import { carousel } from "../../utils/Carousel";
+import { homeCarousel } from "../../utils/Carousel";
 
 const Testimonials = () => {
     return ( 
@@ -10,7 +10,7 @@ const Testimonials = () => {
                 <h2 className="section-title">Testimonials</h2>
                 <div className="w-full md:my-12 my-6">
                 <Splide
-                    options={carousel}
+                    options={homeCarousel}
                 >
                     {testimonials.map((item) => (
                         <SplideSlide>

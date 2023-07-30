@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
+import heroImg from "../../assets/hero.jpg"
 
 const Hero = () => {
     const navigate = useNavigate()
@@ -8,7 +9,7 @@ const Hero = () => {
     }
     return ( 
         <>
-            <div className="hero min-h-screen" style={{backgroundImage: 'url(https://futurefast.co.ke/assets/images/futurefast/photo1.jpg)'}}>
+            <div className="hero min-h-screen" style={{backgroundImage: `url(${heroImg})`}}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content md:text-right text-neutral-content">
                     <div className="md:max-w-lg">
