@@ -39,7 +39,7 @@ const Navbar = () => {
                                 </div>
                             ))}
                             <li className='md:mx-3 md:my-0 my-4'>
-                                <a target='_blank' className="btn btn-sm" href='https://learn.vabrisetech.co.ke/'>
+                                <a target='_blank' className="btn btn-md" href='https://learn.vabrisetech.co.ke/'>
                                     Open Learn
                                 </a>
                             </li>

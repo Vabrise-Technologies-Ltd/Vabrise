@@ -12,6 +12,7 @@ import Home from './pages/Home'
 import Services from './pages/Services'
 import { services } from './data/services'
 import ServicesDetails from './components/Services/ServicesDetails'
+import { ScrollToTop } from './components/ScrollToTop'
 
 function App() {
   const {data: posts, error, loading } = UseFetch('https://jsonplaceholder.typicode.com/posts') 
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <Routes>
             <Route path='/' element={ <Home /> } />
