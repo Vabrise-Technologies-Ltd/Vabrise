@@ -11,7 +11,7 @@ import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Services from './pages/Services'
 import { services } from './data/services'
-import ServicesDetails from './components/Services/ServicesDetails'
+import ServicesDetails from './components/OurServices/ServicesDetails'
 import { ScrollToTop } from './components/ScrollToTop'
 
 function App() {
