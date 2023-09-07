@@ -38,7 +38,7 @@ const ContactForm = () => {
                     <div className="label">
                         <textarea className="border border-cyan-500 py-2 px-3 rounded-lg w-full outline-none" name="message" placeholder="Enter Message..." cols="30" rows="4"></textarea>
                     </div>
-                    <button className="mt-4 btn w-full rounded-lg flex items-center">
+                    <button className="mt-4 btns w-full rounded-lg flex items-center justify-center">
                         Submit
                         <span className="ml-2">
                             <FaPaperPlane />

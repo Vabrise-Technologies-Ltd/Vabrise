@@ -10,7 +10,7 @@ const BlogList = ({blogs, error, loading}) => {
                 <p className="text-red-500">{error}</p>
                 {loading ? <p>Loading blogs...</p> : (
                     <div className="card-container">
-                        {blogs && blogs.slice(10,22).map((blog, index) => (
+                        {blogs && blogs.slice(10,16).map((blog, index) => (
                             <Fade bottom>
                                 <Link to={`/blogs/${blog.id}`} key={index} className="card">
                                     <div className="card-content">

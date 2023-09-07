@@ -22,7 +22,7 @@ const Hero = () => {
                                         'Graphics Design', 
                                         'AI & Automation',
                                         'IOT Systems',
-                                        'Cloud Soltions',
+                                        'Cloud Solutions',
                                         'Cyber Security'
                                     ]}
                                     loop={Infinity}
@@ -33,7 +33,7 @@ const Hero = () => {
                                     delaySpeed={2000}
                                 />
                             </p>
-                        <button onClick={handleQuoteLink} className="btn btn-primary mt-8">
+                        <button onClick={handleQuoteLink} className="btns mt-8">
                             Get Quote
                         </button>
                     </div>

@@ -33,9 +33,11 @@ const AboutUs = () => {
                                 Installation, and Cyber Security.
                             </p>
                         </Slide>
-                        <Link to='/about' className="btn mt-4">
-                            Read More
-                        </Link>
+                        <div className="mt-4 ">
+                            <Link to='/about' className="btns">
+                                Read More
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>

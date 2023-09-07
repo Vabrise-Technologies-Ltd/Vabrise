@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return ( 
         <>
-            <nav className='md:px-32 px-4 py-4 top-0 left-0 sticky z-[100] bg-white opacity-90 shadow-xl'>
+            <nav className='md:px-32 px-4 py-4 top-0 left-0 sticky z-[100] bg-white opacity-95 shadow-xl'>
                 <div className='md:flex items-center justify-between'>
                     <div className="flex justify-between items-center">
                         <Link to='/' className='md:text-2xl text-xl uppercase font-semibold '>
@@ -39,7 +39,7 @@ const Navbar = () => {
                                 </div>
                             ))}
                             <li className='md:mx-3 md:my-0 my-4'>
-                                <a target='_blank' className="btn btn-md" href='https://learn.vabrisetech.co.ke/'>
+                                <a target='_blank' className="btns btn-md" href='https://learn.vabrisetech.co.ke/'>
                                     Open Learn
                                 </a>
                             </li>
@@ -47,7 +47,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0  space-y-8 py-6 px-8 w-[85%] h-screen duration-300 ease-in-out bg-sky-600`}>
+                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0 space-y-8 py-6 px-8 w-[85%] h-screen duration-300 ease-in-out bg-sky-600`}>
                     <ul className="flex flex-col justify-center mt-8 text-base font-medium">
                             <li 
                                 className='md:mx-3 md:my-0 my-4' 
