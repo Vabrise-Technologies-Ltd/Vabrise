@@ -22,9 +22,11 @@ const BlogDetails = ({blogs, loading, error}) => {
                         <h2 className="content-title">{blog.title}</h2>
                         <p className="normal-case font-light md:text-base text-sm">{blog.body}</p>
                     </div>
-                    <Link to='/' className="btn md:mt-6 mt-4">
-                        Back
-                    </Link>
+                    <div className="md:mt-6 mt-4">
+                        <Link to='/' className="btns ">
+                            Back
+                        </Link>
+                    </div>
                 </div>
 
             )}
