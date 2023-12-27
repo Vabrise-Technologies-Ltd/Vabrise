@@ -15,10 +15,10 @@ import ServicesDetails from './components/OurServices/ServicesDetails'
 import { ScrollToTop } from './components/ScrollToTop'
 
 function App() {
-  const {data: posts, error, loading } = UseFetch('https://jsonplaceholder.typicode.com/posts') 
+  const {data: blogs, error, loading } = UseFetch('http://localhost:8000/api/articles') 
 
-  const blogs = posts.data
-  // console.log(blogs)
+  // const articles = 
+  console.log(blogs)
   return (
     <div className="App">
       <BrowserRouter>
@@ -29,8 +29,8 @@ function App() {
             <Route path='/about' element={ <About /> } />
             <Route path='/services' element={ <Services /> } />
             <Route path='/services/:id' element={ <ServicesDetails services={services} /> } />
-            <Route path='/blog' element={ <Blog blogs={blogs} error={error} loading={loading} /> } />
-            <Route path='/blogs/:id' element={ <BlogDetails blogs={blogs} error={error} loading={loading} /> } />
+            <Route path='/articles' element={ <Blog blogs={blogs} error={error} loading={loading} /> } />
+            <Route path='/articles/:slug' element={ <BlogDetails blogs={blogs} error={error} loading={loading} /> } />
             <Route path='/contact' element={ <Contact /> } />
         </Routes>
         <Footer />

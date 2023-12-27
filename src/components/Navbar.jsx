@@ -9,7 +9,7 @@ const Navbar = () => {
     const menus = [
         {name: "About", route: "/about"},
         {name: "Services", route: "/services"},
-        {name: "Blog", route: "/blog"},
+        {name: "Blog", route: "/articles"},
         {name: "Contact", route: "/contact"},
     ]
 

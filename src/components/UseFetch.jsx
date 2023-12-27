@@ -9,8 +9,8 @@ const UseFetch = (url) => {
     useEffect(() => {
         axios.get(url)
             .then((res) => {
-                // console.log(res)
-                setData(res)
+                const posts = res.data
+                setData(posts)
                 setLoading(false)
                 setError(false)
             })
