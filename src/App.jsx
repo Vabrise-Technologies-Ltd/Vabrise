@@ -17,8 +17,6 @@ import { ScrollToTop } from './components/ScrollToTop'
 function App() {
   const {data: blogs, error, loading } = UseFetch('http://localhost:8000/api/articles') 
 
-  // const articles = 
-  console.log(blogs)
   return (
     <div className="App">
       <BrowserRouter>

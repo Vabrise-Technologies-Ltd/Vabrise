@@ -31,7 +31,7 @@ const Footer = () => {
                     <a className="link link-hover">Blogs</a> 
                     <a className="link link-hover">Contact</a>
                 </div> 
-                <div>
+                <div className="md:grid hidden">
                     <span className="footer-title">Legal</span> 
                     <a className="link link-hover">Terms of use</a> 
                     <a className="link link-hover">Privacy policy</a> 

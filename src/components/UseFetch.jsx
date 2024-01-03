@@ -20,23 +20,7 @@ const UseFetch = (url) => {
                 setError(true)
             })
     }, [url])
-
-    // async function getBlogPosts () {
-    //     try {
-    //         let res = await axios.get(url)
-    //         setData(res)
-    //         setLoading(false)
-    //         setError(false)
-    //     } catch (err) {
-    //         console.log(err)
-    //         setLoading(false)
-    //         setError(true)
-    //     }
-    // }
-    // useEffect(() => {
-    //     getBlogPosts()
-    // }, [url])
-
+    
     return ({ data, loading, error });
 }
  

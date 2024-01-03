@@ -48,15 +48,15 @@
   }
 
   .card {
-      @apply rounded-xl shadow-md
+      @apply rounded-xl shadow-md md:text-base text-sm
   }
 
   .card-content {
-      @apply md:p-4 p-3 
+      @apply md:px-4  px-3 py-6
   }
 
   .card-title {
-      @apply font-semibold text-gray-700 hover:text-cyan-700
+      @apply font-semibold text-cyan-700 mt-3 
   }
 
   .card-subtitle {
@@ -64,7 +64,7 @@
 }
 
   .card-description {
-      @apply text-gray-500 font-medium
+      @apply text-gray-600
   }
 
 }
