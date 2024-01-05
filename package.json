@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "author": "Andrew Ochieng",
-  "license": "MIT", 
+  "license": "MIT",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@splidejs/react-splide": "^0.7.12",

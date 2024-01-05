@@ -16,7 +16,7 @@ jobs:
       - name: Install Dependencies 
         run: yarn install
 
-      - name: Build React App / Vue App (depending on user app) 
+      - name: Build React App 
         run: yarn build
 
       - name: Upload to cPanel 
