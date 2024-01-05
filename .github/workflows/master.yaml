@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code 🚚
-      uses: actions/checkout@v2
+      - name: Checkout Code 
+      uses: actions/checkout@v3
 
       - name: Debug - Print message before build
         run: echo "Running build step"
 
-      - name: Install dependencies 📦
+      - name: Install dependencies 
         run: yarn install
 
       - name: Debug - Print current working directory
@@ -24,7 +24,7 @@ jobs:
           pwd
           ls -R
 
-      - name: Build 🏗️
+      - name: Build 
         run: yarn build
 
   delay_before_deploy:
@@ -40,7 +40,7 @@ jobs:
     needs: delay_before_deploy
 
     steps:
-      - name: Deploy to FTP  📂
+      - name: Deploy to FTP  
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftp://ftp.womeninminingkenya.africa
