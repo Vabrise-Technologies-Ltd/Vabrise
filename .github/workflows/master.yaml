@@ -27,15 +27,11 @@ jobs:
         CI: false
 
     # Runs a set of commands using the runners shell
-    - name: FTP-Deploy-Action
+    - name: Deploy to FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        ftp-server: ftp://ftp.womeninminingkenya.africa
-        ftp-username: deploy@vabrisetech.co.ke
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        server: ftp://ftp.womeninminingkenya.africa
+        username: deploy@vabrisetech.co.ke
+        password: ${{ secrets.FTP_PASSWORD }}  # Replace with your secret name
         local-dir: build/
-        exclude: |
-            **/.git**
-            **/.git*/**
-            **/node_modules/**
-            **/.**
+        exclude: '**/.git**'
