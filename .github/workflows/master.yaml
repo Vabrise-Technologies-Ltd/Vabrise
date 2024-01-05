@@ -1,43 +1,55 @@
-# This is a basic workflow to help you get started with Actions
+name: Build and Deploy
 
-name: Build and Deploy React App via FTP
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches:
+      - main
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build-and-deploy"
-  build-and-deploy:
-    # The type of runner that the job will run on
+  build:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
-    - name: Run react build script
-      run: yarn && yarn build
-      env:
-        CI: false
+      - name: Debug - Print message before build
+        run: echo "Running build step"
 
-    - name: Debug - List contents of the working directory
-      run: |
-        pwd
-        ls -R
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
 
+      - name: Install dependencies
+        run: yarn install
 
-    # Runs a set of commands using the runners shell
-    - name: Deploy to FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ftp://ftp.womeninminingkenya.africa
-        username: deploy@vabrisetech.co.ke
-        password: ${{ secrets.FTP_PASSWORD }}  # Replace with your secret name
-        local-dir: /home/runner/work/Vabrise/Vabrise/build/
-        exclude: '**/.git**'
+      - name: Debug - Print current working directory
+        run: |
+          pwd
+          ls -R
+
+      - name: Build
+        run: yarn build
+
+  delay_before_deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Delay before deployment
+        run: sleep 10
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: delay_before_deploy
+
+    steps:
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ftp://ftp.womeninminingkenya.africa
+          username: deploy@vabrisetech.co.ke
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ${{ github.workspace }}/build/
+          exclude: '**/.git**'
