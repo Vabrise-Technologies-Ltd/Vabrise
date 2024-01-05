@@ -27,7 +27,9 @@ jobs:
         CI: false
 
     - name: Debug - List contents of the working directory
-      run: ls -R
+      run: |
+        pwd
+        ls -R
 
 
     # Runs a set of commands using the runners shell
@@ -37,5 +39,5 @@ jobs:
         server: ftp://ftp.womeninminingkenya.africa
         username: deploy@vabrisetech.co.ke
         password: ${{ secrets.FTP_PASSWORD }}  # Replace with your secret name
-        local-dir: ${{ github.workspace }}/build/
+        local-dir: /home/runner/work/Vabrise/Vabrise/build/
         exclude: '**/.git**'
