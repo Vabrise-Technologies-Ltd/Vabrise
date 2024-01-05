@@ -25,7 +25,8 @@ jobs:
           server: ftp.womeninminingkenya.africa
           username: deploy@vabrisetech.co.ke
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /vabrisetech.co.ke/
+          passive: true
+          server-dir: ./vabrisetech.co.ke/
           exclude: |
             **/.git**
             **/.git*/**
