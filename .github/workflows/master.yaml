@@ -26,7 +26,7 @@ jobs:
           username: deploy@vabrisetech.co.ke
           password: ${{ secrets.FTP_PASSWORD }}
           passive: true
-          server-dir: ./vabrisetech.co.ke/
+          server-dir: ./
           exclude: |
             **/.git**
             **/.git*/**
