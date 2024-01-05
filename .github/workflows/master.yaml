@@ -26,6 +26,9 @@ jobs:
       env:
         CI: false
 
+    - name: List contents of the 'build' directory
+      run: ls -R ./build
+
     # Runs a set of commands using the runners shell
     - name: Deploy to FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -33,5 +36,5 @@ jobs:
         server: ftp://ftp.womeninminingkenya.africa
         username: deploy@vabrisetech.co.ke
         password: ${{ secrets.FTP_PASSWORD }}  # Replace with your secret name
-        local-dir: ./build/
+        local-dir: ${{ github.workspace }}/build/
         exclude: '**/.git**'
