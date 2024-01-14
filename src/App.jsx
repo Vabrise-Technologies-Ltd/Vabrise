@@ -13,6 +13,8 @@ import Services from './pages/Services'
 import { services } from './data/services'
 import ServicesDetails from './components/OurServices/ServicesDetails'
 import { ScrollToTop } from './components/ScrollToTop'
+import Create from './pages/Admin/Create'
+import Articles from './pages/Admin/Articles'
 
 function App() {
   const {data: blogs, error, loading } = UseFetch('http://localhost:8000/api/articles') 
@@ -30,6 +32,9 @@ function App() {
             <Route path='/articles' element={ <Blog blogs={blogs} error={error} loading={loading} /> } />
             <Route path='/articles/:slug' element={ <BlogDetails blogs={blogs} error={error} loading={loading} /> } />
             <Route path='/contact' element={ <Contact /> } />
+
+            <Route path='/admin/create' element={ <Create /> } />
+            <Route path='/admin/' element={ <Articles /> } />
         </Routes>
         <Footer />
       </BrowserRouter>

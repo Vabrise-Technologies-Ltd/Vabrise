@@ -11,6 +11,8 @@
   "author": "Andrew Ochieng",
   "license": "MIT",
   "dependencies": {
+    "@cloudinary/react": "^1.11.2",
+    "@cloudinary/url-gen": "^1.14.0",
     "@emailjs/browser": "^3.11.0",
     "@splidejs/react-splide": "^0.7.12",
     "axios": "^1.4.0",

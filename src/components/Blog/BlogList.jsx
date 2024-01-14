@@ -15,24 +15,12 @@ const BlogList = ({blogs, error, loading}) => {
                         {blogs && blogs.map((blog) => (
                             <Fade bottom>
                                 <Link to={`/articles/${blog.slug}`} key={blog.id} className="card">
-                                    {/* <div className="md:h-56 w-full"> */}
-                                        <img className="h-full w-full" src={blog.image} alt="" />
-                                    {/* </div> */}
+                                    <div className="md:h-56 w-full">
+                                        <img src={blog.image} alt="" />
+                                    </div>
                                     <div className="card-content">
-                                        <div>
-                                        <p>
-                                            <FaRegUser />
-                                            {blog.category.length > 0 && (
-                                                <>
-                                                    {blog.category.map((item, index) => (
-                                                        <p  key={index}>{item.name}</p>
-                                                    ))}
-                                                </>
-                                            )}
-                                        </p>
-                                        </div>
                                         <h4 className="card-title">{blog.title}</h4>
-                                        <p className="card-description">{blog.body.slice(0, 100)}</p>
+                                        <p className="card-description">{blog.body.slice(0, 100)}...</p>
                                     </div>
                                 </Link>
                             </Fade>
