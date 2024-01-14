@@ -17,7 +17,7 @@ import Create from './pages/Admin/Create'
 import Articles from './pages/Admin/Articles'
 
 function App() {
-  const {data: blogs, error, loading } = UseFetch('http://localhost:8000/api/articles') 
+  const {data: blogs, error, loading } = UseFetch('https://vabrise-api.onrender.com/api/articles/') 
 
   return (
     <div className="App">
