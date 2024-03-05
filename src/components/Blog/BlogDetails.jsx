@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const BlogDetails = ({blogs, loading, error}) => {
@@ -18,7 +17,10 @@ const BlogDetails = ({blogs, loading, error}) => {
             <div >
                 <img src={blog.image} alt="" />
                 <h2 className="card-title md:mt-4 mt-2">{blog.title}</h2>
-                <p className="normal-case font-light md:text-base text-sm">{blog.body}</p>
+                <div
+                    dangerouslySetInnerHTML={{ __html: blog.body }}
+                    className="normal-case font-light md:text-base text-sm"
+                ></div>
             </div> 
             <div className="md:mt-6 mt-4">
                 <Link to='/articles' className="btns ">

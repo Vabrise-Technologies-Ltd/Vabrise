@@ -20,7 +20,11 @@ const BlogList = ({blogs, error, loading}) => {
                                     </div>
                                     <div className="card-content">
                                         <h4 className="card-title">{blog.title}</h4>
-                                        <p className="card-description">{blog.body.slice(0, 100)}...</p>
+                                        {/* <p className="card-description">{blog.body.slice(0, 100)}...</p> */}
+                                        <div
+                                            dangerouslySetInnerHTML={{ __html: blog.body.slice(0,100) }}
+                                            className="card-description"
+                                        ></div>
                                     </div>
                                 </Link>
                             </Fade>
