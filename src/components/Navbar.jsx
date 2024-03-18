@@ -8,10 +8,13 @@ const Navbar = () => {
 
     const menus = [
         {name: "About", route: "/about"},
-        {name: "Services", route: "/services"},
+        // {name: "Services", route: "/services"},
+        {name: "Shop", route: "/products"},
         {name: "Blog", route: "/articles"},
         {name: "Contact", route: "/contact"},
     ]
+
+    
 
     return ( 
         <>
@@ -28,6 +31,18 @@ const Navbar = () => {
                     </div>
                     
                     <div className='md:flex hidden text-gray-800'>
+                        <div className="dropdown dropdown-hover ">
+                            <div tabIndex={0} role="button" className=" m-1 md:text-lg font-mediu">Solutions</div>
+                           
+                                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-cyan-100 opacity-20 text-sm rounded-box w-52">
+                                {/* <li><a>Hardware Sales</a></li> */}
+                                    <li><Link to='solutions/software-sales'>Software Sales</Link></li>
+                                    <li><Link to='solutions/web-and-email-solutions'>Web & Email Solutions</Link></li>
+                                    <li><Link to='solutions/it-support-and-maintainance'>IT Support & Maintainance</Link></li>
+                                    <li><Link to='solutions/cyber-security'>Cyber Security</Link></li>
+                                    <li><Link to='solutions/training-and-consultancy'>Training & Consultancy Serices</Link></li>
+                                </ul>
+                        </div>
                         <ul className="md:flex items-center md:text-lg font-medium">
                             {menus.map((item, index) => (
                                 <div key={index}>
@@ -38,11 +53,7 @@ const Navbar = () => {
                                     </li>
                                 </div>
                             ))}
-                            <li className='md:mx-3 md:my-0 my-4'>
-                                <a target='_blank' className="btns btn-md" href='https://learn.vabrisetech.co.ke/'>
-                                    Open Learn
-                                </a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -66,11 +77,6 @@ const Navbar = () => {
                                     </li>
                                 </div>
                             ))}
-                        <li className='md:mx-8 md:my-0 my-4'>
-                            <a target='_blank' className="px-4 py-2 bg-white text-sky-400 duration-500 rounded-lg" href='https://learn.vabrisetech.co.ke/'>
-                                Open Learn
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </nav>

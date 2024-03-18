@@ -19,7 +19,7 @@ const BlogDetails = ({blogs, loading, error}) => {
                 <h2 className="card-title md:mt-4 mt-2">{blog.title}</h2>
                 <div
                     dangerouslySetInnerHTML={{ __html: blog.body }}
-                    className="normal-case font-light md:text-base text-sm"
+                    className=""
                 ></div>
             </div> 
             <div className="md:mt-6 mt-4">

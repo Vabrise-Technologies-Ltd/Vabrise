@@ -1,0 +1,16 @@
+Web animation libraries
+1. Greensock Js (Gsap)
+2. Lottie Js
+3. Framer motion
+4. React spring
+5. Mo.js
+6. Animate.css
+7. Pop motion
+9. Anime. Js
+ [You can add more]
+ 
+ Notes:
+ If you're looking for something that easy to start with I recommend mo.js and pop motion. They are spectacular.
+ Framer and react spring looks the same.
+ Lottie Js by Airbnb is a magical library, if you've clicked like button on Twitter then that animation is Lottie Js. Highly recommended.
+ All of them have support for React, good documentation, examples and blogs.
