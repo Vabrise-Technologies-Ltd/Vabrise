@@ -2,7 +2,6 @@ import soft from "../assets/soft-dev.png"
 import design from "../assets/design.png"
 import training from "../assets/training.png"
 import security from "../assets/security.png"
-import { AiOutlineCloudServer } from "react-icons/ai"
 import { MdDraw, MdEngineering } from "react-icons/md"
 import { GrShieldSecurity } from "react-icons/gr"
 import { CgWebsite } from "react-icons/cg"
@@ -47,15 +46,6 @@ const solutions = [
     },
     {
         id: 5,
-        icon: <AiOutlineCloudServer/>,
-        slug: "training-and-consultancy",
-        image: security,
-        title: "Cloud Solutions",
-        summary: "We provide a range of computing solutions such as infrastructure as a service(Iaas),Platform as a service (PaaS) and software as a service(SaaS) ",
-        content: "Our industry experienced training consultants have helped our clients simplify the learning process and assist in the execution of new products, services and software. Through our experts in the field of ICT, we work alongside our clients to provide top-notch services."
-    },
-    {
-        id: 6,
         icon: <MdEngineering/>,
         slug: "training-and-consultancy",
         image: security,

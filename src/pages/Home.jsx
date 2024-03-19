@@ -19,7 +19,7 @@ const Home = () => {
                     >
                         {solutions.map((solution) => (
                             <SplideSlide>
-                                <div className="flex lg:gap-8 md:gap-6 gap-4 md:py-16 py-8">
+                                <div className="flex lg:gap-6  gap-4 md:py-16 py-8">
                                     <div className="mx-8">
                                     <Link to={`/solutions/${solution.id}`} className="service-card text-left h-64">
                                         <div className="w-full">

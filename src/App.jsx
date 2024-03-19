@@ -28,7 +28,7 @@ function App() {
         <Routes>
             <Route path='/' element={ <Home /> } />
             <Route path='/about' element={ <About /> } />
-            <Route path='/services' element={ <Solutions /> } />
+            <Route path='/solutions' element={ <Solutions /> } />
             <Route path='/products' element={ <Shop /> } />
             <Route path='/solutions/:slug' element={ <SolutionsDetails solutions={solutions} /> } />
             <Route path='/articles' element={ <Blog blogs={blogs} error={error} loading={loading} /> } />

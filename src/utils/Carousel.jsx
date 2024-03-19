@@ -28,7 +28,7 @@ const homeCarousel = {
           perMove: 1,
           },
       480: {
-        perPage: 2,
+        perPage: 1,
         perMove: 1,
         },   
       640: {

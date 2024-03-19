@@ -1,5 +1,6 @@
 import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
+import { ScaleLoader } from "react-spinners";
 import { FaRegUser } from "react-icons/fa";
 // import { AiOutlineProfile } from "react-icons/ai";
 
@@ -10,7 +11,11 @@ const BlogList = ({blogs, error, loading}) => {
         <>
             <div>
                 <p className="text-red-500">{error}</p>
-                {loading ? <p>Loading blogs...</p> : (
+                {loading ? (
+                    <div className="flex justify-center items-center md:my-32 my-12 ">
+                        <ScaleLoader color="#06b6d4" />
+                    </div>
+                ) : (
                     <div className="card-container">
                         {blogs && blogs.map((blog) => (
                             <Fade bottom>
