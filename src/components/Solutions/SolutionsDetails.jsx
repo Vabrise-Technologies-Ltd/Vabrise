@@ -12,11 +12,7 @@ const SolutionsDetails = ({solutions}) => {
     if (!solutions && loading) {
         return <p>Loading blog details...</p>;
     }
-    const handleClick = () => {
-        setTimeout(() => {
-            navigate('/solutions')
-        }, 1000);
-    }
+   
     return ( 
         <>
             <div className="grid md:grid-cols-2 md:m-24 m-4 my-16">
@@ -27,9 +23,7 @@ const SolutionsDetails = ({solutions}) => {
                     <h3 className="card-title">{solution.title}</h3>
                     <h4 className="font-medium text-gray-700">{solution.summary}</h4>
                     <p className="md:text-base text-sm text-gray-500">{solution.content}</p>
-                    <button onClick={handleClick} className='btns'>
-                        Back
-                    </button>
+                    
                 </div>
             </div>
         </>

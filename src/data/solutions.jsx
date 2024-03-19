@@ -24,17 +24,17 @@ const solutions = [
         slug: "web-and-email-solutions",
         image: design, 
         title: "Graphics Design", 
-        summary: "We have a strong branding portfolio in logos, posters, & flyers design and affirm to deliver this to all our clients.",
-        content: "We have a strong branding portfolio in logos, posters, & flyers design and affirm to deliver this to all our clients."
+        summary: "Whether you are looking for a custom website design, enhancing your existing site or creating a unique logo design for your business, our Web design and development experts can help.",
+        content: "We base all of our graphic, interface and user experience design principles on evidence-based studies of the way web users tend to think and act. Consequently, our work invariably features smart designs that accommodate users’ demand for simple, attractive, efficient, credible and engaging online experiences. We offer a variety of solutions including We offer a variety of solutions including Web Design and Development, E-Mail Solutions, Branding and Design, Web Audit/Analysis, Web Hosting, Dedicated Hosting, Web Maintenance, Corporate Email Solutions, Domain Names, SSL Certificates."
     },
     {
         id: 3,
         icon: <ImEmbed2 />,
         slug: "it-support-and-maintainance",
         image: training, 
-        title: "IOT & Embeded System", 
-        summary: " Future Fast  develops networks of physical devices vehicles,buildings and other items embeded with electronics software sensors and connectivity which enables these objects to connect and exchange data.",
-        content: "Future Fast has established itself as a prominent IoT app development company that assists multi-level businesses in their IoT journey. We embrace multiple business models with the prowess of Internet of Things technology, successfully delivering winning solutions across multiple domains. "
+        title: "IT Suppport & Maintainance", 
+        summary: "Professional, certified, experienced, fast on site desktop computer repairs (often same day onsite computer repair).",
+        content: "Specializing in residential computer support, small business computer support, mobile computer repair, and remote PC support. Computers and gadgets are an integral part of modern day-to-day life. There’s nothing more frustrating than a computer error that prevents you from accessing the internet or a total system failure that erases your saved documents or when your child locks your pc and infects it with a virus while googling nasties…..Fortunately, any computer problem you encounter today can be fixed by Vabrise Technologies ."
     },
     {
         id: 4,
@@ -42,8 +42,8 @@ const solutions = [
         slug: "cyber-security",
         image: security, 
         title: "Cyber Security", 
-        summary: "We provide solutions to protect internet-connected systems from attacks,damages or unauthorized access. This can include network security,data security and threat intelligence. ",
-        content: "This involves preventing cyber threats including; Network security, Endpoint security, Data security, Identity and access management and, Incident response and disaster recovery. "
+        summary: "A firewall is a network security device that monitors incoming and outgoing network traffic and decides whether to allow or block specific traffic based on a defined set of security rules.",
+        content: "Firewalls have been a first line of defense in network security for over 25 years. They establish a barrier between secured and controlled internal networks that can be trusted and untrusted outside networks, such as the Internet. A firewall can be hardware, software, or both. We are authorized installers and channel partners for Sophos and Mikrotik."
     },
     {
         id: 5,
@@ -52,16 +52,16 @@ const solutions = [
         image: security,
         title: "Cloud Solutions",
         summary: "We provide a range of computing solutions such as infrastructure as a service(Iaas),Platform as a service (PaaS) and software as a service(SaaS) ",
-        content: "With us, you can automate infrastructure, streamline operations, and improve communication between infrastructure, development, operations, quality assurance, and security. We assist clients in creating a frictionless operational environment and implementing secure coding practices. Our development and operations practices have been validated by the industry and are based on current industry standards. "
+        content: "Our industry experienced training consultants have helped our clients simplify the learning process and assist in the execution of new products, services and software. Through our experts in the field of ICT, we work alongside our clients to provide top-notch services."
     },
     {
         id: 6,
         icon: <MdEngineering/>,
         slug: "training-and-consultancy",
         image: security,
-        title: "AI & Automation Systems",
-        summary: " We apply a combination of engineering disciplines ,techonologies and process to design ,develop and implement intergrated systems that meet the needs of a project or industry. ",
-        content: "We engineer projects that use a multidisciplinary approach to optimize every step of the process, from design to operation It entails combining numerous engineering specialties, including mechanical, electrical, civil, and software engineering, to provide an all-encompassing solution that satisfies a project's criteria. Our engineering solutions combine the latest technologies with the design and construction of projects helping improve the efficiency and performance of various industries. "
+        title: "Training & Consultancy Services",
+        summary: "Our industry experienced training consultants have helped our clients simplify the learning process and assist in the execution of new products, services and software. Through our experts in the field of ICT, we work alongside our clients to provide top-notch services.",
+        content: "For over 3 years, Vabrise has been delivering full-scale consulting services in information technology and security. We help our customers to protect their IT environments by proactively identifying security threats and gaps. We have also been providing independent IT & Telecommunication consulting services to private and public sector organizations to help them take advantage of the technologies changing the business world today."
     }
 ]
 
