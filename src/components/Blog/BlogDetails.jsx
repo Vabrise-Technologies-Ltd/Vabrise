@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { ScaleLoader } from "react-spinners";
 
 const BlogDetails = ({blogs, loading, error}) => {
     const { slug } = useParams()
@@ -8,8 +9,17 @@ const BlogDetails = ({blogs, loading, error}) => {
     const blog = blogs.find((item) => item.slug == slug) || {}
 
      // Check if blogs is defined and has the articles property
-    if (!blogs && loading) {
-        return <p>Loading blog details...</p>;
+    if (!blogs || loading) {
+        return (
+                <div className="flex justify-center items-center md:my-32 my-12 ">
+                    <ScaleLoader
+                        color="#06b6d4"
+                        height={60}
+                        radius={100}
+                        width={4}
+                    />
+                </div>
+        );
     }
 
     return ( 
