@@ -1,8 +1,13 @@
+import ProductsList from "../components/Shop/ProductsList"
 
-const Shop = () => {
+const Shop = ({products}) => {
+    // console.log(products)
+
     return ( 
         <>
-            Shop
+            <div>
+                <ProductsList products={products}/>
+            </div>
         </>
      );
 }

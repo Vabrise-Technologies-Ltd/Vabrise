@@ -16,18 +16,17 @@ const Footer = () => {
                     <p>Vabrise Technologies LTD.<br/>Providing reliable tech to businesses, organizations & societies since 2020</p>
                 </div> 
                 <div>
-                    <span className="footer-title">Services</span> 
-                    <a className="link link-hover">Web Development</a> 
-                    <a className="link link-hover">Graphics Design</a> 
-                    <a className="link link-hover">AI & Automation</a>
-                    <a className="link link-hover">Cloud Solutions</a>
-                    <a className="link link-hover">AI & Automation</a>
+                    <span className="footer-title">Solutions</span> 
+                    <a className="link link-hover">Software Development</a> 
+                    <a className="link link-hover">Web & Email Solutions</a> 
+                    <a className="link link-hover">IT Support & Maintainance</a>
+                    <a className="link link-hover">Training & Consultancy Services</a>
                     <a className="link link-hover">Cyber Security</a> 
                 </div> 
                 <div>
                     <span className="footer-title">Company</span> 
                     <a className="link link-hover">About us</a> 
-                    <a className="link link-hover">Services</a> 
+                    <a className="link link-hover">Solutions</a> 
                     <a className="link link-hover">Blogs</a> 
                     <a className="link link-hover">Contact</a>
                 </div> 

@@ -19,7 +19,8 @@ import Shop from './pages/Shop'
 
 function App() {
   const {data: blogs, error, loading } = UseFetch('https://vabrise-api.onrender.com/api/articles/') 
-
+  const { data: products } = UseFetch('https://dummyjson.com/products') 
+  // console.log(products)
   return (
     <div className="App">
       <BrowserRouter>
@@ -29,7 +30,7 @@ function App() {
             <Route path='/' element={ <Home /> } />
             <Route path='/about' element={ <About /> } />
             <Route path='/solutions' element={ <Solutions /> } />
-            <Route path='/products' element={ <Shop /> } />
+            <Route path='/products' element={ <Shop products={products} error={error} loading={loading} /> } />
             <Route path='/solutions/:slug' element={ <SolutionsDetails solutions={solutions} /> } />
             <Route path='/articles' element={ <Blog blogs={blogs} error={error} loading={loading} /> } />
             <Route path='/articles/:slug' element={ <BlogDetails blogs={blogs} error={error} loading={loading} /> } />

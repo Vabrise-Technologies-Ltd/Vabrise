@@ -22,7 +22,7 @@ const solutions = [
         icon: <MdDraw />,
         slug: "web-and-email-solutions",
         image: design, 
-        title: "Graphics Design", 
+        title: "Web & Email Solutions", 
         summary: "Whether you are looking for a custom website design, enhancing your existing site or creating a unique logo design for your business, our Web design and development experts can help.",
         content: "We base all of our graphic, interface and user experience design principles on evidence-based studies of the way web users tend to think and act. Consequently, our work invariably features smart designs that accommodate users’ demand for simple, attractive, efficient, credible and engaging online experiences. We offer a variety of solutions including We offer a variety of solutions including Web Design and Development, E-Mail Solutions, Branding and Design, Web Audit/Analysis, Web Hosting, Dedicated Hosting, Web Maintenance, Corporate Email Solutions, Domain Names, SSL Certificates."
     },
