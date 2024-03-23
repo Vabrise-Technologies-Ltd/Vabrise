@@ -16,6 +16,7 @@ import { ScrollToTop } from './components/ScrollToTop'
 import Create from './pages/Admin/Create'
 import Articles from './pages/Admin/Articles'
 import Shop from './pages/Shop'
+import ProductsDetails from './components/Shop/ProductsDetails'
 
 function App() {
   const {data: blogs, error, loading } = UseFetch('https://vabrise-api.onrender.com/api/articles/') 
@@ -31,6 +32,7 @@ function App() {
             <Route path='/about' element={ <About /> } />
             <Route path='/solutions' element={ <Solutions /> } />
             <Route path='/products' element={ <Shop products={products} error={error} loading={loading} /> } />
+            <Route path='/products/:slug' element={ <ProductsDetails products={products} error={error} loading={loading} /> } />
             <Route path='/solutions/:slug' element={ <SolutionsDetails solutions={solutions} /> } />
             <Route path='/articles' element={ <Blog blogs={blogs} error={error} loading={loading} /> } />
             <Route path='/articles/:slug' element={ <BlogDetails blogs={blogs} error={error} loading={loading} /> } />
