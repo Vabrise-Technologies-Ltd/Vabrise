@@ -20,8 +20,9 @@ import ProductsDetails from './components/Shop/ProductsDetails'
 
 function App() {
   const {data: blogs, error, loading } = UseFetch('https://vabrise-api.onrender.com/api/articles/') 
-  const { data: products } = UseFetch('https://dummyjson.com/products') 
-  // console.log(products)
+  const { data: products } = UseFetch('https://vabrise-api.onrender.com/api/products') 
+  // const { data: products } = UseFetch('http://localhost:8000/api/products') 
+  console.log(products)
   return (
     <div className="App">
       <BrowserRouter>

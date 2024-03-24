@@ -2,15 +2,14 @@ import { useParams } from "react-router-dom";
 import { ScaleLoader } from "react-spinners";
 
 const ProductsDetails = ({products, loading, error}) => {
-    const { id } = useParams()
-    const productDetails = products && products.products
+    const { slug } = useParams()
 
-    const product = productDetails && productDetails.find((item) => item.id == id) || {}
+    const product = products && products.find((item) => item.slug == slug) || {}
     console.log(product)
 
     
      // Check if products is defined and has the articles property
-    if (loading || !productDetails) {
+    if (loading || !products) {
         return (
             <div className="flex justify-center items-center md:my-32 my-12 ">
                 <ScaleLoader
@@ -24,19 +23,23 @@ const ProductsDetails = ({products, loading, error}) => {
     }
 
     return ( 
-        <div className="md:mx-24 mx-4 md:my-32 my-16">
+        <div className="md:grid grid-cols-2 md:mx-24 mx-4 md:my-32 my-16">
             <div >
                 <img src={product.thumbnail} alt="" />
             </div> 
             <div>
-                <h2>{product.title}</h2>
+                <h2>{product.product_name}</h2>
+                <hr className="my-4"/>
                 {/* <div>
                     <p>{stock > 0 ? `In stock` : `Out of stock`}</p>
                 </div> */}
-                <h4>Ksh {product.price*120}</h4>
-                <p>{product.description}</p>
+                <div
+                    dangerouslySetInnerHTML={{ __html: product.description }}
+                    className=""
+                ></div>
+                <h4 className="text-cyan-800 font-semibold md:text-xl">Ksh {product.price}</h4>
             </div>
-            <div className="md:mt-6 mt-4">
+            <div className="md:mt-6 mt-4 btn">
                 Add To Cart
             </div>               
         </div>
