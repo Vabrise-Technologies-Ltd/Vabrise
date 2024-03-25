@@ -10,8 +10,8 @@
 }
 
 @layer components {
-  .btns {
-    @apply px-4 py-2 bg-gradient-to-r from-cyan-500 to-cyan-700 border-none text-white duration-500 rounded-md uppercase font-medium transition hover:translate-y-1 hover:scale-105 duration-700 
+  .btns { 
+    @apply px-4 py-2 bg-gradient-to-r from-cyan-500 to-cyan-700 border-none text-white duration-500 rounded-md capitalize font-semibold transition hover:translate-y-1 hover:scale-105 
   }
 
   .section-title {
