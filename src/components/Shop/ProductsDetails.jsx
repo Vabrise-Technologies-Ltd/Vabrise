@@ -23,11 +23,9 @@ const ProductsDetails = ({products, loading, error}) => {
  const [items, setItems] = useState(1);
     const handleIncrement = () => {
         setItems(items + 1);
-        // setItem((prevItems) => prevItems + 1);
       };
       const handleDecrement = () => {
         setItems(items - 1);
-        // setItem((prevItems) => prevItems - 1);
       };
 
     return ( 
