@@ -11,7 +11,7 @@
 
 @layer components {
   .btns { 
-    @apply px-4 py-2 bg-gradient-to-r from-cyan-500 to-cyan-700 border-none text-white duration-500 rounded-md capitalize font-semibold transition hover:translate-y-1 hover:scale-105 
+    @apply px-4 py-2 bg-gradient-to-r from-cyan-500 to-cyan-700 border-none text-white duration-500 rounded-md capitalize font-semibold 
   }
 
   .section-title {
@@ -22,8 +22,8 @@
     @apply rounded-xl md:w-44 w-72 mb-2 
   }
 
-  .input {
-    @apply py-3 px-2 bg-white rounded-lg w-full border border-cyan-500 focus-within:border-cyan-400 outline-none
+  .inputs {
+    @apply py-2  px-3 bg-white rounded-lg w-full border border-cyan-500 focus-within:border-cyan-400 outline-none
   }
 
   .service-card {
