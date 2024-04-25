@@ -1,16 +1,14 @@
-const brands = ["HP","Dell","Asus","Lenovo","Apple","Huawei","Toshiba","Microsoft"]
-
-const accessories = ["Monitor", "Laptop Screens", "Keyboard", "Mouse", "HDD & SSD", "Laptop Charger", "Flash Disk", "CCTV Connector", ]
-
-const colors = ["Beige", "Black", "Blue", "Brown", "Gold", "Metallic", "Silver", "White"]
-
-
 
 const Categories = () => {
+    const brands = ["HP","Dell","Asus","Lenovo","Apple","Huawei","Toshiba","Microsoft"]
 
+    const accessories = ["Monitor", "Laptop Screens", "Keyboard", "Mouse", "HDD & SSD", "Laptop Charger", "Flash Disk", "CCTV Connector", ]
+    
+    const colors = ["Beige", "Black", "Blue", "Brown", "Gold", "Metallic", "Silver", "White"]
+    
     return ( 
         <>
-            <div className="flex flex-col gap-8 lg:w-64">
+            <div className="sm:flex hidden flex-col gap-8 lg:w-64 ">
                 <div className=" rounded-md border ">
                     <p className="py-2 px-4 text-cyan-700 font-bold">Product Categories</p>
                     <hr className="border-cyan-500"/>
