@@ -1,8 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png"
+import logo from "../../assets/logo.png"
 import { LuShoppingCart } from "react-icons/lu";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { FaRegUser } from "react-icons/fa6";
+import { FaRegHeart } from "react-icons/fa6";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -79,6 +82,19 @@ const Navbar = () => {
                                 </div>
                             ))}
                         </ul>
+                    </div>
+
+                    <div className="flex justify-between items-center md:text-xl text-gray-800">
+                        <button  className="mr-2">
+                            <FaRegHeart />
+                        </button>
+                        <button  className="mx-2">
+                            <LuShoppingCart />
+                        </button>
+                        {/* <MdOutlineShoppingCart /> */}
+                        <button  className="ml-2">
+                            <FaRegUser />
+                        </button>
                     </div>
                 </div>
 

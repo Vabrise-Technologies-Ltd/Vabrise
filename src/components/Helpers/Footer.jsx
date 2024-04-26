@@ -1,12 +1,18 @@
-// import logo from "../assets/logo.png"
+import { FaChevronUp } from "react-icons/fa6";
 import { BsFacebook, BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs"
 import { Link } from "react-router-dom"
-import logo from "../assets/logo.png"
+import logo from "../../assets/logo.png"
 
 const Footer = () => {
     const today = new Date()
     const year = today.getFullYear()
 
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      };
 
     return ( 
         <>
@@ -61,6 +67,13 @@ const Footer = () => {
                     </a> 
                 </div>
             </footer>
+
+            <button
+                onClick={scrollToTop}
+                className="fixed bottom-10 right-10 p-3 bg-cyan-600 text-white rounded-full shadow-md focus:outline-none"
+                >
+                    <FaChevronUp />
+            </button>
         </>
     );
 }

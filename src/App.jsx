@@ -2,8 +2,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import BlogDetails from './components/Blog/BlogDetails'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
+import Footer from './components/Helpers/Footer'
+import Navbar from './components/Helpers/Navbar'
 import UseFetch from './components/UseFetch'
 import About from './pages/About'
 import Blog from './pages/Blog'
@@ -12,13 +12,13 @@ import Home from './pages/Home'
 import Solutions from './pages/Solutions'
 import { solutions } from './data/solutions'
 import SolutionsDetails from './components/Solutions/SolutionsDetails'
-import { ScrollToTop } from './components/ScrollToTop'
+import { ScrollToTop } from './components/Helpers/ScrollToTop'
 import Create from './pages/Admin/Create'
 import Articles from './pages/Admin/Articles'
 import Shop from './pages/Shop'
 import ProductsDetails from './components/Shop/ProductsDetails'
-import Topnavbar from './components/TopNavbar'
-import MobileMenu from './components/MobileMenu'
+// import Topnavbar from './components/Helpers/TopNavbar'
+import MobileMenu from './components/Helpers/MobileMenu'
 
 function App() {
   const {data: blogs, error, loading } = UseFetch('https://vabrise-api.onrender.com/api/articles/') 
@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <ScrollToTop />
-        <Topnavbar />
+        {/* <Topnavbar /> */}
         <Navbar />
         <Routes>
             <Route path='/' element={ <Home /> } />
