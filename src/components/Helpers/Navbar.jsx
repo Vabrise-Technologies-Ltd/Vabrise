@@ -42,7 +42,7 @@ const Navbar = () => {
 
     return ( 
         <>
-            <nav ref={navbarRef} className='md:px-32 px-4 py-4 top-0 left-0 sticky z-50 bg-white opacity-95 shadow-xl'>
+            <nav ref={navbarRef} className='md:px-32 px-4 py-4 top-0 left-0 sticky duration-500 ease-in-out z-50 bg-white opacity-95 shadow-xl'>
                 <div className='md:flex items-center justify-between'>
                     <div className="flex justify-between items-center">
                         <Link to='/' className='md:text-2xl text-xl uppercase font-semibold '>
@@ -61,7 +61,7 @@ const Navbar = () => {
                     
                     <div className='md:flex hidden text-gray-800'>
                         <div className="dropdown dropdown-hover ">
-                            <div tabIndex={0} role="button" className=" m-1 md:text-lg font-medium">Solutions</div>
+                            <div tabIndex={0} role="button" className=" m-1 ">Solutions</div>
                            
                                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-cyan-100 opacity-20 text-sm rounded-box w-52">
                                     <li><Link to='solutions/software-sales'>Software Sales</Link></li>
@@ -71,7 +71,7 @@ const Navbar = () => {
                                     <li><Link to='solutions/training-and-consultancy'>Training & Consultancy Services</Link></li>
                                 </ul>
                         </div>
-                        <ul className="md:flex items-center md:text-lg font-medium">
+                        <ul className="md:flex items-center ">
                             {menus.map((item, index) => (
                                 <div key={index}>
                                     <li className='md:mx-3 md:my-0 my-4 '>
@@ -81,20 +81,17 @@ const Navbar = () => {
                                     </li>
                                 </div>
                             ))}
+                            <div className="flex justify-between items-center ">
+                                <button  className="md:mx-3 md:my-0 my-4 ">
+                                    <LuShoppingCart />
+                                </button>
+                                <button  className="md:mx-3 md:my-0 my-4 flex items-center text-black rounded-md bg-cyan-200 px-2 py-1 text-sm hover:scale-105 duration-300">
+                                    <FaRegUser className="mr-2"/>
+                                    Login
+                                </button>
+                            </div>
                         </ul>
-                    </div>
-
-                    <div className="flex justify-between items-center md:text-xl text-gray-800">
-                        <button  className="mr-2">
-                            <FaRegHeart />
-                        </button>
-                        <button  className="mx-2">
-                            <LuShoppingCart />
-                        </button>
-                        {/* <MdOutlineShoppingCart /> */}
-                        <button  className="ml-2">
-                            <FaRegUser />
-                        </button>
+                        
                     </div>
                 </div>
 

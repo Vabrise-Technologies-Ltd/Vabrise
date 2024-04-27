@@ -11,7 +11,7 @@
 
 @layer components {
   .btns { 
-    @apply px-4 py-2 bg-gradient-to-r from-cyan-500 to-cyan-700 border-none text-white duration-500 rounded-md capitalize font-semibold 
+    @apply px-4 py-2 bg-cyan-300 border-none text-gray-700 duration-500 rounded-md capitalize font-semibold 
   }
 
   .section-title {

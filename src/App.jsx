@@ -46,7 +46,7 @@ function App() {
             <Route path='/admin/' element={ <Articles /> } />
         </Routes>
         <Footer />
-        <MobileMenu />
+        {/* <MobileMenu /> */}
       </BrowserRouter>
 
 
