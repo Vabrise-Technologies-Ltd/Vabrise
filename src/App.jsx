@@ -17,8 +17,7 @@ import Create from './pages/Admin/Create'
 import Articles from './pages/Admin/Articles'
 import Shop from './pages/Shop'
 import ProductsDetails from './components/Shop/ProductsDetails'
-// import Topnavbar from './components/Helpers/TopNavbar'
-import MobileMenu from './components/Helpers/MobileMenu'
+import Sidebar from "./components/Helpers/Sidebar"
 
 function App() {
   const {data: blogs, error, loading } = UseFetch('https://vabrise-api.onrender.com/api/articles/') 
@@ -29,8 +28,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <ScrollToTop />
-        {/* <Topnavbar /> */}
-        <Navbar />
+          <Navbar />
+          <Sidebar />
         <Routes>
             <Route path='/' element={ <Home /> } />
             <Route path='/about' element={ <About /> } />

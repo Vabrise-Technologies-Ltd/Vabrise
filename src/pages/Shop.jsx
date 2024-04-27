@@ -55,7 +55,7 @@ const Shop = ({products, loading, error}) => {
                                 </button>
                             </div>
 
-                            <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0  space-y-8 py-6 px-8 w-full h-[50%] duration-300 ease-in-out bg-cyan-700`}>
+                            <div className={`${open ? "top-0 " : "top-[-100%]"} sm:hidden absolute left-0 right-0 space-y-8 py-6 px-8 w-full h-[50%] duration-300 ease-in-out bg-cyan-700`}>
                                 <ul className="flex flex-col justify-center mt-8 text-base text-gray-200 font-medium">
                                         {menus.map((item, index) => (
                                             <div key={index}>
