@@ -1,12 +1,14 @@
 import { useParams } from "react-router-dom";
 import { ScaleLoader } from "react-spinners";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "../Contexts/CartContext";
 
 const ProductsDetails = ({products, loading, error}) => {
     const { slug } = useParams()
+    const { addToCart } = useContext(CartContext)
 
     const product = products && products.find((item) => item.slug == slug) || {}
-    console.log(product)
+    // console.log(product)
 
     if (loading || !products) {
         return (
@@ -42,6 +44,7 @@ const ProductsDetails = ({products, loading, error}) => {
                 <div className="md:flex space-x-2 pt-3">
                     <div>
                         <button
+                            onClick={() => addToCart(product, product.id)}
                             className="btns"
                         >
                             Add to cart

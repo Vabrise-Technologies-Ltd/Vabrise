@@ -1,15 +1,16 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png"
 import { LuShoppingCart } from "react-icons/lu";
-import { MdOutlineShoppingCart } from "react-icons/md";
+// import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa6";
-import { FaRegHeart } from "react-icons/fa6";
+import { CartContext } from "../Contexts/CartContext";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const navbarRef = useRef(null);
+    const { itemAmount } = useContext(CartContext);
 
     useEffect(() => {
         const handleOutsideClick = (event) => {
@@ -49,9 +50,12 @@ const Navbar = () => {
                             <img className="md:w-36 w-28" src={logo} alt="" />
                         </Link>
                         
-                        <div className="md:hidden text-xl text-gray-800">
-                            <button className={`mr-4 bg-white hover:scale-110 hover:text-cyan-600 duration-300 shadow-lg hover:shadow-xl rounded-full p-2`}>
-                                <LuShoppingCart />   
+                        <div className="flex md:hidden text-xl text-gray-800">
+                            <button className={`cursor-pointer flex relative mr-4 bg-white  duration-300 shadow-lg hover:shadow-xl rounded-full p-2`}>
+                                <div className="bg-cyan-500 absolute left-5 bottom-5 text-[12px] w-[16px] h-[16px] text-white rounded-full flex justify-center items-center">
+                                    {itemAmount}
+                                </div>
+                                <LuShoppingCart className="text-lg"/>   
                             </button>
                             <button onClick={toggleNavbar}>
                                 {open ? <FaTimes/> : <FaBars/>}
@@ -82,8 +86,11 @@ const Navbar = () => {
                                 </div>
                             ))}
                             <div className="flex justify-between items-center ">
-                                <button  className="md:mx-3 md:my-0 my-4 ">
-                                    <LuShoppingCart />
+                                <button  className="cursor-pointer flex relative md:mx-3 md:my-0 my-4 ">
+                                    <div className="bg-cyan-500 absolute left-3 bottom-3 text-[12px] w-[18px] h-[18px] text-white rounded-full flex justify-center items-center">
+                                        {itemAmount}
+                                    </div>
+                                    <LuShoppingCart className="text-lg"/>
                                 </button>
                                 <button  className="md:mx-3 md:my-0 my-4 flex items-center text-black rounded-md bg-cyan-200 px-2 py-1 text-sm hover:scale-105 duration-300">
                                     <FaRegUser className="mr-2"/>
