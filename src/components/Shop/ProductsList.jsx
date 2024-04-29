@@ -1,29 +1,28 @@
 import { Link } from "react-router-dom";
-import { FaHeart } from "react-icons/fa6";
 import { FiEye } from "react-icons/fi";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 import { useContext } from "react";
 import { CartContext } from "../Contexts/CartContext";
+import { FetchContext } from "../Contexts/FetchContext";
 
 
-const ProductsList = ({products, loading, error}) => {
+const ProductsList = () => {
     const  { addToCart } = useContext(CartContext)
+    const { products, errorProducts } = useContext(FetchContext);
 
     return ( 
         <>
             <div>
-                {error}
-            </div>
-
-            
-                <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  gap-8 mb-8">
+                {errorProducts}
+            </div>       
+                <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 mb-8">
                     {products && products.map((item) => (
                         <div>
                             <div className="border border-cyan-500 rounded h-[250px] mb-4 relative overflow-hidden group transition">
                                 <div className="relative flex-col overflow-hidden w-full h-full flex justify-center items-center">
                                     <div className="w-[200px] mx-auto flex justify-center items-center">
                                     <img
-                                        className="max-h-[120px] group-hover:scale-105 transition duration-300"
+                                        className="max-h-[140px] group-hover:scale-125 transition duration-300"
                                         src={item.thumbnail}
                                         alt=""
                                     />

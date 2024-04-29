@@ -1,19 +1,20 @@
+import { useContext } from "react";
 import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
-import { ScaleLoader } from "react-spinners";
-// import { FaRegUser } from "react-icons/fa";
-// import { AiOutlineProfile } from "react-icons/ai";
+import { BounceLoader } from "react-spinners";
+import { FetchContext } from "../Contexts/FetchContext";
 
-const BlogList = ({blogs, error, loading}) => {
-  console.log(blogs)
+const BlogList = () => {
+    const {blogs, errorBlogs, loadingBlogs} = useContext(FetchContext)
+    console.log(blogs)
 
     return ( 
         <>
             <div>
-                <p className="text-red-500">{error}</p>
-                {!blogs || loading ? (
+                <p className="text-red-500">{errorBlogs}</p>
+                {!blogs || loadingBlogs ? (
                     <div className="flex justify-center items-center md:my-32 my-12 ">
-                        <ScaleLoader
+                        <BounceLoader
                             color="#06b6d4"
                             height={60}
                             radius={100}

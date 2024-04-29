@@ -1,24 +1,25 @@
+import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { ScaleLoader } from "react-spinners";
+import { BounceLoader } from "react-spinners";
+import { FetchContext } from "../Contexts/FetchContext";
 
-const BlogDetails = ({blogs, loading, error}) => {
+const BlogDetails = () => {
+    const {blogs, errorBlogs, loadingBlogs} = useContext(FetchContext)
     const { slug } = useParams()
-    console.log(blogs)
 
     const blog = blogs.find((item) => item.slug == slug) || {}
 
-     // Check if blogs is defined and has the articles property
-    if (!blogs || loading) {
+    if (!blogs || loadingBlogs) {
         return (
-                <div className="flex justify-center items-center md:my-32 my-12 ">
-                    <ScaleLoader
-                        color="#06b6d4"
-                        height={60}
-                        radius={100}
-                        width={4}
-                    />
-                </div>
+            <div className="flex justify-center items-center md:my-32 my-12 ">
+                <BounceLoader
+                    color="#06b6d4"
+                    height={60}
+                    radius={100}
+                    width={4}
+                />
+            </div>
         );
     }
 

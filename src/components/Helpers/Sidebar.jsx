@@ -13,8 +13,8 @@ const Sidebar = () => {
   return (
     <div
       className={`${
-        isOpen ? "right-0" : "-right-full"
-      } "w-full bg-white fixed top-16 h-full shadow-2xl md:w-[35vw] lg:w-[40vw] xl:max-w-[30vw] transition-all duration-300 z-[100] px-4 lg:px-[35px]"`}
+        isOpen ? "right-0 px-4" : "right-[-100%]"
+      } " bg-white fixed top-16 h-full shadow-2xl  md:w-[35vw] lg:w-[40vw] xl:max-w-[30vw] transition-all duration-300 z-[100] sm:px-4 lg:px-[35px]"`}
     >
       <div className="flex items-center justify-between py-4 border-b">
         <div className="uppercase text-sm font-semibold">Shopping Bag ({itemAmount})</div>

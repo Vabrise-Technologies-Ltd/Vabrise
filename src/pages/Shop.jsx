@@ -1,16 +1,18 @@
 import Categories from "../components/Shop/Categories";
 import ProductsList from "../components/Shop/ProductsList"
 import { BounceLoader } from "react-spinners";
-import { FaThList } from "react-icons/fa";
-import { BsGrid3X3GapFill } from "react-icons/bs";
-import { useState } from "react";
+import { FaListUl } from "react-icons/fa";
+import { BsGrid } from "react-icons/bs";
+import { useContext, useState } from "react";
 import { RiDropdownList } from "react-icons/ri";                                                
 import { FiFilter } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { FetchContext } from "../components/Contexts/FetchContext";
 
-const Shop = ({products, loading, error}) => {
+const Shop = () => {
     const [search, setSearch] = useState('')
     const [open, setOpen] = useState(false);
+    const { products, loadingProducts, errorProducts } = useContext(FetchContext);
     
     const menus = [
         {name: "About", route: "/about"},
@@ -25,7 +27,7 @@ const Shop = ({products, loading, error}) => {
 
     return ( 
         <>
-            <div className='sm:flex items-start md:gap-6 sm:gap-4 gap-3 md:m-16 my-8 mx-4'>
+            <div className='sm:flex items-start md:gap-6 sm:gap-4 gap-3 md:m-16 my-8 mx-6'>
                 <Categories />
                 
                 <div className="md:space-y-8 space-y-4">
@@ -42,10 +44,10 @@ const Shop = ({products, loading, error}) => {
                             </div>
                             <div className="flex items-center justify-end text-2xl text-gray-500">
                                 <button className="text-cyan-600 md:flex hidden">
-                                    <BsGrid3X3GapFill />
+                                    <BsGrid />
                                 </button>
                                 <button className="ml-4 md:flex hidden">
-                                    <FaThList />
+                                <FaListUl />  
                                 </button>
                                 <button onClick={() => setOpen((prev) => !prev)} className="ml-4 flex md:hidden ">
                                     <RiDropdownList />
@@ -70,7 +72,7 @@ const Shop = ({products, loading, error}) => {
                             </div>
 
                         </div>
-                        {loading ? (
+                        {loadingProducts ? (
                             <div className="flex justify-center items-center md:my-32 my-12 ">
                                 <BounceLoader
                                     color="#06b6d4"
@@ -81,10 +83,10 @@ const Shop = ({products, loading, error}) => {
                             </div>
                         ) : (
                             <div>
-                                <ProductsList products={products} loading={loading} error={error}/>
-                                <ProductsList products={products} loading={loading} error={error}/>
-                                <ProductsList products={products} loading={loading} error={error}/>
-                                <ProductsList products={products} loading={loading} error={error}/>
+                                <ProductsList />
+                                <ProductsList />
+                                <ProductsList />
+                                <ProductsList />
                             </div>
                         )}
                     </div>

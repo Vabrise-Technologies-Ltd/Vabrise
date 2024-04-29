@@ -1,19 +1,21 @@
 import { useParams } from "react-router-dom";
-import { ScaleLoader } from "react-spinners";
-import { useContext, useState } from "react";
+import { BounceLoader } from "react-spinners";
+import { useContext } from "react";
 import { CartContext } from "../Contexts/CartContext";
+import { FetchContext } from "../Contexts/FetchContext";
 
-const ProductsDetails = ({products, loading, error}) => {
+const ProductsDetails = () => {
     const { slug } = useParams()
     const { addToCart } = useContext(CartContext)
+    const {products, loadingProducts, errorProducts} = useContext(FetchContext)
 
     const product = products && products.find((item) => item.slug == slug) || {}
-    // console.log(product)
+    
 
-    if (loading || !products) {
+    if (loadingProducts || !products) {
         return (
             <div className="flex justify-center items-center md:my-32 my-12 ">
-                <ScaleLoader
+                <BounceLoader
                     color="#06b6d4"
                     height={60}
                     radius={100}
