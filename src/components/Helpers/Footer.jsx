@@ -70,7 +70,7 @@ const Footer = () => {
 
             <button
                 onClick={scrollToTop}
-                className="fixed md:bottom-10 bottom-6 md:right-6 right-4 md:p-3 p-2 bg-cyan-600 text-white rounded-full shadow-md focus:outline-none"
+                className="fixed md:bottom-28 bottom-24 right-8 md:p-4 p-3 bg-cyan-500 text-white rounded-full shadow-md focus:outline-none"
                 >
                     <FaChevronUp />
             </button>

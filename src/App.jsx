@@ -16,6 +16,16 @@ import ProductsDetails from './components/Shop/ProductsDetails'
 import Sidebar from "./components/Helpers/Sidebar"
 
 function App() {
+  // tawk chat intergration
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/664b4012981b6c56477286b7/1huav4jup';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
 
   return (
     <div className="App">
