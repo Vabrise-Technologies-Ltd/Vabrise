@@ -1,5 +1,6 @@
 {
   "name": "vabrise",
+  "homepage": "http://vabrisetech.com",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -26,6 +27,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-image-carousel": "^2.0.18",
+    "react-lazy-load-image-component": "^1.6.0",
     "react-loading": "^2.0.3",
     "react-responsive-carousel": "^3.2.23",
     "react-reveal": "^1.2.2",

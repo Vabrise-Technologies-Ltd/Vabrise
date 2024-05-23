@@ -1,3 +1,13 @@
+
+import { FaLinkedinIn } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg"
+import ceo from "../../src/assets/team/ceo.jpg"
+import cto from "../../src/assets/team/cto.jpg"
+import chair from "../../src/assets/team/chair.jpg"
+
+const icon1 = <FaLinkedinIn />
+const icon2 = <CgWebsite />
+
 const companyFocus = [
     {
         id: 1,
@@ -16,4 +26,34 @@ const companyFocus = [
     }
 ]
 
-export { companyFocus }
+const teamData = [
+    {
+        image: chair, 
+        name: "Chris Khayere", 
+        title: "Founder & Chairman", 
+        icon1: icon1, 
+        icon2: icon2, 
+        link1: "https://www.linkedin.com/in/chris-khayere", 
+        link2: "https://chris.vabrisetech.co.ke"
+    },
+    {
+        image: ceo, 
+        name: "Peter Muriuki", 
+        title: "CEO", 
+        icon1: icon1, 
+        icon2: icon2, 
+        link1: "https://github.com/softy-254", 
+        link2: "https://github.com/softy-254"
+    },
+    {
+        image: cto, 
+        name: "Andrew Ochieng", 
+        title: "Co-Founder & CTO", 
+        icon1: icon1, 
+        icon2: icon2, 
+        link1: "https://www.linkedin.com/in/andrew-ochieng-00b076180", 
+        link2: "https://andrew-ochieng.vercel.app"
+    }
+]
+
+export { companyFocus, teamData }
