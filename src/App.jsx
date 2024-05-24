@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import BlogDetails from './components/Blog/BlogDetails'
-import Footer from './components/Helpers/Footer'
-import Navbar from './components/Helpers/Navbar'
+import Footer from './components/Utils/Footer'
+import Navbar from './components/Utils/Navbar'
 import About from './pages/About'
 import Blog from './pages/Blog'
 import Contact from './pages/Contact'
@@ -10,10 +10,10 @@ import Home from './pages/Home'
 import Solutions from './pages/Solutions'
 import { solutions } from './data/solutions'
 import SolutionsDetails from './components/Solutions/SolutionsDetails'
-import { ScrollToTop } from './components/Helpers/ScrollToTop'
+import { ScrollToTop } from './components/Utils/ScrollToTop'
 import Shop from './pages/Shop'
 import ProductsDetails from './components/Shop/ProductsDetails'
-import Sidebar from "./components/Helpers/Sidebar"
+import Sidebar from "./components/Utils/Sidebar"
 
 function App() {
   // tawk chat intergration
