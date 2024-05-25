@@ -36,7 +36,6 @@ const Navbar = () => {
 
     const menus = [
         {name: "About", route: "/about"},
-        {name: "Shop", route: "/products"},
         {name: "Blog", route: "/articles"},
         {name: "Contact", route: "/contact"},
     ];
@@ -66,6 +65,11 @@ const Navbar = () => {
                     </div>
                     
                     <div className='md:flex items-center hidden text-gray-900'>
+                        <li className='md:mx-3 md:my-0 my-4 list-none'>
+                            <a href="https://shop.vabrisetech.com" target="_blank" rel="noopener noreferrer" >
+                                Shop
+                            </a>
+                        </li>
                         <MenuCustomList />
                         <ul className="md:flex items-center ">
                             {menus.map((item, index) => (
@@ -77,7 +81,7 @@ const Navbar = () => {
                                     </li>
                                 </div>
                             ))}
-                            <div className="flex justify-between items-center ">
+                            {/* <div className="flex justify-between items-center ">
                                 <button  
                                     onClick={() => setIsOpen(!isOpen)}
                                     className="cursor-pointer flex relative md:mx-3 md:my-0 my-4 ">
@@ -90,25 +94,31 @@ const Navbar = () => {
                                     <FaRegUser className="mr-2"/>
                                     Login
                                 </button>
-                            </div>
+                            </div> */}
                         </ul>
                         
                     </div>
                 </div>
 
-                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0 space-y-8 py-6 px-8 w-[85%] h-screen duration-300 ease-in-out bg-cyan-700`}>
-                    <ul className="flex flex-col justify-center mt-8 text-base text-gray-200 font-medium">
+                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0 space-y-8 py-6 px-8 w-[80%] h-screen duration-300 ease-in-out bg-white`}>
+                    <ul className="flex flex-col justify-center mt-8 text-base text-gray-800 font-medium">
                             <li 
-                                className={`md:mx-3 md:my-0 my-4`} 
+                                className={`md:mx-3 md:my-0 my-3`} 
                                 onClick={() => {toggleNavbar(); closeNavbar();}}
                             >
                                 <Link to='/'>
                                     Home
                                 </Link>
                             </li>
+                            <li className='md:mx-3 md:my-0 my-4 list-none'>
+                                <a href="https://shop.vabrisetech.com" target="_blank" rel="noopener noreferrer" >
+                                    Shop
+                                </a>
+                            </li>
+                            <li><MenuCustomList /></li>
                             {menus.map((item, index) => (
                                 <div key={index}>
-                                    <li onClick={() => {toggleNavbar(); closeNavbar();}} className={`md:mx-3 md:my-0 my-4 `}>
+                                    <li onClick={() => {toggleNavbar(); closeNavbar();}} className={`md:mx-3 md:my-0 my-3    `}>
                                         <Link to={item.route}>
                                             {item.name}
                                         </Link>

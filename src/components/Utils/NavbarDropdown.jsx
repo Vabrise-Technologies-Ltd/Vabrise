@@ -1,10 +1,9 @@
 import React from "react";
-import { IoChevronDownOutline } from "react-icons/io5";
-import { IoChevronUpOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import {
   Menu,
   MenuHandler,
+  MenuItem,
   MenuList,
   Typography,
 } from "@material-tailwind/react";
@@ -37,27 +36,24 @@ const menuItems = [
 ];
  
 export function MenuCustomList() {
-    const [openMenu, setOpenMenu] = React.useState(false);
- 
+    
     return (
-        <Menu open={openMenu} handler={setOpenMenu} allowHover>
-        <MenuHandler>
-            <p className="hover:cursor-pointer flex items-center gap-1">
-                Technology 
-                {openMenu ? <IoChevronUpOutline /> : <IoChevronDownOutline />}
-            </p>
-        </MenuHandler>
-        <MenuList className="hidden md:w-[24rem] grid-cols-7 gap-3 overflow-visible lg:grid">
-            <ul className="col-span-4 flex w-full flex-col gap-1">
-            {menuItems.map(({ title, link }) => (
-                <Link to={link}>
-                    <Typography  color="cyan" className="mb-1 font-[Lato] font-medium">
-                    {title}
-                    </Typography>
-                </Link>
-            ))}
-            </ul>
-        </MenuList>
-        </Menu>
+        <Menu
+      animate={{
+        mount: { y: 0 },
+        unmount: { y: 25 },
+      }}
+    >
+      <MenuHandler>
+        <p>Solutions</p>
+      </MenuHandler>
+      <MenuList>
+        {menuItems.map(({title, link}) => (
+                <MenuItem>
+                    <Link to={link}>{title}</Link>
+                </MenuItem>
+        ))}
+      </MenuList>
+    </Menu>
     );
 }

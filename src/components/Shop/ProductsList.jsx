@@ -9,7 +9,7 @@ import { FetchContext } from "../Contexts/FetchContext";
 const ProductsList = () => {
     const  { addToCart } = useContext(CartContext)
     const { products, errorProducts } = useContext(FetchContext);
-
+    console.log(products)
     return ( 
         <>
             <div>
