@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Input } from "@material-tailwind/react";
 import { Textarea } from "@material-tailwind/react";
+import { Button } from "@material-tailwind/react";
 
 const ContactForm = () => {
      
@@ -32,14 +33,14 @@ const ContactForm = () => {
                         <Input label='Username' color='cyan' required />
                         <Input label='Email' color='cyan' required />
                         <Input label='Phone' color='cyan' required />
-                        <Textarea color='cyan' />
+                        <Textarea label='Message' color='cyan' />
                     </div>
-                    <button className="mt-4 btns w-full rounded-lg flex items-center justify-center">
-                        Submit
-                        <span className="ml-2">
-                            <FaPaperPlane />
-                        </span>
+                    <button className="w-full mt-3" >
+                        <Button color="cyan" className="w-full">
+                            Send Message
+                        </Button>
                     </button>
+                    
                 </form>
             </div>
         

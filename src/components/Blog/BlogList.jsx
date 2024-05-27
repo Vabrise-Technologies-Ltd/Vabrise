@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
-import { BounceLoader } from "react-spinners";
 import { FetchContext } from "../Contexts/FetchContext";
+import DefaultSpinner from "../Utils/Spinner";
 
 const BlogList = () => {
     const {blogs, errorBlogs, loadingBlogs} = useContext(FetchContext)
@@ -14,12 +14,7 @@ const BlogList = () => {
                 <p className="text-red-500">{errorBlogs}</p>
                 {!blogs || loadingBlogs ? (
                     <div className="flex justify-center items-center md:my-32 my-12 ">
-                        <BounceLoader
-                            color="#06b6d4"
-                            height={60}
-                            radius={100}
-                            width={4}
-                        />
+                        <DefaultSpinner />
                     </div>
                 ) : (
                     <div className="card-container">

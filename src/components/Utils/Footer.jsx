@@ -1,81 +1,113 @@
 import { FaChevronUp } from "react-icons/fa6";
 import { BsFacebook, BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs"
-import { Link } from "react-router-dom"
 import logo from "../../assets/logo.png"
-
+import { Typography } from "@material-tailwind/react";
+ 
+const LINKS = [
+  {
+    title: "Product",
+    items: ["Overview", "Features", "Solutions", "Tutorials"],
+  },
+  {
+    title: "Company",
+    items: ["About us", "Careers", "Press", "News"],
+  },
+  {
+    title: "Resource",
+    items: ["Blog", "Newsletter", "Events", "Help center"],
+  },
+];
+ 
+const currentYear = new Date().getFullYear();
+ 
 const Footer = () => {
-    const today = new Date()
-    const year = today.getFullYear()
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/664b4012981b6c56477286b7/1huav4jup';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
 
     const scrollToTop = () => {
         window.scrollTo({
-          top: 0,
-          behavior: 'smooth',
-        });
-      };
+        top: 0,
+        behavior: 'smooth',
+    });
+    };
 
-    return ( 
-        <>
-            <footer className="footer grid md:grid-cols-4 sm:grid-cols-2 md:p-10 p-4 bg-base-200 text-base-content">
-                <div>
-                    <img src={logo} alt="Vabrise Technologies" className="md:w-36 w-32"/>
-                    <p>Vabrise Technologies LTD.<br/>Providing reliable tech to businesses, organizations & societies since 2020</p>
-                </div> 
-                <div>
-                    <span className="footer-title">Solutions</span> 
-                    <a className="link link-hover">Software Development</a> 
-                    <a className="link link-hover">Web & Email Solutions</a> 
-                    <a className="link link-hover">IT Support & Maintainance</a>
-                    <a className="link link-hover">Training & Consultancy Services</a>
-                    <a className="link link-hover">Cyber Security</a> 
-                </div> 
-                <div>
-                    <span className="footer-title">Company</span> 
-                    <a className="link link-hover">About us</a> 
-                    <a className="link link-hover">Solutions</a> 
-                    <a className="link link-hover">Blogs</a> 
-                    <a className="link link-hover">Contact</a>
-                </div> 
-                <div className="md:grid hidden">
-                    <span className="footer-title">Legal</span> 
-                    <a className="link link-hover">Terms of use</a> 
-                    <a className="link link-hover">Privacy policy</a> 
-                    <a className="link link-hover">Cookie policy</a>
-                </div>
-            </footer> 
-
-            <footer className="footer md:px-10 p-4 border-t bg-cyan-900 text-white border-base-300 ">
-                <div className="md:flex md:flex-row flex-col justify-center items-center">
-                    {/* <img className="w-28" src={logo} alt="Logo" />  */}
-                    <p className="text-xs">
-                        Copyright © {year} - All rights Reserved |
-                        <Link className="ml-1 text-yellow-500" to='/'>Vabrise Technologies</Link>
-                    </p>
-                </div> 
-                <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end md:text-lg text-base">
-                    <a href="https://www.facebook.com/profile.php?id=100068470802763">
-                        <BsFacebook />
-                    </a>
-                    <a href="https://www.linkedin.com/company/vabrise-technologies-ltd/">
-                        <BsLinkedin />
-                    </a>
-                    <a href="#">
-                        <BsTwitter />
-                    </a>
-                    <a href="https://github.com/Vabrise-Technologies-Ltd">
-                        <BsGithub />
-                    </a> 
-                </div>
-            </footer>
-
-            <button
-                onClick={scrollToTop}
-                className="fixed md:bottom-28 bottom-24 right-8 md:p-4 p-3 bg-cyan-500 text-white rounded-full shadow-md focus:outline-none"
+  return (
+    <footer className="relative w-full p-8 bottom-0 bg-gray-200">
+      <div className="mx-auto w-full max-w-7xl ">
+        <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
+            <div>
+                <img src={logo} alt="Vabrise Technologies" className="md:w-36 w-32 "/>
+                <Typography className="mb-6 pt-4" color="gray">
+                    Experts in reliable tech solutions since 2020
+                </Typography>
+          </div>
+          <div className="grid grid-cols-3 justify-between gap-4">
+            {LINKS.map(({ title, items }) => (
+              <ul key={title}>
+                <Typography
+                  variant="small"
+                  color="blue-gray"
+                  className="mb-3 font-medium opacity-40"
                 >
-                    <FaChevronUp />
-            </button>
-        </>
-    );
+                  {title}
+                </Typography>
+                {items.map((link) => (
+                  <li key={link}>
+                    <Typography
+                      as="a"
+                      href="#"
+                      color="gray"
+                      className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
+                    >
+                      {link}
+                    </Typography>
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
+        </div>
+        <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
+          <Typography
+            variant="small"
+            className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
+          >
+            &copy; {currentYear} 
+            <a href="https://vabrisetech.com/" className="text-cyan-600 pl-1">Vabrise Technologies</a>. 
+            All Rights Reserved.
+          </Typography>
+            <div className="flex gap-4 text-gray-700 sm:justify-center">
+                <a href="https://www.facebook.com/profile.php?id=100068470802763">
+                    <BsFacebook />
+                </a>
+                <a href="https://www.linkedin.com/company/vabrise-technologies-ltd/">
+                    <BsLinkedin />
+                </a>
+                <a href="#">
+                    <BsTwitter />
+                </a>
+                <a href="https://github.com/Vabrise-Technologies-Ltd">
+                    <BsGithub />
+                </a> 
+            </div>
+        </div>
+      </div>
+
+      <button
+        onClick={scrollToTop}
+        className="fixed md:bottom-28 bottom-24 right-8 md:p-4 p-3 bg-cyan-500 text-white rounded-full shadow-md focus:outline-none"
+        >
+            <FaChevronUp />
+        </button>
+    </footer>
+  );
 }
- 
+
 export default Footer;

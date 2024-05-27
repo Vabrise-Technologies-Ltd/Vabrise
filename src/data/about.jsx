@@ -31,29 +31,53 @@ const teamData = [
         image: chair, 
         name: "Chris Khayere", 
         title: "Founder & Chairman", 
-        icon1: icon1, 
-        icon2: icon2, 
         link1: "https://www.linkedin.com/in/chris-khayere", 
         link2: "https://chris.vabrisetech.co.ke"
-    },
-    {
-        image: ceo, 
-        name: "Peter Muriuki", 
-        title: "CEO", 
-        icon1: icon1, 
-        icon2: icon2, 
-        link1: "https://github.com/softy-254", 
-        link2: "https://github.com/softy-254"
     },
     {
         image: cto, 
         name: "Andrew Ochieng", 
         title: "Co-Founder & CTO", 
-        icon1: icon1, 
-        icon2: icon2, 
         link1: "https://www.linkedin.com/in/andrew-ochieng-00b076180", 
         link2: "https://andrew-ochieng.vercel.app"
+    },
+    {
+        image: ceo, 
+        name: "Peter Muriuki", 
+        title: "CEO", 
+        link1: "https://github.com/softy-254", 
+        link2: "https://github.com/softy-254"
+    },
+    {
+        image: ceo, 
+        name: "Khalid Juma", 
+        title: "Project Manager", 
+        link1: "https://github.com/softy-254", 
+        link2: "https://github.com/softy-254"
     }
 ]
 
-export { companyFocus, teamData }
+const faqs = [
+    {
+      question: "What is Vabrise Technologies Limited?",
+      answer: "Vabrise Technologies Limited is a leading technology company specializing in innovative software solutions for businesses of all sizes."
+    },
+    {
+      question: "What services do you offer?",
+      answer: "We offer a wide range of services including software development, cloud computing, IT consulting, and data analytics."
+    },
+    {
+      question: "How can I contact Vabrise Technologies Limited?",
+      answer: "You can contact us through our website's contact form, or email us at info@vabrise.com or call us on +254718577070."
+    },
+    {
+      question: "Where is Vabrise Technologies Limited located?",
+      answer: "Our headquarters are located in Nakuru Town, at Bungei House, Room12, opposite Rift Valley Institute of Technology School."
+    },
+    {
+      question: "Do you offer customized solutions?",
+      answer: "Yes, we specialize in providing customized software solutions tailored to meet the unique needs of our clients."
+    }
+  ];
+
+export { companyFocus, teamData, faqs }

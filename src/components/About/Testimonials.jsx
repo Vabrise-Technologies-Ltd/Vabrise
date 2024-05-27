@@ -1,40 +1,50 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { testimonials } from "../../data/testimonials";
-import '@splidejs/react-splide/css/skyblue';
+import React from 'react';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
+// import { testimonials } from "../../data/testimonials";
+// import '@splidejs/react-splide/css/skyblue';
 import { homeCarousel } from "../../utils/Carousel";
+const testimonials = [
+  {
+    name: "John Doe",
+    position: "CEO, Example Corp",
+    testimonial: "Vabrise Technologies provided excellent service and innovative solutions that boosted our business significantly."
+  },
+  {
+    name: "Jane Smith",
+    position: "CTO, Tech Innovators",
+    testimonial: "Their team is highly professional and their technical expertise is unmatched. Highly recommended!"
+  },
+  {
+    name: "Sam Wilson",
+    position: "Product Manager, StartUp Inc.",
+    testimonial: "Working with Vabrise Technologies was a game-changer for our project. Their insights and execution were top-notch."
+  }
+];
 
-const Testimonials = () => {
-    return ( 
-        <>
-            <section className="md:py-24 py-16">
-                <h2 className="section-title">Testimonials</h2>
-                <div className="w-full md:my-12 my-6">
-                <Splide
-                    options={homeCarousel}
-                >
-                    {testimonials.map((item) => (
-                        <SplideSlide>
-                            <div className=" flex justify-center items-center relative w-full">
-                                <div className="flex flex-col md:grid sm:grid-cols-2 md:gap-0 gap-4 items-center justify-center md:w-2/3">
-                                    <img src={item.image} className="rounded-full md:h-64 md:w-64 h-48 w-48" />
-                                    <div className="md:text-left text-center space-y-1">
-                                        <p className="testimonial-card-content">
-                                            <span className="md:text-3xl text-2xl">"</span>
-                                            {item.content}
-                                            <span className="md:text-3xl text-2xl">"</span>
-                                        </p>
-                                        <h3 className="testimonial-card-name">{item.name}</h3>
-                                        <h2 className="testimonial-card-post">{item.post}</h2>
-                                    </div>
-                                </div>
-                            </div> 
-                        </SplideSlide>
-                    ))}    
-                </Splide>                    
+function Testimonials() {
+  return (
+    <div className="bg-gray-100 py-12 md:mb-32 mb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-extrabold text-center text-cyan-800">What Our Clients Say</h2>
+        <div className="mt-8">
+          <Splide
+            options={homeCarousel}
+          >
+            {testimonials.map((testimonial, index) => (
+              <SplideSlide key={index}>
+                <div className="text-center px-4 py-6 bg-white shadow-md rounded-lg">
+                  <p className="text-xl text-gray-800 mb-4">"{testimonial.testimonial}"</p>
+                  <h3 className="text-lg font-bold text-gray-900">{testimonial.name}</h3>
+                  <p className="text-gray-600">{testimonial.position}</p>
                 </div>
-            </section>
-        </>
-     );
+              </SplideSlide>
+            ))}
+          </Splide>
+        </div>
+      </div>
+    </div>
+  );
 }
- 
+
 export default Testimonials;

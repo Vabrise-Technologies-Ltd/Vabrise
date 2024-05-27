@@ -13,7 +13,7 @@ const FetchProvider = ({ children }) => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch("https://api.vabrisetech.com/api/products/");
+                const response = await fetch("http://localhost/api/products/");
                 if (!response.ok) {
                     throw new Error("Failed to fetch products");
                 }
@@ -28,7 +28,7 @@ const FetchProvider = ({ children }) => {
 
         const fetchBlogs = async () => {
             try {
-                const response = await fetch("https://api.vabrisetech.com/api/articles/");
+                const response = await fetch("http://localhost/api/articles/");
                 if (!response.ok) {
                     throw new Error("Failed to fetch blogs");
                 }

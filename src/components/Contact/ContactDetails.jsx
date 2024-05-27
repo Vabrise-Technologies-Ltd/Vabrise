@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 const ContactDetails = () => {
     const contactInfo = [
         {icon: <FaUserAlt />, details: 'Vabrise Technologies'},
-        {icon: <FaPhone />, details: '+2547 9987 4578'},
+        {icon: <FaPhone />, details: '+2547 1857 7070'},
         {icon: <MdLocationOn />, details: 'Nairobi, Kenya'},
-        {icon: <HiOutlineMail />, details: 'info@vabrisetech.co.ke'},
+        {icon: <HiOutlineMail />, details: 'info@vabrise.com'},
     ]
     return ( 
         <>

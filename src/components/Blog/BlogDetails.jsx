@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { BounceLoader } from "react-spinners";
 import { FetchContext } from "../Contexts/FetchContext";
+import DefaultSpinner from "../Utils/Spinner";
 
 const BlogDetails = () => {
     const {blogs, errorBlogs, loadingBlogs} = useContext(FetchContext)
@@ -13,12 +13,7 @@ const BlogDetails = () => {
     if (!blogs || loadingBlogs) {
         return (
             <div className="flex justify-center items-center md:my-32 my-12 ">
-                <BounceLoader
-                    color="#06b6d4"
-                    height={60}
-                    radius={100}
-                    width={4}
-                />
+                <DefaultSpinner />
             </div>
         );
     }
