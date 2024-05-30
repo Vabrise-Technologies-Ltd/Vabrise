@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import BlogDetails from './components/Blog/BlogDetails'
 import Footer from './components/Utils/Footer'
-import Navbar from './components/Utils/Navbar'
+import Navbar from './components/Utils/Navbar/Navbar'
 import About from './pages/About'
 import Blog from './pages/Blog'
 import Contact from './pages/Contact'
@@ -19,7 +19,7 @@ import CallToAction from './components/Utils/CallToAction'
 function App() {
   const { products, errorProducts } = useContext(FetchContext);
   console.log(products)
-
+  
   return (
     <div className="App">
       <BrowserRouter>

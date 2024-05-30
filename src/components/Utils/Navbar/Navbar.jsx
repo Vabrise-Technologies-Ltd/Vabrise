@@ -1,11 +1,10 @@
 import { useState, useEffect, useRef, useContext } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png"
+import logo from "../../../assets/logo.png"
 import { LuShoppingCart } from "react-icons/lu";
-import { FaRegUser } from "react-icons/fa6";
-import { CartContext } from "../Contexts/CartContext";
-import { SidebarContext } from "../Contexts/SidebarContext";
+import { CartContext } from "../../Contexts/CartContext";
+import { SidebarContext } from "../../Contexts/SidebarContext";
 import { MenuCustomList } from "./NavbarDropdown";
 
 const Navbar = () => {

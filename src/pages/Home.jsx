@@ -17,8 +17,8 @@ const Home = () => {
                     <Splide
                         options={serviceCarousel}
                     >
-                        {solutions.map((solution) => (
-                            <SplideSlide>
+                        {solutions.map((solution, index) => (
+                            <SplideSlide key={index}>
                                 <div className="flex lg:gap-6  gap-4 md:py-16 py-8">
                                     <div className="mx-8">
                                     <Link to={`/solutions/${solution.id}`} className="service-card text-left h-64">

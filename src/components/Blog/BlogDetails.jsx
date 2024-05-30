@@ -12,8 +12,9 @@ const BlogDetails = () => {
 
     if (!blogs || loadingBlogs) {
         return (
-            <div className="flex justify-center items-center md:my-32 my-12 ">
+            <div className="flex flex-col justify-center items-center md:my-32 my-12 text-cyan-500 gap-4 ">
                 <DefaultSpinner />
+                <p>Loading blog details...</p>
             </div>
         );
     }

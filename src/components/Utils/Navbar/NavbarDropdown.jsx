@@ -5,7 +5,6 @@ import {
   MenuHandler,
   MenuItem,
   MenuList,
-  Typography,
 } from "@material-tailwind/react";
 const menuItems = [
   {
@@ -48,10 +47,10 @@ export function MenuCustomList() {
         <p>Solutions</p>
       </MenuHandler>
       <MenuList>
-        {menuItems.map(({title, link}) => (
-                <MenuItem>
-                    <Link to={link}>{title}</Link>
-                </MenuItem>
+        {menuItems.map(({title, link}, index) => (
+          <MenuItem key={index}>
+              <Link to={link}>{title}</Link>
+          </MenuItem>
         ))}
       </MenuList>
     </Menu>
