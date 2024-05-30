@@ -11,7 +11,7 @@
 
 @layer components {
   .btns { 
-    @apply px-4 py-2 bg-cyan-300 border-none text-gray-700 duration-500 rounded-md capitalize font-semibold 
+    @apply px-4 py-2 bg-cyan-300 border-none text-gray-100 duration-500 rounded-md capitalize font-semibold 
   }
 
   .section-title {
@@ -44,7 +44,7 @@
 
 
   .card-container {
-    @apply md:m-24 m-4 md:gap-16 gap-8 grid md:grid-cols-3
+    @apply md:m-24 my-12 m-4 lg:gap-16 md:gap-12 gap-8 grid lg:grid-cols-3 md:grid-cols-2
   }
 
   .card {
@@ -52,11 +52,11 @@
   }
 
   .card-content {
-      @apply md:px-4  px-3 py-6
+      @apply md:px-4 px-3 py-6
   }
 
   .card-title {
-      @apply font-semibold text-cyan-700 mt-3 
+      @apply font-semibold text-cyan-700  
   }
 
   .card-subtitle {
