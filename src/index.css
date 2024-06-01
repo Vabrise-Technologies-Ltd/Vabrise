@@ -15,7 +15,7 @@
   }
 
   .section-title {
-    @apply md:text-4xl text-2xl mt-2 font-semibold text-gray-600 text-center mb-2
+    @apply md:text-4xl text-2xl mt-2 font-semibold text-gray-800 text-center mb-2
   }
 
   .team-img {
@@ -42,6 +42,9 @@
     @apply font-medium md:text-xl text-cyan-800 italic
   }
 
+  .container {
+    @apply md:py-16 py-8 md:mb-24 mb-16 flex flex-col items-center
+  }
 
   .card-container {
     @apply md:m-24 my-12 m-4 lg:gap-16 md:gap-12 gap-8 grid lg:grid-cols-3 md:grid-cols-2
@@ -67,6 +70,39 @@
       @apply text-gray-600
   }
 
+}
+
+
+.bar-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+
+/* baricon */
+.bar-icon span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.bar-icon.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.bar-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.bar-icon.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 

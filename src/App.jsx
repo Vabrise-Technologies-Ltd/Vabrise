@@ -5,7 +5,7 @@ import AppRoutes from './routes/AppRoutes';
 
 // import BlogDetails from './components/Blog/BlogDetails'
 import Footer from './components/Footer'
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/navbar/Navbar'
 import { ScrollToTop } from './components/ScrollToTop'
 import CallToAction from './components/CallToAction'
 

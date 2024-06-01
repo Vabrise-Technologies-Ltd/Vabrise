@@ -18,7 +18,7 @@ const AboutUs = () => {
                             <div className="mb-4 lg:text-5xl md:text-4xl text-2xl font-bold text-gray-800 md:space-y-3 space-y-1 tracking-wide ">
                                 <p>Providing nextgen</p> 
                                 <p>
-                                    <span className="underline underline-offset-4 cursor-pointer text-yellow-400 md:mx-2 mx-1">tech</span>
+                                    <span className="underline underline-offset-4 cursor-pointer text-cyan-500 md:mx-2 mx-1">tech</span>
                                     solutions
                                 </p>            
                             </div>

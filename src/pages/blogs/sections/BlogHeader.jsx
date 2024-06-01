@@ -27,7 +27,7 @@ export default function BlogHeader() {
                         className="h-full w-full object-cover "
                     />
                     <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
-                        <div className="w-3/4 pl-12  md:w-3/4 md:pl-20 md:pb-6 lg:pl-32 lg:pb-8 pb-4 py-4">
+                        <div className="w-11/12 pl-4  md:w-3/4 md:pl-20 md:pb-6 lg:pl-32 lg:pb-8 pb-4 py-4">
                             <Typography 
                                 variant="h5"
                                 className="text-cyan-600 text-base md:text-xl lg:text-2xl md:mb-6 mb-2 "

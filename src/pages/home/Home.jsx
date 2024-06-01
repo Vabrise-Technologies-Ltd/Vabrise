@@ -5,6 +5,7 @@ import OurWork from "./sections/OurWork";
 import { serviceCarousel } from "../../utils/Carousel"
 import { Link } from "react-router-dom";
 import { solutions } from "../solutions/data";
+import OurPartners from "./sections/OurPartners";
 
 const Home = () => {
     return ( 
@@ -36,6 +37,7 @@ const Home = () => {
                 </section>
                 <OurWork />
             </div>
+            <OurPartners />
         </>
      );
 }

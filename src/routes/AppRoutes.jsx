@@ -8,8 +8,8 @@ import Blog from '../pages/blogs/Blog';
 import Contact from '../pages/contact/Contact';
 import BlogDetails from '../pages/blogs/sections/BlogDetails';
 import SolutionsDetails from '../pages/solutions/sections/SolutionsDetails';
-import ErrorPage from '../components/ErrorPage';
 import { solutions } from '../pages/solutions/data';
+import Error404 from '../pages/errorPages/Error404';
 
 const AppRoutes = () => {
   return (
@@ -21,7 +21,7 @@ const AppRoutes = () => {
       <Route path='/articles' element={<Blog />} />
       <Route path='/articles/:slug' element={<BlogDetails />} />
       <Route path='/contact' element={<Contact />} />
-      <Route path='*' element={<ErrorPage />} />
+      <Route path='*' element={<Error404 />} />
     </Routes>
   );
 };

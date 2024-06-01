@@ -43,12 +43,12 @@ export function MenuCustomList() {
         unmount: { y: 25 },
       }}
     >
-      <MenuHandler>
+      <MenuHandler className="hover:cursor-pointer md:hover:text-cyan-600">
         <p>Solutions</p>
       </MenuHandler>
       <MenuList>
         {menuItems.map(({title, link}, index) => (
-          <MenuItem key={index}>
+          <MenuItem key={index} >
               <Link to={link}>{title}</Link>
           </MenuItem>
         ))}

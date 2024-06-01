@@ -2,11 +2,8 @@ import { useParams } from "react-router-dom"
 
 const SolutionsDetails = ({solutions}) => {
     const { slug } = useParams()
-    console.log(slug)
-    console.log(solutions)
 
     const solution = solutions.find((item) => item.slug == slug) || {}
-    console.log(solution)
      // Check if solutions is defined and has the articles property
     if (!solutions && loading) {
         return <p>Loading blog details...</p>;

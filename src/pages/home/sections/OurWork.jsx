@@ -12,7 +12,7 @@ const OurWork = () => {
     ]
     return ( 
         <>
-            <div className="md:py-16 py-8 md:mb-24 mb-16 flex flex-col items-center">
+            <div className="container">
                 <h1 className="section-title">Our Work</h1>
                 <div className="grid sm:grid-cols-2 md:grid-cols-4 grid-cols-1 items-center gap-8 md:mt-8 mt-4 md:mb-16 mb-8">
                     {projects.map((project) => (

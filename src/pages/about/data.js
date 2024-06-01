@@ -1,6 +1,7 @@
+import chair from "../../assets/team/chair.jpg"
 import ceo from "../../assets/team/ceo.jpg"
 import cto from "../../assets/team/cto.jpg"
-import chair from "../../assets/team/chair.jpg"
+import pm from "../../assets/team/alex.jpg"
 import avatar1 from "../../assets/testimonials/thompson.jpg"
 import avatar2 from "../../assets/testimonials/sharon.jpg"
 import avatar3 from "../../assets/testimonials/jilo.jpg"
@@ -46,8 +47,8 @@ const teamData = [
         link2: "https://github.com/softy-254"
     },
     {
-        image: ceo, 
-        name: "Khalid Juma", 
+        image: pm, 
+        name: "Alex Morwabe", 
         title: "Project Manager", 
         link1: "https://github.com/softy-254", 
         link2: "https://github.com/softy-254"
