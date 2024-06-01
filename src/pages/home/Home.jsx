@@ -37,7 +37,7 @@ const Home = () => {
                 </section>
                 <OurWork />
             </div>
-            <OurPartners />
+            {/* <OurPartners /> */}
         </>
      );
 }

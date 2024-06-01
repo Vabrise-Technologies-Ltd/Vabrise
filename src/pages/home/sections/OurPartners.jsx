@@ -14,15 +14,14 @@ function OurPartners() {
           speed={50} 
           delay={0}
           gradient={true}
-          gradientWidth={200}
+          gradientWidth={100}
           gradientColor='white '
           pauseOnHover={true}
           autoFill={false}
-          direction='right'
         >
-          {partners.map((item, index) => ( // Duplicate the array to create the loop effect
-            <div key={index} className='flex-shrink-0 mx-16'> {/* mx-4 for consistent gap */}
-              <img className='w-24 h-24' src={item.image} alt={item.name} />
+          {partners.map((item, index) => ( 
+            <div key={index} className='flex-shrink-0'> 
+              <img className='w-20 h-20' src={item.image} alt={item.name} />
             </div>
           ))}
         </Marquee>
