@@ -13,7 +13,9 @@ const About = () => {
                 <History />
                 <CompanyFocus />
                 <OurTeam />
-                <Testimonials />
+            </div>
+            <Testimonials />
+            <div className="md:px-28 px-4 md:py-16 py-8">
                 <FAQ />
             </div>
         </>

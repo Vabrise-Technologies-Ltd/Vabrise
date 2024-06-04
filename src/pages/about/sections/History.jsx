@@ -3,7 +3,7 @@ const History = () => {
         <>
             <div className="text-center md:mb-16 mb-8">
                 <h3 className="section-title md:mb-8 mb-4">Our History</h3>
-                <div className="tracking-wide md:text-base text-sm font-light text-gray-600 space-y-4"> 
+                <div className="tracking-wide lg:text-lg text-gray-800"> 
                     <p>
                         Vabrise Technologies Limited was Incorporated under the Companies Act,
                         2015 as a Private Limited company on the 28th Day of January, 2023. We are
@@ -14,7 +14,7 @@ const History = () => {
                         consultancy, Information Technology and Cyber Security firm, founded the
                         company.
                     </p>
-                    <p className="md:flex hidden">
+                    <p className="md:flex hidden mt-4">
                         Vabrise Technologies Limited is a strategic Information Technology
                         powerhouse, serving the Technological needs of individuals, institutions and
                         businesses through provision of innovative and reliable Information

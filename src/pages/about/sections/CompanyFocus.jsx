@@ -13,7 +13,7 @@ const CompanyFocus = () => {
                             <h2 className="font-semibold text-cyan-600 uppercase md:text-3xl text-2xl md:mb-4 mb-2">
                                 {item.name}
                             </h2>
-                            <p className="text-gray-600 md:tracking-wide text-light">
+                            <p className="text-gray-800 md:tracking-wide text-light">
                                 {item.details}
                             </p>
                         </Fade>

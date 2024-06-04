@@ -1,7 +1,7 @@
 const AboutHero = () => {
     return ( 
         <>
-            <div className="hero bg-cover" style={{backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)'}}>
+            <div className="hero bg-cover" style={{backgroundImage: 'url(https://t3.ftcdn.net/jpg/01/64/56/20/360_F_164562000_AuB4fwJAm5KWP9KxpYvXqH86gVDpnRho.jpg)'}}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content md:py-16 py-8">
                     <div className="max-w-md">

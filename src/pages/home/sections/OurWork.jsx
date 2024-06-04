@@ -1,35 +1,68 @@
-import kccson from "../../../assets/home/KCCSON.png"
-import chris from "../../../assets/home/chris-portfolio.png"
-import ola from "../../../assets/home/OLA.png"
-import ccabo from "../../../assets/home/ccabo.png"
+import { Link } from "react-router-dom";
+import { projects } from "../data";
+import { Typography } from "@material-tailwind/react";
 
 const OurWork = () => {
-    const projects = [
-        {id: 1, title: "Kakamega CSO Network", image: kccson, link: "https://www.kakamegacsonetwork.org"},
-        {id: 2, title: "Open Learn Africa", image: ola, link: "https://learn.vabrisetech.co.ke/"},
-        {id: 3, title: "CCABO KENYA", image: ccabo, link: "https://ccabokenya.or.ke/"},
-        {id: 4, title: "Chris Khayere", image: chris, link: "https://chris.vabrisetech.co.ke/"},
-    ]
+  function getFirstWords(text, wordLimit) {
+    const words = text.split(' ');
+    if (words.length <= wordLimit) return text;
+    return words.slice(0, wordLimit).join(' ') + '...';  // Adding ellipsis to indicate truncation
+  }
+    
     return ( 
-        <>
-            <div className="container">
+          <>
+              <div className="container">
+                <div className="md:mb-16 mb-8">
                 <h1 className="section-title">Our Work</h1>
-                <div className="grid sm:grid-cols-2 md:grid-cols-4 grid-cols-1 items-center gap-8 md:mt-8 mt-4 md:mb-16 mb-8">
-                    {projects.map((project) => (
-                        <div key={project.id} className='shadow-xl hover:shadow-2xl py-3 px-2 rounded-lg flex flex-col items-center'>
-                            <img 
-                                src={project.image} 
-                                alt="project-image"
-                                className="w-full h-full rounded-lg mb-4"
-                            />
-                            <a target="_blank" className="text-sm px-4 py-1 bg-gradient-to-r from-cyan-500 to-cyan-700 border-none text-white duration-500 rounded-md" href={project.link}>
-                                {project.title}
-                            </a>
-                        </div>
-                    ))}
+                  <Typography
+                    className="text-center md:text-xl mx-auto w-full text-gray-700 max-w-4xl"
+                  >
+                    Since inception, we have been steadfast in churning out revolutionary software products to counter the challenges faced by businesses in their operations
+                  </Typography>
                 </div>
+
+                <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">
+                {projects.map((project, index) => (
+                  <Link
+                    href={`${project.link}`}
+                    key={index}
+                    className="project flex relative text-white hover:scale-105"
+                  >
+                    <img
+                      src={project.cover_image}
+                      alt={project.title}
+                      className="w-full h-56 object-cover object-center"
+                    />
+                    <div className="project-details absolute p-4 flex flex-col w-full h-56 md:bg-gray-900/75 bg-transparent transition duration-500 ease-in-out opacity-0 hover:opacity-100">
+                      <h1 className="font-bold text-xl mb-3 ">{project.title}</h1>
+                      <p className="text-gray-200 text-sm ">
+                        {getFirstWords(project.description, 24)}...
+                      </p>
+                      <div className="justify-between items-center mt-4 flex">
+                        <Link
+                          href={`${project.link}`}
+                          className="text-sm btns text-white"
+                        >
+                          View Project
+                        </Link>
+                      </div>
+                    </div>
+
+                    <div className="p-4 absolute  md:hidden flex flex-col justify-center h-56 bg-black/60">
+                      <h1 className="font-bold text-xl mb-3">{project.title}</h1>
+                      <Link
+                        href={`${project.link}`}
+                        className="hover:underline text-sm bg-black text-white px-4 py-2"
+                      >
+                        View Project
+                      </Link>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+                
                 <a  
-                    className="btns"
+                    className="btns mt-8"
                     target="_blank"
                     href="https://github.com/orgs/Vabrise-Technologies-Ltd"
                     >
@@ -41,3 +74,4 @@ const OurWork = () => {
 }
  
 export default OurWork;
+

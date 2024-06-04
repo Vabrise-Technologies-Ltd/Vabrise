@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "react-router-dom";
 import logo from "../../assets/utils/logo.png"
-import { MenuCustomList } from "./NavbarDropdown";
+import MenuCustomList from "./MenuCustomList";
 import BarIcon from "./BarIcon";
 
 const Navbar = () => {
@@ -53,7 +52,7 @@ const Navbar = () => {
                     </div>
                     
                     <div className='md:flex items-center hidden text-gray-900'>
-                        <MenuCustomList />
+                        <MenuCustomList toggleNavbar={toggleNavbar} closeNavbar={closeNavbar} />
                         <ul className="md:flex items-center ">
                             {menus.map((item, index) => (
                                 <div key={index}>
@@ -80,17 +79,17 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-16 right-0 bottom-0 py-4 w-[80%] h-screen duration-300 ease-in-out bg-white`}>
+                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-16 right-0 bottom-0 py-4 w-full h-screen duration-500 ease-in-out bg-white`}>
                     <ul className="flex flex-col justify-center top-16 text-base text-gray-800 font-medium">
                         <hr />
-                            <li className="p-4 hover:bg-cyan-500 hover:text-white"><MenuCustomList /></li>
+                            <li className="p-4 hover:text-white"><MenuCustomList /></li>
                         <hr />
                         {menus.map((item, index) => (
                             <div key={index}>
                                 <Link to={item.route}>
                                     <li 
                                         onClick={() => {toggleNavbar(); closeNavbar();}} 
-                                        className="p-4 border-b hover:bg-cyan-500 hover:text-white hover:cursor-pointer"
+                                        className="p-4 border-b hover:text-white hover:cursor-pointer"
                                     >
                                         {item.name}                                
                                     </li>
@@ -114,3 +113,5 @@ const Navbar = () => {
 }
  
 export default Navbar;
+
+

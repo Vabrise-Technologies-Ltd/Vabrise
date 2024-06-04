@@ -10,7 +10,7 @@ import { teamData } from "../../data";
         <div className="mb-16 text-center lg:mb-28">
           <Typography
             variant="h6"
-            color="blue-gray"
+            color="cyan"
             className="text-lg"
           >
             Meet the Team
@@ -23,8 +23,7 @@ import { teamData } from "../../data";
             Behind the Success: Our Dedicated Team
           </Typography>
           <Typography
-            variant="lead"
-            className="mx-auto w-full !text-gray-500 max-w-4xl"
+            className="md:text-xl mx-auto w-full text-gray-500 max-w-4xl"
           >
             From visionary leadership to creative talent, and technical wizards, 
             each team member plays a pivotal role in delivering the exceptional 

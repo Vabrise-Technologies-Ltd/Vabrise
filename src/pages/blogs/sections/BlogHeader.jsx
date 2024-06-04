@@ -14,6 +14,7 @@ export default function BlogHeader() {
 
     return (
         <Carousel
+            navigation={false}
             autoplay={true}    
             loop={true}
             autoplayDelay={ 5000}

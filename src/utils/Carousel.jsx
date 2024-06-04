@@ -4,11 +4,12 @@ const homeCarousel = {
     perMove: 1,
     autoplay: true,
     interval: 5000,
-    pauseOnHover: false,
+    pauseOnHover: true,
     pauseOnFocus: false,
     arrows: true,
     pagination: false,
-    drag: true,
+    drag: false,
+    
   }
 
   const serviceCarousel = {

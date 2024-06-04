@@ -21,22 +21,12 @@ const LINKS = [
 const currentYear = new Date().getFullYear();
  
 const Footer = () => {
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function() {
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/664b4012981b6c56477286b7/1huav4jup';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-
-    // const scrollToTop = () => {
-    //     window.scrollTo({
-    //     top: 0,
-    //     behavior: 'smooth',
-    // });
-    // };
+    const scrollToTop = () => {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+    };
 
   return (
     <footer className="relative w-full p-8 bottom-0 bg-gray-200">
@@ -45,7 +35,12 @@ const Footer = () => {
             <div>
                 <img src={logo} alt="Vabrise Technologies" className="md:w-36 w-32 "/>
                 <Typography className="mb-6 pt-4" color="gray">
-                    Experts in reliable tech solutions since 2020
+                    Vabrise specializes in technological and IT-related 
+                    services such as product engineering, 
+                    systems integration, web design & development, 
+                    mobile applications, APIs, etc. We put a strong 
+                    focus on the needs of your business to figure out 
+                    solutions that best fits your demand and nail it.
                 </Typography>
           </div>
           <div className="grid grid-cols-3 justify-between gap-4">
@@ -100,12 +95,12 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* <button
+      <button
         onClick={scrollToTop}
-        className="fixed bottom-4 left-4 md:p-3 p-2 bg-cyan-500 text-white rounded-md shadow-md focus:outline-none"
+        className="fixed bottom-8 right-8 md:p-3 p-2 bg-cyan-500 text-white rounded-full shadow-md focus:outline-none"
         >
             <FaChevronUp className="md:text-base text-sm" />
-        </button> */}
+        </button>
     </footer>
   );
 }
