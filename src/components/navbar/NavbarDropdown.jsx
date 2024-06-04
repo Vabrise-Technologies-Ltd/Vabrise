@@ -35,9 +35,8 @@ const menuItems = [
 ];
  
 export function MenuCustomList() {
-    
-    return (
-        <Menu
+  return (
+    <Menu
       animate={{
         mount: { y: 0 },
         unmount: { y: 25 },
@@ -47,12 +46,12 @@ export function MenuCustomList() {
         <p>Solutions</p>
       </MenuHandler>
       <MenuList>
-        {menuItems.map(({title, link}, index) => (
-          <MenuItem key={index} >
-              <Link to={link}>{title}</Link>
+        {menuItems.map(({ title, link }, index) => (
+          <MenuItem key={index}>
+            <Link to={link}>{title}</Link>
           </MenuItem>
         ))}
       </MenuList>
     </Menu>
-    );
+  );
 }

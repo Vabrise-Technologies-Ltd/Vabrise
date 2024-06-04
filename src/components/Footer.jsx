@@ -31,12 +31,12 @@ const Footer = () => {
       s0.parentNode.insertBefore(s1, s0);
     })();
 
-    const scrollToTop = () => {
-        window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-    });
-    };
+    // const scrollToTop = () => {
+    //     window.scrollTo({
+    //     top: 0,
+    //     behavior: 'smooth',
+    // });
+    // };
 
   return (
     <footer className="relative w-full p-8 bottom-0 bg-gray-200">
@@ -100,12 +100,12 @@ const Footer = () => {
         </div>
       </div>
 
-      <button
+      {/* <button
         onClick={scrollToTop}
         className="fixed bottom-4 left-4 md:p-3 p-2 bg-cyan-500 text-white rounded-md shadow-md focus:outline-none"
         >
             <FaChevronUp className="md:text-base text-sm" />
-        </button>
+        </button> */}
     </footer>
   );
 }

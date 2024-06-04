@@ -5,7 +5,7 @@ import { FetchContext } from "../../../context/FetchContext";
 import DefaultSpinner from "../../../components/Spinner";
 
 const BlogDetails = () => {
-    const {blogs, errorBlogs, loadingBlogs} = useContext(FetchContext)
+    const {blogs, loadingBlogs} = useContext(FetchContext)
     const { slug } = useParams()
 
     const blog = blogs.find((item) => item.slug == slug) || {}

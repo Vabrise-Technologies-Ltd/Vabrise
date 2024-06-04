@@ -12,13 +12,11 @@ function getFirstWords(text, wordLimit) {
 }
 
 const BlogList = () => {
-    const { blogs, errorBlogs, loadingBlogs } = useContext(FetchContext);
-    console.log(blogs);
+    const { blogs, loadingBlogs } = useContext(FetchContext);
 
     return (
         <>
             <div>
-                <p className="text-red-500">{errorBlogs}</p>
                 {!blogs || loadingBlogs ? (
                     <div className="flex flex-col justify-center items-center md:my-32 my-12 text-cyan-500 gap-4">
                         <DefaultSpinner />

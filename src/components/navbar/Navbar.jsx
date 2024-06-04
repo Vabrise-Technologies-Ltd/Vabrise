@@ -53,23 +53,13 @@ const Navbar = () => {
                     </div>
                     
                     <div className='md:flex items-center hidden text-gray-900'>
-                        <li className='md:mx-3 md:my-0 my-4 list-none'>
-                            <a 
-                                href="https://shop.vabrisetech.com" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className="hover:text-cyan-600"
-                            >
-                                Shop
-                            </a>
-                        </li>
-                            <MenuCustomList />
+                        <MenuCustomList />
                         <ul className="md:flex items-center ">
                             {menus.map((item, index) => (
                                 <div key={index}>
                                     <li 
                                         onClick={() => setActiveIndex(index)}
-                                        className={`${activeIndex === index ? `btns py-1 px-2` : `text-gray-900`} md:px-3 `}
+                                        className={`${activeIndex === index ? `text-cyan-600 font-semibold py-1 px-2` : `text-gray-900`} md:px-3 hover:text-cyan-600`}
                                     >
                                         <Link to={item.route}>
                                             {item.name}
@@ -77,6 +67,15 @@ const Navbar = () => {
                                     </li>
                                 </div>
                             ))}
+                            <li className="btns py-1 px-3" >
+                                <a 
+                                    href="https://shop.vabrisetech.com" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                >
+                                    Shop
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -98,6 +97,15 @@ const Navbar = () => {
                                 </Link>
                             </div>
                         ))}
+                        <li className="p-4 border-b bg-cyan-500 text-white hover:cursor-pointer">
+                            <a 
+                                href="https://shop.vabrisetech.com" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                            >
+                                Shop
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>

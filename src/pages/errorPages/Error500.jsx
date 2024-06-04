@@ -1,5 +1,6 @@
 import React from "react";
-import { bgError500, error500svg } from "../../../assets/images/errorPages";
+import bgError500  from "../../assets/errorPages/bg-error-500.png";
+import error500svg  from "../../assets/errorPages/server-500.svg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Error500() {

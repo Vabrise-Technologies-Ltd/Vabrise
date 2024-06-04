@@ -10,8 +10,7 @@ function getFirstWords(text, wordLimit) {
 }
 
 export default function BlogHeader() {
-    const { blogs, errorBlogs, loadingBlogs } = useContext(FetchContext);
-    console.log(blogs);
+    const { blogs} = useContext(FetchContext);
 
     return (
         <Carousel
