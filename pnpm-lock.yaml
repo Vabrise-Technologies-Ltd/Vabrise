@@ -637,8 +637,8 @@ packages:
       react: ^16 || ^17 || ^18
       react-dom: ^16 || ^17 || ^18
 
-  '@million/install@0.0.15':
-    resolution: {integrity: sha512-IFJ9AqouwVR7GZuiAJM7G5F1ha02WPMIDJvag4UBYHBxWSsaFbWbKNtfVYnXclDDrgHW9L6Hc7re9hE/C0FtXQ==}
+  '@million/install@0.0.16':
+    resolution: {integrity: sha512-v281XJsOjhBBuF0X2ajmYxevgQET2r2BVSuj1BJa/RToP6lvA5zSnXe1ZNyR2ifDL9uujkUltGu55p6VRSz4/Q==}
     hasBin: true
 
   '@million/lint@1.0.0-rc.18':
@@ -2173,7 +2173,7 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       tailwind-merge: 1.8.1
 
-  '@million/install@0.0.15':
+  '@million/install@0.0.16':
     dependencies:
       '@antfu/ni': 0.21.12
       '@axiomhq/js': 1.0.0-rc.3
@@ -2193,7 +2193,7 @@ snapshots:
       '@babel/core': 7.24.6
       '@babel/types': 7.24.6
       '@hono/node-server': 1.11.2
-      '@million/install': 0.0.15
+      '@million/install': 0.0.16
       '@rollup/pluginutils': 5.1.0(rollup@3.29.4)
       babel-plugin-syntax-hermes-parser: 0.21.1
       esbuild: 0.20.2

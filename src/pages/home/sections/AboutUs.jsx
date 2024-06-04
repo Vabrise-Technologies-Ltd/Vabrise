@@ -15,21 +15,21 @@ const AboutUs = () => {
                     </div>
                     <div>
                         <Slide right>
-                            <div className="mb-4 lg:text-5xl md:text-4xl text-2xl font-bold text-gray-800 md:space-y-3 space-y-1 tracking-wide ">
-                                <p>Providing nextgen</p> 
+                            <div className="mb-4 lg:text-5xl md:text-4xl text-3xl font-bold text-gray-800 md:space-y-3 space-y-1 tracking-wide ">
+                                <p>Enterprise tech</p> 
                                 <p>
-                                    <span className="underline underline-offset-4 cursor-pointer text-cyan-500 md:mx-2 mx-1">tech</span>
-                                    solutions
+                                    <span className="underline underline-offset-4 cursor-pointer text-cyan-500 md:mx-2 mx-1">solutions</span>
+                                    provider
                                 </p>            
                             </div>
-                            <p className="md:text-base text-sm">
+                            <div className="md:text-lg text-base text-gray-800">
                                 Vabrise Technologies is a startup ICT Consultancy Firm 
                                 in Nairobi - Kenya, started in 2020. We do, we provide services in Computer Sales & Repair, 
                                 Software Design & Development, CCTV & Networks Installation & 
                                 Maintainance, Graphics Design. We also provide ICT-Based Training 
                                 in Web Development, UI/ UX Design, Graphics Design, CCTV & Network 
                                 Installation, and Cyber Security.
-                            </p>
+                            </div>
                         </Slide>
                         <div className="mt-4 ">
                             <Link to='/about' className="btns">

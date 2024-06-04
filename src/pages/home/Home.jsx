@@ -1,4 +1,3 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import AboutUs from "./sections/AboutUs";
 import Hero from "./sections/Hero";
 import OurWork from "./sections/OurWork";
