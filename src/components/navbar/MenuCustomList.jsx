@@ -30,7 +30,7 @@ export default function MenuCustomList() {
         onClick={toggleDropdown}
         className="flex items-center m-1 text-gray-900 hover:cursor-pointer hover:text-cyan-600"
       >
-        Solutions 
+        Services 
         {isOpen ? <IoChevronUp className="ml-1"/> : <IoChevronDown className="ml-1"/>}
       </button>
       {isOpen && (
