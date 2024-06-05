@@ -9,21 +9,28 @@ const Hero = () => {
     }
     return ( 
         <>
-            <div className="hero min-h-screen" style={{backgroundImage: `url(${heroImg})`}}>
+            <div className="hero min-h-screen "
+                style={{ 
+                    backgroundImage: `url(${heroImg})`,
+                    backgroundAttachment: 'fixed',
+                    objectPosition: 'cover'
+              }} 
+                >
                 <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content md:text-right text-neutral-content">
-                    <div className="md:max-w-lg">
-                        <h1 className="mb-5 md:text-5xl text-4xl font-bold">We Build Ideas Driven by the Future</h1>
-                        <p className="mb-5">Manage your bussiness without having to worry about the the software solutions you are using. Less hustle more growth.</p>
-                        <p className="text-cyan-500 md:text-4xl text-xl">
+                <div className="hero-content md:text-left text-neutral-content md:px-auto px-3">
+                    <div className="lg:max-w-2xl md:max-w-xl">
+                        <h1 className="md:my-8 my-4 lg:text-7xl md:text-5xl text-4xl font-bold">We Build Ideas Driven by the Future</h1>
+                        <p className="md:mb-8 mb-4 md:text-lg">Manage your bussiness without having to worry about the the software solutions you are using. Less hustle more growth.</p>
+                        <p className="text-yellow-500 md:text-4xl text-xl font-light">
                                 <Typewriter
                                     words={[
-                                        'Software Development', 
+                                        'Web Design', 
+                                        'Mobile App Development',
+                                        'Software As A Service (SAAS)',
                                         'Graphics Design', 
-                                        'AI & Automation',
-                                        'IOT Systems',
-                                        'Cloud Solutions',
-                                        'Cyber Security'
+                                        'Cloud Computing',
+                                        'Cyber Security',
+                                        'IT Consulting & Maintenance'
                                     ]}
                                     loop={Infinity}
                                     cursor
@@ -33,7 +40,7 @@ const Hero = () => {
                                     delaySpeed={2000}
                                 />
                             </p>
-                        <button onClick={handleQuoteLink} className="btns mt-8">
+                        <button onClick={handleQuoteLink} className="btns mt-8 text-black">
                             Get Quote
                         </button>
                     </div>

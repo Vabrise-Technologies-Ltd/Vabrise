@@ -11,7 +11,7 @@ function OurPartners() {
       <div>
       <Marquee
           play={true}
-          speed={50} 
+          speed={30} 
           delay={0}
           gradient={true}
           gradientWidth={100}
@@ -20,8 +20,8 @@ function OurPartners() {
           autoFill={false}
         >
           {partners.map((item, index) => ( 
-            <div key={index} className='flex-shrink-0'> 
-              <img className='w-20 h-20' src={item.image} alt={item.name} />
+            <div key={index} className='flex-shrink-0 md:mx-8 mx-2'> 
+              <img className='md:w-36 h-28 md:h-36 w-28' src={item.cover_image} alt={item.name} />
             </div>
           ))}
         </Marquee>

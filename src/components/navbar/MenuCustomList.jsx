@@ -35,12 +35,12 @@ export default function MenuCustomList() {
       </button>
       {isOpen && (
         <ul
-          className="absolute py-2 px-4 shadow menu dropdown-content z-[1] sm:bg-base-100 bg-cyan-100 rounded-md md:w-72 w-64"
+          className="absolute py-2 px-3 shadow menu dropdown-content z-[1] sm:bg-base-100 bg-cyan-100 rounded-md md:w-72 w-72"
         >
           {menuItems.map((item, index) => (
             <Link to={item.link} key={index} onClick={closeDropdown}>
               <li className="text-gray-900">
-                <a className="text-gray-900 no-underline hover:text-gray-900">{item.title}</a>
+                <a className="text-gray-900 no-underline hover:text-gray-900">{item.title}</a>      
               </li>
             </Link>
           ))}

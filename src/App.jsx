@@ -1,13 +1,12 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { useContext, useState, useEffect, Suspense } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { lazy, useState, useEffect, Suspense } from 'react';
 import './App.css';
-import AppRoutes from './routes/AppRoutes';
-import Footer from './components/Footer';
-import Navbar from './components/navbar/Navbar';
-import { ScrollToTop } from './components/ScrollToTop';
-import CallToAction from './components/CallToAction';
-import DefaultSpinner from './components/Spinner';
-import AppSpinner from './components/AppSpinner';
+const AppRoutes = lazy(() => import('./routes/AppRoutes')); 
+const Footer = lazy(() => import('./components/Footer')); 
+const Navbar = lazy(() => import('./components/navbar/Navbar')); 
+const ScrollToTop = lazy(() => import('./components/ScrollToTop')); 
+const CallToAction = lazy(() => import('./components/CallToAction')); 
+const AppSpinner = lazy(() => import('./components/AppSpinner')); 
 
 function App() {
   const [loading, setLoading] = useState(true);

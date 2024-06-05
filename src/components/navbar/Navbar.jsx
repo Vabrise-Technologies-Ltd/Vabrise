@@ -37,7 +37,7 @@ const Navbar = () => {
 
     return ( 
         <>
-            <nav ref={navbarRef} className='md:px-32 px-4 py-4 top-0 left-0 sticky duration-500 ease-in-out z-50 bg-white opacity-95 shadow-xl'>
+            <nav ref={navbarRef} className='md:px-32 px-3 py-4 top-0 left-0 sticky duration-500 ease-in-out z-50 bg-white opacity-95 shadow-xl'>
                 <div className='md:flex items-center justify-between'>
                     <div className="flex justify-between items-center">
                         <Link to='/' className='md:text-2xl text-xl uppercase font-semibold '>

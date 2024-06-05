@@ -12,11 +12,9 @@ const Blog = lazy(() => delay(2000).then(() => import('../pages/blogs/Blog')));
 const Contact = lazy(() => delay(2000).then(() => import('../pages/contact/Contact')));
 const BlogDetails = lazy(() => delay(2000).then(() => import('../pages/blogs/sections/BlogDetails')));
 const SolutionsDetails = lazy(() => delay(2000).then(() => import('../pages/solutions/sections/SolutionsDetails')));
-// const Error404 = lazy(() => delay(2000).then(() => import('../pages/errorPages/Error404')));
 
 const AppRoutes = () => {
   return (
-    // <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
@@ -26,9 +24,7 @@ const AppRoutes = () => {
         <Route path='/articles/:slug' element={<BlogDetails />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<Error404 />} />
-      </Routes>
-    // </Suspense>
-  );
+      </Routes>  );
 };
 
 export default AppRoutes;

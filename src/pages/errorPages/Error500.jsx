@@ -30,14 +30,14 @@ function Error500() {
             <p className="text-xl font-normal mb-2">
               We’re experiencing an internal server problem. Please try again
               after a few minutes or{" "}
-              <a href="/" className="text-primary hover:underline">
-                contact us.
+              <a href="/" className="btns bg-yellow-500 text-gray-800 text-base">
+                contact us
               </a>
             </p>
 
             <a
               href="/"
-              className="bg-[#00664E] rounded-lg text-white w-max py-2 px-10"
+              className="btns text-white w-max py-2 px-10"
             >
               Go Home
             </a>
