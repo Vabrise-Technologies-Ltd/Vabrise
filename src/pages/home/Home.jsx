@@ -11,7 +11,7 @@ const Home = () => {
             <div className="lg:px-32 md:px-16 px-3 ">
                 <AboutUs />
             </div>
-            <section className="lg:p-28 md:p-24 py-16 my-8 bg-gray-200"  >
+            <section className="lg:p-28 md:p-24 py-16 my-8 bg-[#F3FEFF]"  >
                    <Services />
                 </section>
             <div className="lg:px-32 md:px-16 px-3">

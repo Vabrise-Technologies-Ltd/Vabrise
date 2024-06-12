@@ -8,7 +8,7 @@ const ContactDetails = () => {
         {icon: <FaUserAlt />, details: 'Vabrise Technologies'},
         {icon: <FaPhone />, details: '+2547 1857 7070'},
         {icon: <MdLocationOn />, details: 'Nairobi, Kenya'},
-        {icon: <HiOutlineMail />, details: 'info@vabrise.com'},
+        {icon: <HiOutlineMail />, details: 'info@vabrisetech.com'},
     ]
     return ( 
         <>

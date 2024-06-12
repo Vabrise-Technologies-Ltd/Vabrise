@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import { solutions } from "../data";
+import { solutionDetails } from "../data";
 
 const SolutionsList = () => {
     
     return ( 
         <>
-            {solutions.map((solution) => (
+            {solutionDetails.map((solution) => (
                 <Link to={`/Solutions/${solution.id}`} className="service-card">
                     <div className="w-full">
                         <img className="w-72" src={solution.image} alt="" />

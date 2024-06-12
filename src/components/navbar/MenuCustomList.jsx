@@ -2,12 +2,12 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IoChevronDown } from "react-icons/io5";
 import { IoChevronUp } from "react-icons/io5";
-import menuItems from "../data";
+import {solutionDetails} from "../../pages/solutions/data";
 
 export default function MenuCustomList() {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
-
+  console.log(solutionDetails)
   const toggleDropdown = () => setIsOpen(!isOpen);
   const closeDropdown = () => setIsOpen(false);
 
@@ -35,12 +35,12 @@ export default function MenuCustomList() {
       </button>
       {isOpen && (
         <ul
-          className="absolute py-2 px-3 shadow menu dropdown-content z-[1] sm:bg-base-100 bg-cyan-100 rounded-md md:w-72 w-72"
+          className="absolute py-2 px-3 shadow menu dropdown-content z-[1] sm:bg-base-100 bg-cyan-400 rounded-lg md:w-72 w-72"
         >
-          {menuItems.map((item, index) => (
-            <Link to={item.link} key={index} onClick={closeDropdown}>
+          {solutionDetails.map((item) => (
+            <Link to={item.slugLink} key={item.id} onClick={closeDropdown}>
               <li className="text-gray-900">
-                <a className="text-gray-900 no-underline hover:text-gray-900">{item.title}</a>      
+                <a className="text-cyan-900 no-underline hover:text-cyan-600">{item.title}</a>      
               </li>
             </Link>
           ))}

@@ -76,12 +76,10 @@ const servicesData = [
       icon: <div className="bg-orange-500 md:-left-5 -left-3 md:rounded-r-xl rounded-r-lg text-white md:py-5 py-4 md:pr-2 pr-1">
               <IoCloudDownloadOutline className="md:w-11 md:h-11 w-8 h-8 " />
             </div>,
-      // icon : <IoCloudDownloadOutline className="md:w-14 md:h-14 w-12 h-12 text-orange-500" />,
       title: "Software As A Service (SAAS)",
       description: "We deploy cloud-based software delivery models by developing & maintaining cloud application software & providing automatic software updates."
     },
     {
-      // icon: <BsShieldLock className="md:w-14 md:h-14 w-12 h-12 text-teal-500" />,
       icon: <div className="bg-teal-500 md:-left-5 -left-3 md:rounded-r-xl rounded-r-lg text-white md:py-5 py-4 md:pr-2 pr-1">
               <BsShieldLock className="md:w-11 md:h-11 w-8 h-8 " />
             </div>,
@@ -89,7 +87,6 @@ const servicesData = [
       description: "Tech platforms rely on Critical Infrastructure Security, Network Security, Cloud Security, Application Security & Internet of Things (IoT) Security."
     },
     {
-      // icon: <MdOutlineWebStories className="md:w-14 md:h-14 w-12 h-12 text-green-500" />,
       icon: <div className="bg-green-500 md:-left-5 -left-3 md:rounded-r-xl rounded-r-lg text-white md:py-5 py-4 md:pr-2 pr-1">
               <MdOutlineWebStories className="md:w-11 md:h-11 w-8 h-8 " />
             </div>,
@@ -97,7 +94,6 @@ const servicesData = [
       description: "Our Software Engineers efficiently design Adaptive, Dynamic & Responsive websites with emphasis on User Experience (UX) & Search Engine Optimization."
     },
     {
-      // icon: <BiServer className="md:w-14 md:h-14 w-12 h-12 text-yellow-500" />,
       icon: <div className="bg-yellow-600 md:-left-5 -left-3 md:rounded-r-xl rounded-r-lg text-white md:py-5 py-4 md:pr-2 pr-1">
               <BiServer className="md:w-11 md:h-11 w-8 h-8 " />
             </div>,
@@ -105,7 +101,6 @@ const servicesData = [
       description: "Cloud services will allow your employees to work remotely on projects from any location. This is especially useful to companies that operate in multiple locations."
     },
     {
-      // icon: <BsWrenchAdjustable className="md:w-14 md:h-14 w-12 h-12 text-blue-500" />,
       icon: <div className="bg-blue-500 md:-left-5 -left-3 md:rounded-r-xl rounded-r-lg text-white md:py-5 py-4 md:pr-2 pr-1">
               <BsWrenchAdjustable className="md:w-11 md:h-11 w-8 h-8 " />
             </div>,

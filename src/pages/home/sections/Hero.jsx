@@ -3,10 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import heroImg from "../../../assets/home/hero.jpg"
 
 const Hero = () => {
-    const navigate = useNavigate()
-    const handleQuoteLink = () => {
-        navigate('/contact')
-    }
+   
     return ( 
         <>
             <div className="hero min-h-screen "
@@ -40,9 +37,14 @@ const Hero = () => {
                                     delaySpeed={2000}
                                 />
                             </p>
-                        <button onClick={handleQuoteLink} className="btns mt-8 text-black">
-                            Get Quote
-                        </button>
+                            <button className="btns mt-8 text-black">
+                                <a 
+                                    href="https://api.whatsapp.com/send?phone=254799874578"
+                                    target="_blank" 
+                                        rel="noopener noreferrer" >
+                                    Get Quote
+                                </a>
+                            </button>
                     </div>
                 </div>
             </div>

@@ -27,30 +27,26 @@ const teamData = [
     {
         image: chair, 
         name: "Chris Khayere", 
-        title: "Founder & Chairman", 
-        link1: "https://www.linkedin.com/in/chris-khayere", 
-        link2: "https://chris.vabrisetech.co.ke"
+        title: "Founder | Cyber Security Engineer", 
+        portfolio: "https://www.linkedin.com/in/chris-khayere", 
     },
     {
         image: cto, 
         name: "Andrew Ochieng", 
-        title: "Co-Founder & CTO", 
-        link1: "https://www.linkedin.com/in/andrew-ochieng-00b076180", 
-        link2: "https://andrew-ochieng.vercel.app"
+        title: "Co-Founder | CTO | Software Developer", 
+        portfolio: "https://www.linkedin.com/in/andrew-ochieng-00b076180", 
     },
     {
         image: ceo, 
         name: "Peter Muriuki", 
-        title: "CEO", 
-        link1: "https://github.com/softy-254", 
-        link2: "https://github.com/softy-254"
+        title: "CEO | Network Engineer", 
+        portfolio: "https://www.linkedin.com/in/peter-muriuki-568a2b246/", 
     },
     {
         image: pm, 
         name: "Alex Morwabe", 
-        title: "Project Manager", 
-        link1: "https://github.com/softy-254", 
-        link2: "https://github.com/softy-254"
+        title: "Project Manager | IT Trainer", 
+        portfolio: "https://www.linkedin.com/in/alex-morwabe-997995b6/", 
     }
 ]
 

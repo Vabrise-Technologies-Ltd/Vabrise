@@ -26,16 +26,16 @@ const BlogList = () => {
                     <div className="card-container">
                         {blogs && blogs.map((blog, index) => (
                             <Fade bottom key={blog.id}>
-                                <Link to={`/articles/${blog.slug}`} className="card">
-                                    <div className="md:h-52 w-full">
+                                <Link to={`/articles/${blog.slug}`} className="card h-84">
+                                    <div className="md:h-44 w-full">
                                         <LazyLoadImage
                                             src={blog.image}
                                             alt={`image ${index + 1}`}
-                                            className="h-full w-full"
+                                            className="h-full w-full rounded-lg object-cover"
                                         />
                                     </div>
                                     <div className="card-content">
-                                        <h4 className="card-title">{blog.title}</h4>
+                                        <h4 className="card-title font-senibold text-base">{blog.title}</h4>
                                         <div
                                             dangerouslySetInnerHTML={{ __html: getFirstWords(blog.body, 12) }}
                                             className="card-description"

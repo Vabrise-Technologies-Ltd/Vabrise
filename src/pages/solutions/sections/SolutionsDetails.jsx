@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 
-const SolutionsDetails = ({solutions}) => {
+const SolutionsDetails = ({solutionDetails}) => {
     const { slug } = useParams()
 
     const solution = solutions.find((item) => item.slug == slug) || {}

@@ -82,7 +82,9 @@ const Navbar = () => {
                 <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-16 right-0 bottom-0 py-4 w-full h-screen duration-500 ease-in-out bg-white`}>
                     <ul className="flex flex-col justify-center top-16 text-base text-gray-800 font-medium">
                         <hr />
-                            <li className="p-4 "><MenuCustomList /></li>
+                            <li className="p-4 ">
+                            <MenuCustomList toggleNavbar={toggleNavbar} closeNavbar={closeNavbar} />
+                                </li>
                         <hr />
                         {menus.map((item, index) => (
                             <div key={index}>
