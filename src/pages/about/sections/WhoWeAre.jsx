@@ -1,8 +1,8 @@
-const History = () => {
+const WhoWeAre = () => {
     return ( 
         <>
             <div className="text-center md:mb-16 mb-8">
-                <h3 className="section-title md:mb-8 mb-4">Our History</h3>
+                <h3 className="section-title md:mb-8 mb-4">Our WhoWeAre</h3>
                 <div className="tracking-wide lg:text-lg text-gray-800"> 
                     <p>
                         Vabrise Technologies Limited was Incorporated under the Companies Act,
@@ -28,4 +28,4 @@ const History = () => {
      );
 }
  
-export default History;
+export default WhoWeAre;

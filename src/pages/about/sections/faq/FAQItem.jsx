@@ -23,7 +23,7 @@ function FAQItem({ question, answer }) {
           {question}
         </div>
         {!isCollapsed && (
-          <div className="collapse-content mt-2 md:text-lg text-sm">
+          <div className="collapse-content mt-2 md:text-lg text-sm font-light">
             <p>{answer}</p>
           </div>
         )}

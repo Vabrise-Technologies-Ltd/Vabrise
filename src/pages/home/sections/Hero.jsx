@@ -17,17 +17,18 @@ const Hero = () => {
                 <div className="hero-content md:text-left text-neutral-content md:px-auto px-3">
                     <div className="lg:max-w-2xl md:max-w-xl">
                         <h1 className="md:my-8 my-4 lg:text-7xl md:text-5xl text-4xl font-bold">We Build Ideas Driven by the Future</h1>
-                        <p className="md:mb-8 mb-4 md:text-lg">Manage your bussiness without having to worry about the the software solutions you are using. Less hustle more growth.</p>
+                        <p className="md:mb-8 mb-4 md:text-lg">Manage your bussiness without having to worry about the kind of technical solutions to use. Less hustle more growth.</p>
                         <p className="text-yellow-500 md:text-4xl text-xl font-light">
                                 <Typewriter
                                     words={[
                                         'Web Design', 
-                                        'Mobile App Development',
-                                        'Software As A Service (SAAS)',
-                                        'Graphics Design', 
+                                        'Software Development',
+                                        'Software As A Service',
                                         'Cloud Computing',
                                         'Cyber Security',
-                                        'IT Consulting & Maintenance'
+                                        'IT Equipments & Supplies',
+                                        'IT Consulting & Maintenance',
+                                        'Technical Mentorship'
                                     ]}
                                     loop={Infinity}
                                     cursor

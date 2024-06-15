@@ -33,7 +33,7 @@ const teamData = [
     {
         image: cto, 
         name: "Andrew Ochieng", 
-        title: "Co-Founder | CTO | Software Developer", 
+        title: "Co-Founder | Technical Lead", 
         portfolio: "https://www.linkedin.com/in/andrew-ochieng-00b076180", 
     },
     {
@@ -45,7 +45,7 @@ const teamData = [
     {
         image: pm, 
         name: "Alex Morwabe", 
-        title: "Project Manager | IT Trainer", 
+        title: "Project Manager | Technical Mentor", 
         portfolio: "https://www.linkedin.com/in/alex-morwabe-997995b6/", 
     }
 ]

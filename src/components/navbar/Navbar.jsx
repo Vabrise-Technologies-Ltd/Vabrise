@@ -37,7 +37,7 @@ const Navbar = () => {
 
     return ( 
         <>
-            <nav ref={navbarRef} className='md:px-32 px-3 py-4 top-0 left-0 sticky duration-500 ease-in-out z-50 bg-white opacity-95 shadow-xl'>
+            <nav ref={navbarRef} className='xl:px-32 lg:px-24 md:px-8 px-3 py-4 top-0 left-0 sticky duration-500 ease-in-out z-50 bg-white opacity-95 shadow-xl'>
                 <div className='md:flex items-center justify-between'>
                     <div className="flex justify-between items-center">
                         <Link to='/' className='md:text-2xl text-xl uppercase font-semibold '>
@@ -66,13 +66,22 @@ const Navbar = () => {
                                     </li>
                                 </div>
                             ))}
-                            <li className="btns py-1 px-3" >
-                                <a 
+                            <li className="flex items-center" >
+                                <a
+                                    className="btns py-1 px-3 mr-2" 
                                     href="https://shop.vabrisetech.com" 
                                     target="_blank" 
                                     rel="noopener noreferrer" 
                                 >
                                     Shop
+                                </a>
+                                <a 
+                                    className="bg-yellow-700 rounded text-white py-1 px-3"
+                                    href="https://school.vabrisetech.com" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                >
+                                    Mentorship
                                 </a>
                             </li>
                         </ul>
@@ -105,6 +114,15 @@ const Navbar = () => {
                                 rel="noopener noreferrer" 
                             >
                                 Shop
+                            </a>
+                        </li>
+                        <li className="p-4 border-b bg-yellow-700 text-white hover:cursor-pointer">
+                            <a 
+                                href="https://school.vabrisetech.com" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                            >
+                                Mentorship
                             </a>
                         </li>
                     </ul>

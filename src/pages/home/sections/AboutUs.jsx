@@ -16,24 +16,22 @@ const AboutUs = () => {
                     <div>
                         <Slide right>
                             <div className="mb-4 lg:text-5xl md:text-4xl text-3xl font-bold text-gray-800 md:space-y-3 space-y-1 tracking-wide ">
-                                <p>Enterprise tech</p> 
+                                <p>Leading Enterprise </p> 
                                 <p>
-                                    <span className="underline underline-offset-4 cursor-pointer text-cyan-500 md:mx-2 mx-1">solutions</span>
-                                    provider
+                                    <span className="underline underline-offset-4 cursor-pointer text-cyan-500 md:mx-2 mx-1">tech</span>
+                                     provider
                                 </p>            
                             </div>
-                            <div className="md:text-lg text-base text-gray-800">
-                                Vabrise Technologies is a startup ICT Consultancy Firm 
-                                in Nairobi - Kenya, started in 2020. We do, we provide services in Computer Sales & Repair, 
-                                Software Design & Development, CCTV & Networks Installation & 
-                                Maintainance, Graphics Design. We also provide ICT-Based Training 
-                                in Web Development, UI/ UX Design, Graphics Design, CCTV & Network 
-                                Installation, and Cyber Security.
+                            <div className="md:text-lg text-base text-gray-700">
+                                Vabrise Technologies is a leading ICT Consultancy Company in Kenya 
+                                We provide various ICT services such as Web Design, Software Development,
+                                Software As A Service, Cloud Computing, Cyber Security, ICT Equipments & Supplies, 
+                                ICT Consultancy and Maintainance, and Technical Mentorship
                             </div>
                         </Slide>
                         <div className="mt-4 ">
                             <Link to='/about' className="btns">
-                                Read More
+                                About Us
                             </Link>
                         </div>
                     </div>
