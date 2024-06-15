@@ -25,7 +25,6 @@ export default function MenuCustomList() {
 
   const firstRowItems = solutionDetails.slice(0, 4);
   const secondRowItems = solutionDetails.slice(4, 8);
-  console.log(secondRowItems);
 
   return (
     <div ref={dropdownRef} className="relative">
