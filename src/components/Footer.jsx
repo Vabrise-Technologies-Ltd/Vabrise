@@ -21,15 +21,15 @@ const LINKS = [
 const currentYear = new Date().getFullYear();
  
 const Footer = () => {
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/664b4012981b6c56477286b7/1huav4jup';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
+  // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  // (function(){
+  // var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  // s1.async=true;
+  // s1.src='https://embed.tawk.to/664b4012981b6c56477286b7/1huav4jup';
+  // s1.charset='UTF-8';
+  // s1.setAttribute('crossorigin','*');
+  // s0.parentNode.insertBefore(s1,s0);
+  // })();
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -107,7 +107,7 @@ const Footer = () => {
 
       <button
         onClick={scrollToTop}
-        className="fixed bottom-24 right-4 md:p-3 p-2 bg-cyan-500 text-white rounded-full shadow-md focus:outline-none"
+        className="fixed bottom-4 right-4 md:p-3 p-2 bg-cyan-500 text-white rounded-full shadow-md focus:outline-none"
         >
             <FaChevronUp className="md:text-base text-sm" />
         </button>
