@@ -109,5 +109,20 @@ const servicesData = [
     },
   ];
 
+  const whyUsData = [
+    {
+      title: 'Customer-Centric Approach',
+      content: 'We prioritize your success. Our customer-centric approach ensures that your vision is at the forefront of our service delivery process, resulting in solutions that not only meet but exceed expectations.'
+    },
+    {
+      title: 'Cutting-Edge Technologies',
+      content: 'Staying ahead in the rapidly evolving tech landscape, we leverage the latest technologies to ensure your software solutions are future-proof and technologically advanced.'
+    },
+    {
+      title: 'Continous Communication',
+      content: 'Open lines of communication are crucial. We keep you informed at every stage of the service delivery process, fostering trust, transparency, and collaboration.'
+    }
+  ]
 
-export { partners, projects, servicesData }
+
+export { partners, projects, servicesData, whyUsData }

@@ -66,9 +66,9 @@ const Navbar = () => {
                                     </li>
                                 </div>
                             ))}
-                            <li className="flex gap-3" >
+                            <li className="flex items-center" >
                                 <a
-                                    className="btns py-1 px-3" 
+                                    className="btns py-1 px-3 mr-2" 
                                     href="https://shop.vabrisetech.com" 
                                     target="_blank" 
                                     rel="noopener noreferrer" 
@@ -76,7 +76,7 @@ const Navbar = () => {
                                     Shop
                                 </a>
                                 <a 
-                                    className="bg-none border-2 border-yellow-700 rounded hover:bg-yellow-700 text-yellow-700 hover:text-white py-1 px-3"
+                                    className="bg-yellow-700 rounded text-white py-1 px-3"
                                     href="https://school.vabrisetech.com" 
                                     target="_blank" 
                                     rel="noopener noreferrer" 
@@ -114,6 +114,15 @@ const Navbar = () => {
                                 rel="noopener noreferrer" 
                             >
                                 Shop
+                            </a>
+                        </li>
+                        <li className="p-4 border-b bg-yellow-700 text-white hover:cursor-pointer">
+                            <a 
+                                href="https://school.vabrisetech.com" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                            >
+                                Mentorship
                             </a>
                         </li>
                     </ul>

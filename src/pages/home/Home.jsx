@@ -3,21 +3,19 @@ import Hero from "./sections/Hero";
 import OurWork from "./sections/OurWork";
 import Services from "./sections/HomeServices";
 import OurPartners from "./sections/OurPartners";
+import WhyChooseUs from "./sections/WhyChooseUs";
 
 const Home = () => {
     return ( 
         <>
             <Hero />
-            <div className="lg:px-32 md:px-16 px-3 ">
-                <AboutUs />
-            </div>
-            <section className="lg:p-28 md:p-24 py-16 my-8 bg-[#F3FEFF]"  >
-                   <Services />
-                </section>
-            <div className="lg:px-32 md:px-16 px-3">
+            <section className="lg:p-28 md:p-24 py-16 px-3"  >
+                <Services />
+                <WhyChooseUs />
                 <OurWork />
+                <AboutUs />
                 <OurPartners />
-            </div>
+            </section>
             {/* <OurPartners /> */}
         </>
      );
