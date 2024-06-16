@@ -7,7 +7,7 @@ const ContactDetails = () => {
     const contactInfo = [
         {icon: <FaUserAlt />, details: 'Vabrise Technologies'},
         {icon: <FaPhone />, details: '+2547 1857 7070'},
-        {icon: <MdLocationOn />, details: 'Nairobi, Kenya'},
+        {icon: <MdLocationOn />, details: 'Nakuru, Kenya'},
         {icon: <HiOutlineMail />, details: 'info@vabrisetech.com'},
     ]
     return ( 

@@ -21,16 +21,6 @@ const LINKS = [
 const currentYear = new Date().getFullYear();
  
 const Footer = () => {
-  // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  // (function(){
-  // var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  // s1.async=true;
-  // s1.src='https://embed.tawk.to/664b4012981b6c56477286b7/1huav4jup';
-  // s1.charset='UTF-8';
-  // s1.setAttribute('crossorigin','*');
-  // s0.parentNode.insertBefore(s1,s0);
-  // })();
-
     const scrollToTop = () => {
         window.scrollTo({
         top: 0,
@@ -39,55 +29,48 @@ const Footer = () => {
     };
 
   return (
-    <footer className="relative w-full md:p-8 py-8 px-3 bottom-0 bg-gray-200">
+    <footer className="relative w-full lg:px-28 md:px-24 md:py-8 py-8 px-3 bottom-0 bg-gray-200">
       <div className="mx-auto w-full max-w-7xl ">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
             <div>
                 <img src={logo} alt="Vabrise Technologies" className="md:w-36 w-32 "/>
-                <Typography className="mb-6 pt-4 md:text-base text-sm" color="gray">
-                    Vabrise specializes in technological and IT-related 
-                    services such as product engineering, 
-                    systems integration, web design & development, 
-                    mobile applications, APIs, etc. We put a strong 
-                    focus on the needs of your business to figure out 
-                    solutions that best fits your demand and nail it.
-                </Typography>
+                <p className="mb-6 pt-4  text-sm text-gray-600 md:max-w-lg" >
+                  We are an ICT Consulting Company offering solutions in
+                  Web Development, Software Development, Software As A Service, 
+                  Cloud Computing, Cyber Security, ICT Equipments & Supplies,
+                  ICT Consultancy and Maintainance, and Technical Mentorship.
+                </p>
           </div>
           <div className="grid grid-cols-3 justify-between gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="mb-3 font-medium opacity-40"
+                <p
+                  className="mb-3 font-medium text-cyan-500"
                 >
                   {title}
-                </Typography>
+                </p>
                 {items.map((link) => (
-                  <li key={link}>
-                    <Typography
-                      as="a"
+                  <li key={link} className="md:my-3 my-1 md:text-base text-sm">
+                    <a
                       href="#"
-                      color="gray"
-                      className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
+                      className=" text-gray-600 transition-colors hover:text-blue-gray-900"
                     >
                       {link}
-                    </Typography>
+                    </a>
                   </li>
                 ))}
               </ul>
             ))}
           </div>
         </div>
-        <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
-          <Typography
-            variant="small"
-            className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
+        <div className="md:mt-12 mt-8 flex w-full flex-col items-center justify-center border-t border-blue-gray-50  md:flex-row md:justify-between">
+          <p
+            className="md:text-base text-xs mb-2 text-center font-normal text-blue-gray-900 md:mb-0"
           >
             &copy; {currentYear} 
             <a href="https://vabrisetech.com/" className="text-cyan-600 pl-1">Vabrise Technologies</a>. 
             All Rights Reserved.
-          </Typography>
+          </p>
             <div className="flex gap-4 text-gray-700 sm:justify-center">
                 <a href="https://www.facebook.com/profile.php?id=100068470802763">
                     <BsFacebook />

@@ -1,26 +1,40 @@
+import work from "../../../assets/about/us.svg"
+
 const WhoWeAre = () => {
     return ( 
         <>
-            <div className="text-center md:mb-16 mb-8">
-                <h3 className="section-title md:mb-8 mb-4">Our WhoWeAre</h3>
-                <div className="tracking-wide lg:text-lg text-gray-800"> 
+            <div className="lg:mb-32 md:mb-16 mb-8">
+                <div className="grid md:grid-cols-2 md:gap-16 gap-8">
+                    <div>
+                        <img src={work} alt="" />
+                    </div>
+                    <div className="md:text-base text-sm text-gray-600 text-justify"> 
                     <p>
-                        Vabrise Technologies Limited was Incorporated under the Companies Act,
-                        2015 as a Private Limited company on the 28th Day of January, 2023. We are
-                        headquartered in Vihiga and our offices are at Cheptul market, off Chavakali
-                        – Kapsabet road.
-                        The directors are Mr. Khayere Christopher and Mr. Omondi Andrew. Mr.
-                        Khayere, who dreamt of building the most respected and leading business
-                        consultancy, Information Technology and Cyber Security firm, founded the
-                        company.
+                        We are an ICT Consulting Company offering solutions in
+                        Web Development, Software Development, Software As A Service, 
+                        Cloud Computing, Cyber Security, ICT Equipments & Supplies,
+                        ICT Consultancy and Maintainance, and Technical Mentorship.
+                        The scope of our work is primarily focused on developing & maintaining tested & secured 
+                        custom software and web design solutions. Our team of experts has accumilated extensive
+                        experience over the years in developing production applications. 
                     </p>
-                    <p className="md:flex hidden mt-4">
-                        Vabrise Technologies Limited is a strategic Information Technology
-                        powerhouse, serving the Technological needs of individuals, institutions and
-                        businesses through provision of innovative and reliable Information
-                        Technology solutions within the shortest time possible. We are known for
-                        our objectivity, balance, consistency and quality content.
+                    {/* <p className="md: hidden mt-4">
+                        Recognizing a client’s custom application needs and consistently 
+                        exceeding their expectations is what sets us apart from the rest. 
+                        We therefore focus not only on developing and maintaining the products 
+                        and services we offer, but also on building long term relationships.
+                        Established in the year 2021, Vabrise Technologies offers bespoke solutions 
+                        to technological impediments so that entrepreneurs, 
+                        techpreneurs, and organizations can harness to the maximum ROI 
+                        on their businesses.
+                    </p> */}
+                    <p className="md:flex mt-2">
+                        Whether you’re a small startup or a large 
+                        corporation, our customized web design solutions will help you stand out 
+                        in the digital landscape. Contact us today to discuss your project and 
+                        take the first step towards a successful online presence.
                     </p>
+                </div>
                 </div>
             </div>
             
