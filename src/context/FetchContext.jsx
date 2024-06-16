@@ -1,6 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
 import publicAxios from "../api/publicAxios";
-import Error500 from "../pages/errorPages/Error500";
 
 export const FetchContext = createContext();
 
@@ -23,11 +22,6 @@ const FetchProvider = ({ children }) => {
         fetchBlogs();
     }, []);
 
-    if (errorBlogs) {
-        return (
-            <Error500 />
-        );
-    }
 
     return (
         <FetchContext.Provider value={{ blogs, loadingBlogs, errorBlogs }}>

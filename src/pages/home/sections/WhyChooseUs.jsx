@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
         {whyUsData.map((item, index) => (
           <div 
             key={index} 
-            className={`md:px-6 md:py-4 px-4 py-2 rounded-tl-2xl rounded-br-2xl shadow ${index === 0 || index === whyUsData.length - 1 ? 'card-color1' : index === Math.floor(whyUsData.length / 2) ? 'card-color2' : ''}`}>
+            className={` ${index === 0 || index === whyUsData.length - 1 ? 'service-card1' : index === Math.floor(whyUsData.length / 2) ? 'service-card2' : ''}`}>
             <h3 
             className={`md:text-lg font-semibold mb-1 ${index === 0 || index === whyUsData.length - 1 ? 'text-gray-700' : index === Math.floor(whyUsData.length / 2) ? 'text-gray-800' : ''}`}
             >{item.title}</h3>

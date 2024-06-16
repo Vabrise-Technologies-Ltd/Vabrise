@@ -5,30 +5,22 @@ import { teamData } from "../../data";
 
   export function OurTeam() {
     return (
-      <section className="min-h-screen py-8 px-8 lg:py-24l">
+      <section className="min-h-screen py-8 lg:py-24">
       <div className="container mx-auto flex flex-col">
         <div className="mb-16 text-center lg:mb-28">
-          <Typography
-            // variant="h6"
-            color="cyan"
-            className="text-lg font-semibold"
-          >
+          <h5 className="md:text-lg font-semibold text-gray-500">
             Meet the Team
-          </Typography>
-          <Typography
-            variant="h1"
-            color="blue-gray"
-            className="my-2 !text-2xl lg:!text-4xl !text-gray-800"
-          >
+          </h5>
+          <h2 className="section-title">
             Behind the Success: Our Dedicated Team
-          </Typography>
-          <Typography
-            className="md:text-xl mx-auto w-full text-gray-600 max-w-4xl"
+          </h2>
+          <p
+            className=" mx-auto w-full text-gray-700 md:max-w-4xl font-light"
           >
             From visionary leadership to creative talent, and technical wizards, 
-            each team member plays a pivotal role in delivering the exceptional 
+            each member plays a pivotal role in delivering the exceptional 
             service and innovative solutions.
-          </Typography>
+          </p>
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 ">
           {teamData.map((member, key) => (
