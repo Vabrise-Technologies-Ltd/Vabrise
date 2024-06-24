@@ -37,7 +37,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
           # local-dir: build  # Ensure this matches the output directory of your build
-          server-dir: /
+          server-dir: /public_html/
           exclude: |
             **/.git**
             **/.git*/**
