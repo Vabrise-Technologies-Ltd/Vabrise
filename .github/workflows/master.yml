@@ -39,7 +39,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}  # Optional, remove if using default port 21
           # local-dir: /dist/  # Vite's default build output directory
-          server-dir: /dist/  # Adjust to your server directory
+          server-dir: /  # Adjust to your server directory
           exclude: |
             **/.git**
             **/.git*/**
