@@ -58,7 +58,7 @@ const projects = [
     },
     {   title: "Medical Zone", 
         cover_image: img6,
-        description: "A platform where patients can keep track of their medical appointments & history", 
+        description: "A platform where patients can keep track of their medical appointments & medical history", 
         link: "https://github.com/Andrew-Ochieng/medical-zone-frontend"
     },
 ]
