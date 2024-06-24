@@ -10,7 +10,7 @@ function FAQItem({ question, answer }) {
     return (
       <div
         tabIndex={0}
-        className={`text-gray-800 collapse collapse-arrow  bg-cyan-50 md:my-4 my-2 rounded-md ${isCollapsed ? 'collapsed' : 'expanded'}`}
+        className={`text-gray-800 collapse collapse-arrow  bg-cyan-50 md:mb-4 mb-3 rounded-md ${isCollapsed ? 'collapsed' : 'expanded'}`}
         onClick={handleToggle}
         onKeyDown={(e) => {
           if (e.key === 'Enter' || e.key === ' ') {
@@ -19,11 +19,11 @@ function FAQItem({ question, answer }) {
         }}
         role="button"
       >
-        <div className="collapse-title md:text-lg font-semibold">
+        <div className="collapse-title text-sm font-semibold">
           {question}
         </div>
         {!isCollapsed && (
-          <div className="collapse-content mt-2 md:text-lg text-sm font-light">
+          <div className="collapse-content text-sm font-light">
             <p>{answer}</p>
           </div>
         )}

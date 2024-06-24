@@ -54,15 +54,11 @@ const faqs = [
     },
     {
         question: "How much does the software cost?",
-        answer: "We price our software products quite competitively. Pricing is based on factors such as; number of users, physical location & the scope of data."
+        answer: "We price our software products quite competitively. Pricing is based on various models such as pay-per-use for Software As A Service products and the rest are negotiable depending on defined factors"
       },
     {
       question: "How can I contact Vabrise Technologies Limited?",
-      answer: "You can contact us through our website's contact form, or email us at info@vabrise.com or call us on +254718577070."
-    },
-    {
-      question: "Where is Vabrise Technologies Limited located?",
-      answer: "Our headquarters are located in Nakuru Town, at Bungei House, Room12, opposite Rift Valley Institute of Technology School."
+      answer: "You can contact us through our website's contact form, email us at contact@vabrisetech.com or call us on +254718577070."
     },
     {
       question: "Do you offer customized solutions?",
