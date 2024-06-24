@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 import { FetchContext } from "../../../context/FetchContext";
 import DefaultSpinner from "../../../components/Spinner";
@@ -25,24 +24,22 @@ const BlogList = () => {
                 ) : (
                     <div className="card-container">
                         {blogs && blogs.map((blog, index) => (
-                            <Fade bottom key={blog.id}>
-                                <Link to={`/articles/${blog.slug}`} className="card h-84">
-                                    <div className="md:h-44 w-full">
-                                        <LazyLoadImage
-                                            src={blog.image}
-                                            alt={`image ${index + 1}`}
-                                            className="h-full w-full rounded-lg object-cover"
-                                        />
-                                    </div>
-                                    <div className="card-content">
-                                        <h4 className="card-title font-senibold text-base">{blog.title}</h4>
-                                        <div
-                                            dangerouslySetInnerHTML={{ __html: getFirstWords(blog.body, 12) }}
-                                            className="card-description"
-                                        ></div>
-                                    </div>
-                                </Link>
-                            </Fade>
+                            <Link key={blog.id} to={`/articles/${blog.slug}`} className="card h-84">
+                                <div className="md:h-44 w-full">
+                                    <LazyLoadImage
+                                        src={blog.image}
+                                        alt={`image ${index + 1}`}
+                                        className="h-full w-full rounded-lg object-cover"
+                                    />
+                                </div>
+                                <div className="card-content">
+                                    <h4 className="card-title font-senibold text-base">{blog.title}</h4>
+                                    <div
+                                        dangerouslySetInnerHTML={{ __html: getFirstWords(blog.body, 12) }}
+                                        className="card-description"
+                                    ></div>
+                                </div>
+                            </Link>
                         ))}
                     </div>
                 )}

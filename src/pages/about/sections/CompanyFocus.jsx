@@ -1,4 +1,3 @@
-import { Fade } from "react-reveal";
 import { companyFocus } from "../data";
 
 const CompanyFocus = () => {
