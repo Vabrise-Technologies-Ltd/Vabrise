@@ -1,7 +1,7 @@
 import chair from "../../assets/team/chair.jpg"
 import ceo from "../../assets/team/ceo.jpg"
 import cto from "../../assets/team/cto.jpg"
-import pm from "../../assets/team/alex.jpg"
+import dev1 from "../../assets/team/simon.jpg"
 import avatar_male from "../../assets/about/avatar.svg"
 import avatar_female from "../../assets/about/avatar-female.svg"
 
@@ -24,7 +24,7 @@ const teamData = [
     {
         image: chair, 
         name: "Chris Khayere", 
-        title: "Founder | Cyber Security Engineer", 
+        title: "Founder | Cybersecurity Engineer", 
         portfolio: "https://www.linkedin.com/in/chris-khayere", 
     },
     {
@@ -40,10 +40,10 @@ const teamData = [
         portfolio: "https://www.linkedin.com/in/peter-muriuki-568a2b246/", 
     },
     {
-        image: pm, 
-        name: "Alex Morwabe", 
-        title: "Project Manager | Technical Mentor", 
-        portfolio: "https://www.linkedin.com/in/alex-morwabe-997995b6/", 
+        image: dev1, 
+        name: "Simon Gideon", 
+        title: "Frontend Developer", 
+        portfolio: "https://www.linkedin.com/in/simon-gideon/", 
     }
 ]
 

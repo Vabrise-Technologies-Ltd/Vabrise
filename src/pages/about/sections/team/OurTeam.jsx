@@ -5,7 +5,7 @@ import { teamData } from "../../data";
 
   export function OurTeam() {
     return (
-      <section className="min-h-screen py-8 lg:py-24">
+      <section className="min-h-screen py-8 lg:py-12">
       <div className="container mx-auto flex flex-col">
         <div className="mb-16 text-center lg:mb-28">
           <h5 className="md:text-lg font-semibold text-gray-500">
