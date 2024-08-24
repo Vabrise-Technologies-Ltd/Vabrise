@@ -1,7 +1,9 @@
 import chair from "../../assets/team/chair.jpg"
 import ceo from "../../assets/team/ceo.jpg"
 import cto from "../../assets/team/cto.jpg"
-import dev1 from "../../assets/team/simon.jpg"
+import dev1 from "../../assets/team/wilfred.jpg"
+import dev2 from "../../assets/team/nick.jpg"
+import dev3 from "../../assets/team/mwangi.jpg"
 import avatar_male from "../../assets/about/avatar.svg"
 import avatar_female from "../../assets/about/avatar-female.svg"
 
@@ -36,14 +38,26 @@ const teamData = [
     {
         image: ceo, 
         name: "Peter Muriuki", 
-        title: "CEO | Network Engineer", 
+        title: "CEO | Software Engineer", 
         portfolio: "https://www.linkedin.com/in/peter-muriuki-568a2b246/", 
     },
     {
         image: dev1, 
-        name: "Simon Gideon", 
+        name: "Wilfred Mutwiri", 
         title: "Frontend Developer", 
-        portfolio: "https://www.linkedin.com/in/simon-gideon/", 
+        portfolio: "https://www.linkedin.com/in/wilfred-mutwiri-ba3bb8236/", 
+    },
+    {
+        image: dev2, 
+        name: "Nick Odhiambo", 
+        title: "Backend Developer", 
+        portfolio: "https://www.linkedin.com/in/nickodhiambo/", 
+    },
+    {
+        image: dev3, 
+        name: "Brian Mwangi", 
+        title: "Frontend Developer", 
+        portfolio: "https://www.linkedin.com/in/mwangi-brian-0505861a8/", 
     }
 ]
 
