@@ -24,6 +24,30 @@ html {
   display: flex;
 }
 
+
+/* Navbar Dropdown Initial state - hidden */
+.menu.dropdown-content {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Adjust duration as needed */
+  display: none; /* For mobile compatibility */
+}
+
+/* Reveal state */
+.relative:hover .menu.dropdown-content {
+  display: block; /* Display dropdown on hover for desktop */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile compatibility - Ensure dropdown does not appear on hover for mobile */
+@media (max-width: 768px) {
+  .menu.dropdown-content {
+    display: none; /* Mobile dropdown handling should be via click */
+  }
+}
+
+
 @layer components {
   .btns { 
     @apply px-4 py-2 bg-cyan-300 border-none text-gray-100 duration-500 rounded capitalize font-semibold 
@@ -133,3 +157,6 @@ html {
 .group:hover .group-hover\\:block {
   display: block;
 }
+
+
+

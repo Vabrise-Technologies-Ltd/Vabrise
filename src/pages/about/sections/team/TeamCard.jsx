@@ -9,14 +9,14 @@ function TeamCard({member}) {
   const {image, name, title, portfolio} = member
 
     return (
-      <Card className="rounded-xl bg-[#F3FEFF]" shadow={false}>
+      <Card className="rounded-2xl bg-[#F3FEFF] h-[280px]" shadow={false}>
         <CardBody className="text-center">
           <Avatar
             src={image}
             alt={name}
-            // variant="rounded"
+            variant="rounded"
             size="xxl"
-            className="mx-auto mb-6 object-top !rounded-xl"
+            className="mx-auto mb-6 object-top "
           />
           <Typography 
             variant="h5" 

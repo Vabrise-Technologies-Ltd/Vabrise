@@ -62,14 +62,6 @@ const OurWork = () => {
                   </div>
                 ))}
               </div>
-                
-                <a  
-                    className="btns mt-8"
-                    target="_blank"
-                    href="https://github.com/orgs/Vabrise-Technologies-Ltd"
-                    >
-                    More Projects
-                </a>
             </div>
         </>
      );

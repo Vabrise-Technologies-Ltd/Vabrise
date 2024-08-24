@@ -5,9 +5,9 @@ import { teamData } from "../../data";
 
   export function OurTeam() {
     return (
-      <section className="min-h-screen py-8 lg:py-24">
+      <section className="min-h-screen py-8 lg:py-12">
       <div className="container mx-auto flex flex-col">
-        <div className="mb-16 text-center lg:mb-28">
+        <div className="lg:mb-16 md:mb-16 mb-16 text-center ">
           <h5 className="md:text-lg font-semibold text-gray-500">
             Meet the Team
           </h5>
@@ -25,9 +25,9 @@ import { teamData } from "../../data";
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 ">
           {teamData.map((member, key) => (
             <motion.div 
-            whileHover={{y: -8}}
-            transition={{type: 'spring', stiffness: 80}}>
-            <TeamCard key={key} member={member} />
+              whileHover={{y: -8}}
+              transition={{type: 'spring', stiffness: 80}}>
+              <TeamCard key={key} member={member} />
             </motion.div>
           ))}
         </div>

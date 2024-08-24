@@ -29,9 +29,9 @@ const WhoWeAre = () => {
                         on their businesses.
                     </p> */}
                     <p className="md:flex mt-2">
-                        Whether you’re a small startup or a large 
-                        corporation, our customized web design solutions will help you stand out 
-                        in the digital landscape. Contact us today to discuss your project and 
+                        Whether you’re a small startup or a large enterprise,
+                        our customized ict-related solutions will help you stand out 
+                        in the digital landscape. Reach out today to discuss your project and 
                         take the first step towards a successful online presence.
                     </p>
                 </div>
