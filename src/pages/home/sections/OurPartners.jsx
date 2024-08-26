@@ -6,7 +6,7 @@ function OurPartners() {
   return (
     <div className='container gap-8'>
       <h3 className='section-title md:mb-8 mb-4'>
-        Our Clients
+        Our Partners & Clients
       </h3>
       <div>
       <Marquee
