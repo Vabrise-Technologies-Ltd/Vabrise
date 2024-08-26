@@ -19,9 +19,9 @@ function Testimonials() {
               >
                 <div className="max-w-xl sm:mx-auto mx-4 sm:px-6 lg:px-8 text-center px-2  py-6 bg-white rounded-lg">
                   <div>
-                    <img className='md:w-24 w-20 h-20 md:h-24 mx-auto object-cover' src={testimonial.avatar} alt="" />
+                    <img className='md:w-[8rem] w-[4rem] mx-auto mb-3' src={testimonial.avatar} alt="" />
                   </div>
-                  <p className="lg:text-xl md:text-lg text-gray-800 mb-4">"{testimonial.content}"</p>
+                  <p className="lg:text-xl md:text-lg text-gray-500 mb-4">"{testimonial.content}"</p>
                   <h3 className="md:*:text-lg font-bold text-cyan-900">{testimonial.name}</h3>
                   <p className="text-gray-600">{testimonial.position}</p>
                 </div>

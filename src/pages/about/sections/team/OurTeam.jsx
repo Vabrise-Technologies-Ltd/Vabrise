@@ -1,13 +1,12 @@
 import { motion } from "framer-motion";
 import TeamCard from "./TeamCard";
-import {Typography} from "@material-tailwind/react";
 import { teamData } from "../../data";
 
   export function OurTeam() {
     return (
-      <section className="min-h-screen py-8 lg:py-12">
+      <section className="">
       <div className="container mx-auto flex flex-col">
-        <div className="lg:mb-16 md:mb-16 mb-16 text-center ">
+        <div className="lg:mb-16 md:mb-12 mb-8 text-center ">
           <h5 className="md:text-lg font-semibold text-gray-500">
             Meet the Team
           </h5>
