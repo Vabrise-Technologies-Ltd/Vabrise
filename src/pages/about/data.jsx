@@ -6,21 +6,29 @@ import dev2 from "../../assets/team/nick.jpg"
 import dev3 from "../../assets/team/mwangi.jpg"
 import avatar_male from "../../assets/about/avatar.svg"
 import avatar_female from "../../assets/about/avatar-female.svg"
+import { FaEye, FaBullseye, FaTrophy } from 'react-icons/fa';
+import { TbTargetArrow } from "react-icons/tb";
+import { GrAchievement } from "react-icons/gr";
+
 
 const companyFocus = [
-    {
-        name: "Vision",
-        details: "To be a leader in shaping the future of technology by continuously exploring and pushing the boundaries of what is possible."
-    },
-    {
-        name: "Mission",
-        details: "To provide innovative and cutting-edge technology solutions that help our customers achieve their goals and overcome challenges."
-    },
-    {
-        name: "Goals",
-        details: "To consistently provide an exciting experience in software solutions which contributes to every customer’s success, resulting in high levels of satisfaction."
-    }
-]
+  {
+    name: "Vision",
+    details: "To be a leader in shaping the future of technology by continuously exploring and pushing the boundaries of what is possible.",
+    icon: <FaEye />
+  },
+  {
+    name: "Mission",
+    details: "To provide innovative and cutting-edge technology solutions that help our customers achieve their goals and overcome challenges.",
+    icon: <TbTargetArrow />
+  },
+  {
+    name: "Goals",
+    details: "To consistently provide an exciting experience in software solutions which contributes to every customer’s success, resulting in high levels of satisfaction.",
+    icon: <GrAchievement />
+  }
+];
+
 
 const teamData = [
     {
@@ -99,9 +107,9 @@ const faqs = [
     },
     {
         avatar: avatar_male,
-        content: "I am glad for how the team is well organized & delivers quality services on time.",
-        name: "Brian Gillo",
-        position: "Data Engineer, Gilltech Solutions"
+        content: "We are really impressed with the work the team did on our Sacco Website. I would recommend them to anyone.",
+        name: "Mr. Stanley Washika",
+        position: "Sacco Manager, Ng’ara Maisha Sacco"
     }
 ]
 
