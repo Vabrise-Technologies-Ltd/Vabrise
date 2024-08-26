@@ -1,7 +1,7 @@
 import client1 from "../../assets/partners/img1.png"
 import client2 from "../../assets/partners/img2.png"
 import client3 from "../../assets/partners/img3.jpg"
-import client4 from "../../assets/partners/img4.svg"
+import client4 from "../../assets/partners/img4.png"
 import client5 from "../../assets/partners/img5.png"
 import client6 from "../../assets/partners/img6.png"
 import client7 from "../../assets/partners/img7.png"
@@ -14,7 +14,8 @@ import { BsShieldLock } from "react-icons/bs";
 import { BiServer } from "react-icons/bi";
 import { BsWrenchAdjustable } from "react-icons/bs";
 import { MdOutlineWebStories } from "react-icons/md";
-
+import { FiUserCheck, FiCpu } from 'react-icons/fi';
+import { IoChatbubbleEllipsesOutline } from "react-icons/io5"
 
 
 const partners = [
@@ -91,20 +92,25 @@ const servicesData = [
     },
   ];
 
-  const whyUsData = [
-    {
-      title: 'Customer-Centric Approach',
-      content: 'We prioritize your success. Our customer-centric approach ensures that your vision is at the forefront of our service delivery process, resulting in solutions that not only meet but exceed expectations.'
-    },
-    {
-      title: 'Cutting-Edge Technologies',
-      content: 'Staying ahead in the rapidly evolving tech landscape, we leverage the latest technologies to ensure your software solutions are future-proof and technologically advanced.'
-    },
-    {
-      title: 'Continous Communication',
-      content: 'Open lines of communication are crucial. We keep you informed at every stage of the service delivery process, fostering trust, transparency, and collaboration.'
-    }
-  ]
+
+
+const whyUsData = [
+  {
+    title: 'Customer-Centric Approach',
+    content: 'Our customer-centric approach ensures that your vision is at the forefront of our service delivery process, resulting in solutions that not only meet but exceed expectations.',
+    icon: <FiUserCheck />, 
+  },
+  {
+    title: 'Cutting-Edge Technologies',
+    content: 'Staying ahead in the rapidly evolving tech landscape, we leverage the latest technologies to ensure your software solutions are future-proof and technologically advanced.',
+    icon: <FiCpu />, 
+  },
+  {
+    title: 'Continuous Communication',
+    content: 'Open lines of communication are crucial. We keep you informed at every stage of the service delivery process, fostering trust, transparency, and collaboration.',
+    icon: <IoChatbubbleEllipsesOutline />, 
+  },
+]
 
 
 export { partners, projects, servicesData, whyUsData }

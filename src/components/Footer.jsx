@@ -1,37 +1,54 @@
 import { FaChevronUp } from "react-icons/fa6";
 import { BsFacebook, BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs"
 import logo from "../assets/utils/logo.png"
-import { Typography } from "@material-tailwind/react";
- 
+import { useState, useEffect } from "react";
+import { solutionDetails } from "../pages/solutions/data";
+import { Link } from "react-router-dom";
+
 const LINKS = [
   {
-    title: "Product",
-    items: ["Overview", "Features", "Solutions", "Tutorials"],
+    title: "Services",
+    items: solutionDetails.map((item) => item.title),
+    link: `/solutions/${solutionDetails.map((item) => item.slug)}`,
+    // items: ["Overview", "Features", "Solutions", "Tutorials"],
   },
   {
     title: "Company",
-    items: ["About us", "Careers", "Press", "News"],
+    items: ["About Us", "Careers", "News", "Contact"],
+    link: '#',
   },
   {
     title: "Resource",
     items: ["Blog", "Newsletter", "Events", "Help center"],
+    link: '#',
   },
 ];
  
 const currentYear = new Date().getFullYear();
  
 const Footer = () => {
-    const scrollToTop = () => {
-        window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-    });
-    };
+  const [showButton, setShowButton] = useState(false);
+
+  const handleScroll = () => {
+      window.scrollY > 100 ? setShowButton(true) : setShowButton(false);
+  };
+
+  useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      };
+  }, []);
+
+  const scrollToTop = () => {
+    // Smooth scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <footer className="relative w-full lg:px-28 md:px-24 md:py-8 py-8 px-3 bottom-0 bg-gray-200">
       <div className="mx-auto w-full max-w-7xl ">
-        <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
+        <div className="md:flex md:basis-1/2 justify-between items-start ">
             <div>
                 <img src={logo} alt="Vabrise Technologies" className="md:w-36 w-32 "/>
                 <p className="mb-6 pt-4  text-sm text-gray-600 md:max-w-lg" >
@@ -41,22 +58,22 @@ const Footer = () => {
                   ICT Consultancy and Maintainance, and Technical Mentorship.
                 </p>
           </div>
-          <div className="grid grid-cols-3 justify-between gap-4">
-            {LINKS.map(({ title, items }) => (
-              <ul key={title}>
+          <div className="md:flex ">
+            {LINKS.map(({ title, items, route }) => (
+              <ul key={title} className="md:ml-8">
                 <p
                   className="mb-3 font-medium text-cyan-500"
                 >
                   {title}
                 </p>
-                {items.map((link) => (
-                  <li key={link} className="md:my-3 my-1 md:text-base text-sm">
-                    <a
-                      href="#"
-                      className=" text-gray-600 transition-colors hover:text-blue-gray-900"
+                {items.map((item) => (
+                  <li key={item} className="md:my-3 my-1 md:text-base text-sm">
+                    <Link
+                      to={route}
+                      className="text-sm text-gray-600 transition-colors hover:text-blue-gray-900"
                     >
-                      {link}
-                    </a>
+                      {item}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -90,7 +107,7 @@ const Footer = () => {
 
       <button
         onClick={scrollToTop}
-        className="fixed bottom-4 right-4 md:p-3 p-2 bg-cyan-500 text-white rounded-full shadow-md focus:outline-none"
+        className={`${showButton ? "block" : "hidden"} fixed bottom-4 right-4 md:p-3 p-2 bg-cyan-500 text-white rounded-full shadow-md focus:outline-none `}
         >
             <FaChevronUp className="md:text-base text-sm" />
         </button>
