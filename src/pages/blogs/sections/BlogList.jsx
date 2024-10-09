@@ -35,7 +35,7 @@ const BlogList = () => {
                                 <div className="card-content">
                                     <h4 className="card-title font-senibold text-base">{blog.title}</h4>
                                     <div
-                                        dangerouslySetInnerHTML={{ __html: getFirstWords(blog.body, 12) }}
+                                        dangerouslySetInnerHTML={{ __html: blog.body.split(' ').slice(0, 16).join(' ') }}
                                         className="card-description"
                                     ></div>
                                 </div>
