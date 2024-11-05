@@ -54,19 +54,19 @@ const teamData = [
         name: "Wilfred Mutwiri", 
         title: "Frontend Developer", 
         portfolio: "https://www.linkedin.com/in/wilfred-mutwiri-ba3bb8236/", 
-    },
-    {
-        image: dev2, 
-        name: "Nick Odhiambo", 
-        title: "Backend Developer", 
-        portfolio: "https://www.linkedin.com/in/nickodhiambo/", 
-    },
-    {
-        image: dev3, 
-        name: "Brian Mwangi", 
-        title: "Frontend Developer", 
-        portfolio: "https://www.linkedin.com/in/mwangi-brian-0505861a8/", 
     }
+    // {
+    //     image: dev2, 
+    //     name: "Nick Odhiambo", 
+    //     title: "Backend Developer", 
+    //     portfolio: "https://www.linkedin.com/in/nickodhiambo/", 
+    // },
+    // {
+    //     image: dev3, 
+    //     name: "Brian Mwangi", 
+    //     title: "Frontend Developer", 
+    //     portfolio: "https://www.linkedin.com/in/mwangi-brian-0505861a8/", 
+    // }
 ]
 
 const faqs = [

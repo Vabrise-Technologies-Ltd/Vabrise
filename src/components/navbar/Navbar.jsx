@@ -66,18 +66,9 @@ const Navbar = () => {
                                     </li>
                                 </div>
                             ))}
-                            <li className="flex items-center" >
-                                <a
-                                    className="btns py-1 px-3 mr-2" 
-                                    href="https://shop.vabrisetech.com" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                >
-                                    Shop
-                                </a>
+                            <li className="bg-none text-cyan-600 border-2 border-cyan-600 hover:bg-cyan-600 hover:text-white hover:transition hover:duration-300 hover:ease-in-out hover:scale-105 rounded py-1 px-3 mr-2">
                                 <a 
-                                    className="bg-yellow-700 rounded text-white py-1 px-3"
-                                    href="https://school.vabrisetech.com" 
+                                    href="https://savannaacademy.com" 
                                     target="_blank" 
                                     rel="noopener noreferrer" 
                                 >
@@ -107,24 +98,16 @@ const Navbar = () => {
                                 </Link>
                             </div>
                         ))}
-                        <li className="p-4 border-b bg-cyan-500 text-white hover:cursor-pointer">
+                        {/* <li className="mt-4"> */}
                             <a 
-                                href="https://shop.vabrisetech.com" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                            >
-                                Shop
-                            </a>
-                        </li>
-                        <li className="p-4 border-b bg-yellow-700 text-white hover:cursor-pointer">
-                            <a 
-                                href="https://school.vabrisetech.com" 
+                                className="p-4 border-b bg-cyan-500 text-white min-w-full hover:cursor-pointer"
+                                href="https://savannaacademy.com" 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
                             >
                                 Mentorship
                             </a>
-                        </li>
+                        {/* </li> */}
                     </ul>
                 </div>
             </nav>
