@@ -1,18 +1,20 @@
 import AboutHero from "./sections/AboutHero";
 import CompanyFocus from "./sections/CompanyFocus";
-import OurTeam from "./sections/team/OurTeam";
+// import OurTeam from "./sections/team/OurTeam";
 import Testimonials from "./sections/Testimonials";
 import FAQ from "./sections/faq/FAQ";
 import WhoWeAre from "./sections/WhoWeAre";
+import WorkProcess from "./sections/WorkProcess";
 
 const About = () => {
     return ( 
         <>
             <AboutHero />
-            <div className="md:px-28 px-4 md:py-16 py-8">
+            <div className="lg:p-28 md:p-24 py-16 px-3">
                 <WhoWeAre />
                 <CompanyFocus />
-                <OurTeam />
+                {/* <OurTeam /> */}
+                <WorkProcess />
             </div>
             <Testimonials />
             <div className="md:px-28 px-4 md:py-16 py-8">

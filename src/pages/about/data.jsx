@@ -2,13 +2,14 @@ import chair from "../../assets/team/chair.jpg"
 import ceo from "../../assets/team/ceo.jpg"
 import cto from "../../assets/team/cto.jpg"
 import dev1 from "../../assets/team/wilfred.jpg"
-import dev2 from "../../assets/team/nick.jpg"
-import dev3 from "../../assets/team/mwangi.jpg"
+// import dev2 from "../../assets/team/nick.jpg"
+// import dev3 from "../../assets/team/mwangi.jpg"
 import avatar_male from "../../assets/about/avatar.svg"
 import avatar_female from "../../assets/about/avatar-female.svg"
-import { FaEye, FaBullseye, FaTrophy } from 'react-icons/fa';
+import { FaEye } from 'react-icons/fa';
 import { TbTargetArrow } from "react-icons/tb";
 import { GrAchievement } from "react-icons/gr";
+import { FaLightbulb, FaChartLine, FaCogs, FaRocket } from 'react-icons/fa';
 
 
 const companyFocus = [
@@ -26,6 +27,30 @@ const companyFocus = [
     name: "Goals",
     details: "To consistently provide an exciting experience in software solutions which contributes to every customer’s success, resulting in high levels of satisfaction.",
     icon: <GrAchievement />
+  }
+];
+
+
+const workProcesses = [
+  {
+    icon: <FaLightbulb />,
+    title: "Ideation",
+    description: "We start by brainstorming innovative ideas tailored to your specific needs and goals."
+  },
+  {
+    icon: <FaChartLine />,
+    title: "Strategy",
+    description: "Our team develops a comprehensive strategy to bring your vision to life effectively."
+  },
+  {
+    icon: <FaCogs />,
+    title: "Development",
+    description: "We employ cutting-edge technologies to build robust and scalable solutions."
+  },
+  {
+    icon: <FaRocket />,
+    title: "Launch & Support",
+    description: "We ensure a smooth launch and provide ongoing support to guarantee your success."
   }
 ];
 
@@ -115,5 +140,5 @@ const faqs = [
 
 
 
-export { companyFocus, teamData, faqs, testimonials }
+export { companyFocus, teamData, faqs, testimonials, workProcesses };
 

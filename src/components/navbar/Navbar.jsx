@@ -79,12 +79,17 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-16 right-0 bottom-0 py-4 w-full h-screen duration-500 ease-in-out bg-white`}>
-                    <ul className="flex flex-col justify-center top-16 text-base text-gray-800 font-medium">
+                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0 py-4 w-[80%] h-screen duration-500 ease-in-out bg-white shadow-xl`}>
+                    <ul className="flex flex-col justify-center top-0 text-base text-gray-800 font-medium">
+                        <li className="pb-4">
+                            <Link to='/' className='md:text-2xl text-xl uppercase font-semibold '>
+                                <img className="md:w-36 w-28" src={logo} alt="" />
+                            </Link>
+                        </li>
                         <hr />
                             <li className="p-4 ">
                             <MenuCustomList toggleNavbar={toggleNavbar} closeNavbar={closeNavbar} />
-                                </li>
+                            </li>
                         <hr />
                         {menus.map((item, index) => (
                             <div key={index}>
@@ -98,16 +103,14 @@ const Navbar = () => {
                                 </Link>
                             </div>
                         ))}
-                        {/* <li className="mt-4"> */}
-                            <a 
-                                className="p-4 border-b bg-cyan-500 text-white min-w-full hover:cursor-pointer"
-                                href="https://savannaacademy.com" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                            >
-                                Mentorship
-                            </a>
-                        {/* </li> */}
+                        <a 
+                            className="p-4 border-b bg-cyan-500 text-white min-w-full hover:cursor-pointer"
+                            href="https://savannaacademy.com" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                        >
+                            Mentorship
+                        </a>
                     </ul>
                 </div>
             </nav>
