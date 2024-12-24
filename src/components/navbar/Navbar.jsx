@@ -1,18 +1,20 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/utils/logo.png"
+import logo from "../../assets/utils/logo.png";
 import MenuCustomList from "./MenuCustomList";
 import BarIcon from "./BarIcon";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const navbarRef = useRef(null);
-    const [activeIndex, setActiveIndex] = useState(null)
+    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeDropdown, setActiveDropdown] = useState(null);
 
     useEffect(() => {
         const handleOutsideClick = (event) => {
             if (navbarRef.current && !navbarRef.current.contains(event.target)) {
                 setOpen(false);
+                setActiveDropdown(null);
             }
         };
         document.addEventListener("mousedown", handleOutsideClick);
@@ -27,6 +29,7 @@ const Navbar = () => {
 
     const closeNavbar = () => {
         setOpen(false);
+        setActiveDropdown(null);
     };
 
     const menus = [
@@ -41,7 +44,7 @@ const Navbar = () => {
                 <div className='md:flex items-center justify-between'>
                     <div className="flex justify-between items-center">
                         <Link to='/' className='md:text-2xl text-xl uppercase font-semibold '>
-                            <img className="md:w-36 w-28" src={logo} alt="" />
+                            <img className="md:w-36 w-28" src={logo} alt="Logo" />
                         </Link>
                         
                         <div className="flex md:hidden text-xl text-gray-800">
@@ -52,7 +55,13 @@ const Navbar = () => {
                     </div>
                     
                     <div className='md:flex items-center hidden text-gray-900'>
-                        <MenuCustomList toggleNavbar={toggleNavbar} closeNavbar={closeNavbar} />
+                        <MenuCustomList 
+                            toggleNavbar={toggleNavbar} 
+                            closeNavbar={closeNavbar} 
+                            activeDropdown={activeDropdown}
+                            setActiveDropdown={setActiveDropdown}
+                            isMobile={false}
+                        />
                         <ul className="md:flex items-center ">
                             {menus.map((item, index) => (
                                 <div key={index}>
@@ -81,15 +90,21 @@ const Navbar = () => {
 
                 <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0 py-4 w-[80%] h-screen duration-500 ease-in-out bg-white shadow-xl`}>
                     <ul className="flex flex-col justify-center top-0 text-base text-gray-800 font-medium">
-                        <li className="pb-4">
+                        <li className="px-4 pb-4">
                             <Link to='/' className='md:text-2xl text-xl uppercase font-semibold '>
-                                <img className="md:w-36 w-28" src={logo} alt="" />
+                                <img className="md:w-36 w-28" src={logo} alt="Logo" />
                             </Link>
                         </li>
                         <hr />
-                            <li className="p-4 ">
-                            <MenuCustomList toggleNavbar={toggleNavbar} closeNavbar={closeNavbar} />
-                            </li>
+                        <li className="p-4 ">
+                            <MenuCustomList 
+                                toggleNavbar={toggleNavbar} 
+                                closeNavbar={closeNavbar} 
+                                activeDropdown={activeDropdown}
+                                setActiveDropdown={setActiveDropdown}
+                                isMobile={true}
+                            />
+                        </li>
                         <hr />
                         {menus.map((item, index) => (
                             <div key={index}>
@@ -119,5 +134,4 @@ const Navbar = () => {
 }
  
 export default Navbar;
-
 
