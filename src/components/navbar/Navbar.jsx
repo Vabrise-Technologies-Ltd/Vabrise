@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/utils/logo.png";
 import MenuCustomList from "./MenuCustomList";
 import BarIcon from "./BarIcon";
 
@@ -44,7 +43,7 @@ const Navbar = () => {
                 <div className='md:flex items-center justify-between'>
                     <div className="flex justify-between items-center">
                         <Link to='/' className='md:text-2xl text-xl uppercase font-semibold '>
-                            <img className="md:w-36 w-28" src={logo} alt="Logo" />
+                            <img className="md:w-36 w-28" src="/placeholder.svg?height=36&width=144" alt="Logo" />
                         </Link>
                         
                         <div className="flex md:hidden text-xl text-gray-800">
@@ -56,7 +55,6 @@ const Navbar = () => {
                     
                     <div className='md:flex items-center hidden text-gray-900'>
                         <MenuCustomList 
-                            toggleNavbar={toggleNavbar} 
                             closeNavbar={closeNavbar} 
                             activeDropdown={activeDropdown}
                             setActiveDropdown={setActiveDropdown}
@@ -88,17 +86,16 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0 py-4 w-[80%] h-screen duration-500 ease-in-out bg-white shadow-xl`}>
+                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0 py-4 w-[80%] h-screen duration-500 ease-in-out bg-white shadow-xl opacity-100`}>
                     <ul className="flex flex-col justify-center top-0 text-base text-gray-800 font-medium">
                         <li className="px-4 pb-4">
                             <Link to='/' className='md:text-2xl text-xl uppercase font-semibold '>
-                                <img className="md:w-36 w-28" src={logo} alt="Logo" />
+                                <img className="md:w-36 w-28" src="/placeholder.svg?height=28&width=112" alt="Logo" />
                             </Link>
                         </li>
                         <hr />
                         <li className="p-4 ">
                             <MenuCustomList 
-                                toggleNavbar={toggleNavbar} 
                                 closeNavbar={closeNavbar} 
                                 activeDropdown={activeDropdown}
                                 setActiveDropdown={setActiveDropdown}
@@ -110,7 +107,7 @@ const Navbar = () => {
                             <div key={index}>
                                 <Link to={item.route}>
                                     <li 
-                                        onClick={() => {toggleNavbar(); closeNavbar();}} 
+                                        onClick={closeNavbar} 
                                         className="p-4 border-b hover:text-cyan-600 hover:cursor-pointer"
                                     >
                                         {item.name}                                
