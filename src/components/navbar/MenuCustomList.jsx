@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDownIcon as IoChevronDown, ChevronUpIcon as IoChevronUp } from 'lucide-react';
-import { solutionDetails } from "../pages/solutions/data";
+import { IoChevronDown, IoChevronUp } from "react-icons/io5";
+import { solutionDetails } from "../../pages/solutions/data";
 
-export default function MenuCustomList({ closeNavbar, activeDropdown, setActiveDropdown, isMobile }) {
+export default function MenuCustomList({ toggleNavbar, closeNavbar, activeDropdown, setActiveDropdown, isMobile }) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -41,9 +41,7 @@ export default function MenuCustomList({ closeNavbar, activeDropdown, setActiveD
   };
 
   const handleItemClick = () => {
-    if (isMobile) {
-      setActiveDropdown(null);
-    }
+    toggleDropdown();
     closeNavbar();
   };
 
@@ -85,3 +83,4 @@ export default function MenuCustomList({ closeNavbar, activeDropdown, setActiveD
     </div>
   );
 }
+

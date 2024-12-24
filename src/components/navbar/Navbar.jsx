@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import MenuCustomList from "./MenuCustomList";
 import BarIcon from "./BarIcon";
+import logo from "../../assets/utils/logo.png";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -43,7 +44,7 @@ const Navbar = () => {
                 <div className='md:flex items-center justify-between'>
                     <div className="flex justify-between items-center">
                         <Link to='/' className='md:text-2xl text-xl uppercase font-semibold '>
-                            <img className="md:w-36 w-28" src="/placeholder.svg?height=36&width=144" alt="Logo" />
+                            <img className="md:w-36 w-28" src={logo} alt="Logo" />
                         </Link>
                         
                         <div className="flex md:hidden text-xl text-gray-800">
@@ -90,7 +91,7 @@ const Navbar = () => {
                     <ul className="flex flex-col justify-center top-0 text-base text-gray-800 font-medium">
                         <li className="px-4 pb-4">
                             <Link to='/' className='md:text-2xl text-xl uppercase font-semibold '>
-                                <img className="md:w-36 w-28" src="/placeholder.svg?height=28&width=112" alt="Logo" />
+                                <img className="md:w-36 w-28" src={logo} alt="Logo" />
                             </Link>
                         </li>
                         <hr />
