@@ -87,7 +87,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0 py-4 w-[80%] h-screen duration-500 ease-in-out bg-white shadow-xl opacity-100`}>
+                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0 py-4 w-[90%] h-screen duration-500 ease-in-out bg-white shadow-xl opacity-100`}>
                     <ul className="flex flex-col justify-center top-0 text-base text-gray-800 font-medium">
                         <li className="px-4 pb-4">
                             <Link to='/' className='md:text-2xl text-xl uppercase font-semibold '>
