@@ -4,25 +4,28 @@ import { HiOutlineMail } from "react-icons/hi";
 import { motion } from "framer-motion";
 
 const ContactDetails = () => {
-    const contactInfo = [
-        {icon: <FaUserAlt />, details: 'Vabrise Technologies'},
-        {icon: <FaPhone />, details: '+2547 1857 7070'},
-        {icon: <MdLocationOn />, details: 'Nakuru, Kenya'},
-        {icon: <HiOutlineMail />, details: 'info@vabrisetech.com'},
-    ]
-    return ( 
-        <>
-            {contactInfo.map((info) => (
-                <motion.div 
-                    whileHover={{y: -8, scale: 1.02}}
-                    transition={{type: 'spring', stiffness: 80}}
-                    class="flex items-center justify-start bg-white rounded-lg ease-out duration-300 px-4 py-6 shadow-lg hover:shadow-xl">
-                    <p className="text-cyan-800">{info.icon}</p>
-                    <p class="md:ml-4 ml-2 md:text-sm text-xs">{info.details}</p>
-                </motion.div>
-            ))}
-        </>
-     );
-}
- 
+  const contactInfo = [
+    { icon: <FaUserAlt size={24} />, details: 'Vabrise Technologies' },
+    { icon: <FaPhone size={24} />, details: '+2547 1857 7070' },
+    { icon: <MdLocationOn size={24} />, details: 'Parklands - Nairobi, Kenya' },
+    { icon: <HiOutlineMail size={24} />, details: 'info@vabrisetech.com' },
+  ];
+
+  return (
+    <div className="space-y-6 md:w-[40%] w-full mx-auto">
+      {contactInfo.map((info, index) => (
+        <motion.div
+          key={index}
+          whileHover={{ y: -8, scale: 1.02 }}
+          transition={{ type: "spring", stiffness: 80 }}
+          className="flex items-center justify-start bg-white rounded-lg px-4 py-6 shadow-lg hover:shadow-xl"
+        >
+          <p className="text-cyan-800">{info.icon}</p>
+          <p className="ml-4 text-lg text-gray-700">{info.details}</p>
+        </motion.div>
+      ))}
+    </div>
+  );
+};
+
 export default ContactDetails;

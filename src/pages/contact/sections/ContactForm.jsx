@@ -6,10 +6,10 @@ import DOMPurify from 'dompurify';
 import { z } from 'zod';
 
 const formSchema = z.object({
-  user_name: z.string().min(2, 'Name must be at least 2 characters').max(50, 'Name must be less than 50 characters'),
-  user_email: z.string().email('Invalid email address'),
-  user_phone: z.string().regex(/^\+?[1-9]\d{1,14}$/, 'Invalid phone number'),
-  message: z.string().min(10, 'Message must be at least 10 characters').max(1000, 'Message must be less than 1000 characters'),
+  user_name: z.string().min(2).max(50),
+  user_email: z.string().email(),
+  user_phone: z.string().regex(/^\+?[1-9]\d{1,14}$/),
+  message: z.string().min(10).max(1000),
 });
 
 const ContactForm = () => {
@@ -17,9 +17,7 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({});
 
-  const sanitizeInput = (input) => {
-    return DOMPurify.sanitize(input);
-  };
+  const sanitizeInput = (input) => DOMPurify.sanitize(input);
 
   const validateForm = (data) => {
     try {
@@ -60,17 +58,14 @@ const ContactForm = () => {
         sanitizedData,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
-      .then((result) => {
-        console.log('Message sent successfully!', result.text);
+      .then(() => {
         toast.success('Email sent successfully');
         if (form.current) form.current.reset();
-      }, (error) => {
-        console.error('There was an error, please try again!', error.text);
+      })
+      .catch(() => {
         toast.error('There was an error, please try again!');
       })
-      .finally(() => {
-        setIsSubmitting(false);
-      });
+      .finally(() => setIsSubmitting(false));
     } else {
       setErrors(formErrors);
       setIsSubmitting(false);
@@ -78,41 +73,18 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='md:mt-0 mt-16'>
+    <div className="md:mt-0 mt-16 md:w-[50%] w-full mx-auto bg-white p-6 rounded-lg shadow-lg">
       <Toaster position="top-right" reverseOrder={false} />
       <form ref={form} onSubmit={sendEmail}>
-        <div className="flex flex-col gap-6 md:w-96">
-          <Input 
-            label='Username' 
-            color='cyan' 
-            name='user_name'
-            required 
-            error={!!errors.user_name}
-          />
-          {errors.user_name && <p className="text-red-500 text-xs mt-1">{errors.user_name}</p>}
-          <Input 
-            label='Email' 
-            color='cyan' 
-            name='user_email'
-            required 
-            error={!!errors.user_email}
-          />
-          {errors.user_email && <p className="text-red-500 text-xs mt-1">{errors.user_email}</p>}
-          <Input 
-            label='Phone' 
-            color='cyan' 
-            name='user_phone'
-            required 
-            error={!!errors.user_phone}
-          />
-          {errors.user_phone && <p className="text-red-500 text-xs mt-1">{errors.user_phone}</p>}
-          <Textarea 
-            label='Message' 
-            color='cyan' 
-            name='message'
-            error={!!errors.message}
-          />
-          {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
+        <div className="flex flex-col gap-6">
+          <Input label="Username" color="cyan" name="user_name" required error={!!errors.user_name} />
+          {errors.user_name && <p className="text-red-500 text-sm">{errors.user_name}</p>}
+          <Input label="Email" color="cyan" name="user_email" required error={!!errors.user_email} />
+          {errors.user_email && <p className="text-red-500 text-sm">{errors.user_email}</p>}
+          <Input label="Phone" color="cyan" name="user_phone" required error={!!errors.user_phone} />
+          {errors.user_phone && <p className="text-red-500 text-sm">{errors.user_phone}</p>}
+          <Textarea label="Message" color="cyan" name="message" required error={!!errors.message} />
+          {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
         </div>
         <Button type="submit" color="cyan" className="w-full mt-3" disabled={isSubmitting}>
           {isSubmitting ? 'Sending...' : 'Send Message'}
