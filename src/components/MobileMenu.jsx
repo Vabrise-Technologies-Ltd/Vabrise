@@ -1,15 +1,11 @@
 import { AiOutlineShop } from "react-icons/ai";
 import { RiUser3Line } from "react-icons/ri";
 import { FiShoppingBag } from "react-icons/fi";
-// import { FaRegHeart } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
-import { FaBars, FaTimes } from "react-icons/fa"
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
 const MobileMenu = () => {
-    
 
     return ( 
         <>
@@ -17,7 +13,7 @@ const MobileMenu = () => {
                 <button className="bg-cyan-700 rounded-tr-3xl text-white ">
                     <Link to='/' className="flex flex-col items-center">
                         <FaHome />
-                        <span className="btm-nav-label">Home</span>
+                         <span className="btm-nav-label">Home</span>
                     </Link>
                 </button>
                 <button>

@@ -6,13 +6,13 @@ const OurWork = () => {
   function getFirstWords(text, wordLimit) {
     const words = text.split(' ');
     if (words.length <= wordLimit) return text;
-    return words.slice(0, wordLimit).join(' ') + '...';  // Adding ellipsis to indicate truncation
+    return words.slice(0, wordLimit).join(' ') + '...';  
   }
     
     return ( 
           <>
               <div className="container">
-                <div className="md:mb-16 mb-8">
+                <div className="md:mb-16 mb-8 flex flex-col items-center">
                 <h1 className="section-title">Our Work</h1>
                   <Typography
                     className="text-center md:text-xl mx-auto w-full text-gray-700 max-w-4xl"
@@ -21,9 +21,9 @@ const OurWork = () => {
                   </Typography>
                 </div>
 
-                <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-8 gap-4">
                 {projects.map((project, index) => (
-                  <div
+                  <div  
                     key={index}
                     className="project flex relative text-white hover:scale-105 transition duration-500 ease-in-out"
                   >
@@ -35,7 +35,7 @@ const OurWork = () => {
                     <div className="project-details absolute p-4 flex flex-col w-full h-56 md:bg-gray-900/75 bg-transparent transition duration-500 ease-in-out opacity-0 hover:opacity-100">
                       <h1 className="font-bold md:text-xl mb-3 ">{project.title}</h1>
                       <p className="text-gray-200 text-sm ">
-                        {getFirstWords(project.description, 24)}...
+                        {getFirstWords(project.description, 18)}...
                       </p>
                       <div className="justify-between items-center mt-4 flex">
                         <a

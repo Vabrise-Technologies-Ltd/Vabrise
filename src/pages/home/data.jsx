@@ -1,13 +1,16 @@
-import client1 from "../../assets/partners/img1.png"
-import client2 from "../../assets/partners/img2.png"
-import client3 from "../../assets/partners/img3.jpg"
-import client4 from "../../assets/partners/img4.png"
-import client5 from "../../assets/partners/img5.png"
-import client6 from "../../assets/partners/img6.png"
-import client7 from "../../assets/partners/img7.png"
+import client1 from "../../assets/partners/partner-1.png"
+import client2 from "../../assets/partners/partner-2.jpg"
+import client3 from "../../assets/partners/partner-3.png"
+import client4 from "../../assets/partners/partner-4.jpg"
+import client5 from "../../assets/partners/partner-5.jpg"
+import client6 from "../../assets/partners/partner-6.png"
+import client7 from "../../assets/partners/partner-7.jpg"
+import client8 from "../../assets/partners/partner-8.png"
+import client9 from "../../assets/partners/partner-9.png"
 import img1 from "../../assets/home/img1.png"
 import img2 from "../../assets/home/img2.png"
 import img3 from "../../assets/home/img3.png"
+import img4 from "../../assets/home/img4.png"
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { IoIosLaptop } from "react-icons/io";
 import { BsShieldLock } from "react-icons/bs";
@@ -37,13 +40,18 @@ const projects = [
     {   title: "Savanna School", 
         cover_image: img2,
         description: "Savanna School is a tech training bootcamp by Vabrise Technologies in Kenya. This program started off in 2023 as a program to equip young people in tertiary insttutions with skills to help them be self-reliant.", 
-        link: "https://school.vabrisetech.com"
+        link: "https://savannaacademy.com"
     },
-    {   title: "Vabrise Technologies", 
+    {   title: "CCABO Kenya", 
         cover_image: img3,
-        description: "A tech company that manages your bussiness without having to worry about the the software solutions you are using. Less hustle more growth.", 
-        link: "https://vabrisetech.com"
+        description: "A CBO that works with and supports vulnerable community members to attain quality livelihoods through trainings and other innovative development innitiatives.", 
+        link: "https://ccabokenya.or.ke"
     },
+    {   title: "Savanna Africa", 
+      cover_image: img4,
+      description: "An ecommerce platform for tech-related businesses in Kenya ", 
+      link: "https://shop.vabrisetech.com"
+  }
 ]
 
 

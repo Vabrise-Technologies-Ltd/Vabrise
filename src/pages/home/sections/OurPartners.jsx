@@ -21,7 +21,7 @@ function OurPartners() {
         >
           {partners.map((item, index) => ( 
             <div key={index} className='flex-shrink-0 md:mx-8 mx-2'> 
-              <img className='md:w-36 h-28 md:h-36 w-28' src={item.cover_image} alt={item.name} />
+              <img className='md:w-36 md:h-36 h-24 w-24 grayscale hover:grayscale-0' src={item.cover_image} alt={item.name} />
             </div>
           ))}
         </Marquee>
