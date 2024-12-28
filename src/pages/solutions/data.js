@@ -18,26 +18,26 @@ const solutionDetails = [
     },
     {
         id: 1,
-        slug: "software-development",
-        image: softImg,
-        title: "Software Development",
-        summary: "We create modern solution-based applications that will help you reach all of your marketing.",
-        content: "We have a team of experienced developers who are proficient in the latest technologies and are dedicated to delivering exceptional results for our clients. Whether you’re looking to build a new app or improve an existing one, Vabrise Technologies has the expertise and resources to help you achieve your business goals."
+        slug: "mobile-app-development",
+        image: saasImg,
+        title: "Mobile App Development",
+        summary: "We create modern mobile applications that will help you reach all of your marketing.",
+        content: "Our customer-centric approach ensures that your vision is at the forefront of our service delivery process, resulting in solutions that not only meet but exceed expectations."
     },
     {
         id: 2,
-        slug: "software-as-a-service",
-        image: saasImg,
-        title: "Software As A Service",
+        slug: "software-development",
+        image: softImg,
+        title: "Software Development",
         summary: "We have robust custom software solutions spanning across different industries like education, real estate, health, among others",
         content: "Our softwares have been created to meet user demands and can be customized upon request. They are cormercially viable, scalable and are based on pay-per-use model. We do all the heavylifting of maintainance so that you can concentrate with service delivery."
     },
     
     {
         id: 3,
-        slug: "cloud-computing",
+        slug: "web-hosting",
         image: cloudImg,
-        title: "Cloud Computing",
+        title: "Web Hosting",
         summary: "",
         content: "We offer a full suite of domain services, including domain name registration, domain name transfers, domain name renewal, domain expiration protection, recovery of lost domains and domain privacy services."
     },
