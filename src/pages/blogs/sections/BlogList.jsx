@@ -22,7 +22,7 @@ const BlogList = () => {
                         <p>Loading blogs...</p>
                     </div>
                 ) : (
-                    <div className="max-w-7xl mx-auto card-container">
+                    <div className="card-container max-w-7xl mx-auto px-4">
                         {blogs && blogs.map((blog, index) => (
                             <Link key={blog.id} to={`/articles/${blog.slug}`} className="card h-84">
                                 <div className="md:h-44 w-full">
