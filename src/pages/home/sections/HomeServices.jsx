@@ -16,7 +16,7 @@ const Services = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
         {servicesData.map((service, index) => (
           <div key={index} className="relative flex bg-[#f7feff] lg:py-6 md:py-4 py-3 lg:pr-6 md:pr-4 pr-2 rounded-lg shadow-md hover:shadow-lg transition hover:-translate-y-2 duration-500 overflow-hidden">
-            <div className="absolute  top-1/2 transform -translate-y-1/2 flex items-center justify-center">
+            <div className="absolute top-1/2 transform -translate-y-1/2 flex items-center justify-center">
               {service.icon}
             </div>
             <div className="md:pl-12 pl-8 md:ml-4 ml-3">

@@ -7,8 +7,8 @@ import { homeCarousel } from "../../../utils/Carousel";
 
 function Testimonials() {
   return (
-    <div className="bg-[#F3FEFF] md:py-24 py-12 md:mb-32 mb-8">
-      <div className="">
+    <div className="bg-[#F3FEFF] md:py-24 py-12 md:mb-24 mb-8">
+      <div className="max-w-7xl mx-auto">
         <h2 className="md:text-3xl text-xl font-extrabold text-center text-cyan-800">What Our Clients Say</h2>
         <div className="mt-8 ">
           <Splide options={homeCarousel}>

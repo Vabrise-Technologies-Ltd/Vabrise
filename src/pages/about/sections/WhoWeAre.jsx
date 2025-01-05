@@ -3,7 +3,7 @@ import work from "../../../assets/about/us.svg"
 const WhoWeAre = () => {
     return ( 
         <>
-            <div className="lg:mb-32 md:mb-16 mb-8">
+            <div className="lg:mb-24 md:mb-16 mb-8">
                 <div className="grid md:grid-cols-2 md:gap-16 gap-8">
                     <div>
                         <img src={work} alt="" />

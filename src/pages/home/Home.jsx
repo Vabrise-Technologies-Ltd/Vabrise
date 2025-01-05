@@ -9,7 +9,7 @@ const Home = () => {
     return ( 
         <>
             <Hero />
-            <section className="lg:p-28 md:p-24 py-16 px-3 flex flex-col items-center justify-center"  >
+            <section className="max-w-7xl mx-auto lg:p-28 md:p-24 py-16 px-3 flex flex-col items-center justify-center"  >
                 <Services />
                 <WhyChooseUs />
                 <OurWork />

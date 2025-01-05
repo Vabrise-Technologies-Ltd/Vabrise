@@ -10,14 +10,14 @@ const About = () => {
     return ( 
         <>
             <AboutHero />
-            <div className="lg:p-28 md:p-24 py-16 px-3">
+            <div className="max-w-7xl mx-auto lg:p-28 md:p-24 py-16 px-3">
                 <WhoWeAre />
                 <CompanyFocus />
                 {/* <OurTeam /> */}
                 <WorkProcess />
             </div>
             <Testimonials />
-            <div className="md:px-28 px-4 md:py-16 py-8">
+            <div className="max-w-7xl mx-auto md:px-28 px-4 md:py-16 py-8">
                 <FAQ />
             </div>
         </>

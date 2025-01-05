@@ -4,14 +4,13 @@ const SolutionsDetails = ({solutionDetails}) => {
     const { slug } = useParams()
 
     const solution = solutionDetails.find((item) => item.slug == slug) || {}
-     // Check if solutions is defined and has the articles property
     if (!solutionDetails && loading) {
         return <p>Loading blog details...</p>;
     }
    
     return ( 
-        <>
-            <div className="grid md:grid-cols-2 md:gap-16 gap-8 md:m-24 m-4 my-16">
+        <div className="flex items-center justify-center p-4">
+            <div className="max-w-7xl mx-auto grid md:grid-cols-2 md:gap-16 gap-8 md:m-24 m-4 my-16 items-center">
                 <div>
                     <img src={solution.image} alt="" />
                 </div>
@@ -22,7 +21,7 @@ const SolutionsDetails = ({solutionDetails}) => {
                     
                 </div>
             </div>
-        </>
+        </div>
      );
 }
  

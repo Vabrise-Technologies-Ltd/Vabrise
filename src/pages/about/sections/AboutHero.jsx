@@ -2,7 +2,7 @@ const AboutHero = () => {
     return ( 
         <>
             <div 
-                className="hero bg-cover" 
+                className="hero bg-cover md:h-96 h-64" 
                 style={{
                     backgroundAttachment: 'fixed',
                     objectPosition: 'cover',
