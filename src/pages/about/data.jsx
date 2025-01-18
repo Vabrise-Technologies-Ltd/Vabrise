@@ -105,7 +105,7 @@ const faqs = [
       },
     {
       question: "How can I contact Vabrise Technologies Limited?",
-      answer: "You can contact us through our website's contact form, email us at contact@vabrisetech.com or call us on +254718577070."
+      answer: "You can contact us through our website's contact form, email us at info@vabrisetech.com or call us on 0710815080/ 0799874578."
     },
     {
       question: "Do you offer customized solutions?",
