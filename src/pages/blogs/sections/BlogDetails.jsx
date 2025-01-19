@@ -39,20 +39,17 @@ const BlogDetails = () => {
 
     return (
         <div className="md:mx-24 mx-4 md:mt-16 mt-8 md:mb-32 mb-16">
-            {/* Back Button */}
             <div className="md:mb-16 mb-8">
                 <Link
                     to="/articles"
-                    className="flex items-center text-cyan-500 border border-cyan-500 rounded-lg py-2 px-4 w-fit hover:bg-cyan-500 hover:text-white"
+                    className="flex items-center text-cyan-500 border border-cyan-500 rounded-lg py-2 md:px-4 px-3 w-fit hover:bg-cyan-500 hover:text-white"
                 >
                     <FaArrowLeft className="mr-2" />
                     <p>Back to Articles</p>
                 </Link>
             </div>
 
-            {/* Blog Content */}
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
-                {/* Image Container with Overlay */}
                 <div className="relative">
                     <img
                         src={blog.image}
@@ -60,14 +57,12 @@ const BlogDetails = () => {
                         className="w-full h-64 md:h-96 object-cover"
                         loading="lazy"
                     />
-                    {/* Overlay */}
                     <div className="absolute inset-0 bg-black bg-opacity-30"></div>
                 </div>
-                <div className="p-6">
+                <div className="md:p-6 py-3 px-1">
                     <h2 className="text-2xl font-semibold text-gray-800 md:mt-4 mt-2">
                         {blog.title}
                     </h2>
-                    {/* Blog Body */}
                     <div
                         dangerouslySetInnerHTML={{ __html: blog.body }}
                         className="prose max-w-full mt-4 text-gray-700"
